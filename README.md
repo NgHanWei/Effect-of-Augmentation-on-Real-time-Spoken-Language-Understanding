@@ -20,8 +20,9 @@ Activate VirtualEnvironment in the folder named NLUParaphrasing
 ### Splitting Training and Test Data
 
 1. split the training data into 90/10
-	$ rasa data split nlu --nlu data/nlu/appended_original_nlu.yml --training-fraction 9
-
+```sh
+$ rasa data split nlu --nlu data/nlu/appended_original_nlu.yml --training-fraction 9
+```
 2. rename the 10% test file to non_paraphrased_test_data_from_appended_original_nlu.yml
 
 3. rename the 90% train file to non_paraphrased_training_data_from_appended_original_nlu.yml
@@ -29,20 +30,26 @@ Activate VirtualEnvironment in the folder named NLUParaphrasing
 ### Training baseline RASA NLU Model
 
 4. Train nlu model with non_paraphrased_training_data_from_appended_original_nlu.yml
-	$ rasa train --nlu --data data/nlu/non_paraphrased_training_data_from_appended_original_nlu.yml
-
+```sh
+$ rasa train --nlu --data data/nlu/non_paraphrased_training_data_from_appended_original_nlu.yml
+```
 ### Performing Paraphrasing on training set
 
 5. Paraphrase non_paraphrased_training_data_from_appended_original_nlu.yml by shifting the file to Pharaphraser folder, and convert it into XLSX format.
+```sh
 	a. Convert Yaml to XLSX by using: https://www.convertcsv.com/yaml-to-csv.htm 
 	b. Update nlu_test.xlsx by importing the converted data.
 	c. Run split.py to generate a new expanded.tsv file:
+```
+```sh
 $ python split.py nlu_test.xlsx
+```
 e. Add "- " to nlu_examples_expanded by ="- "&<cell>
 
 6. Run the paraphrasing python script.
-	$ python run paraphraser.py
-
+```sh
+$ python run paraphraser.py
+```
 7. Rename the resulting yaml file to paraphrased_training_data_from_non_paraphrased_training_data.yml
 	
 ### Training Paraphrased Training Model
