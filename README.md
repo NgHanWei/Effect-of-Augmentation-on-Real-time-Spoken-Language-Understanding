@@ -1,7 +1,15 @@
 # CE7455 Project
 
-0. Install corresponding libraries, modules, and packages in requirements.txt
-	a. Activate VirtualEnvironment in the folder named NLUParaphrasing
+Step by step instruction for how to run RASA NLU and Paraphraser to obtain results.
+
+## Instructions
+
+### Install the dependencies
+It is recommended to create a virtual environment with python version 3.7 and activate it before running the following:
+```sh
+pip install -r requirements.txt
+```
+Activate VirtualEnvironment in the folder named NLUParaphrasing
 
 1. split the training data into 90/10
 	$ rasa data split nlu --nlu data/nlu/appended_original_nlu.yml --training-fraction 9
