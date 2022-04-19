@@ -15,7 +15,7 @@ It is recommended to create a virtual environment with python version 3.7 and ac
 ```sh
 pip install -r requirements.txt
 ```
-Activate VirtualEnvironment in the folder named NLUParaphrasing
+Activate VirtualEnvironment in the folder
 
 ### Splitting Training and Test Data
 
