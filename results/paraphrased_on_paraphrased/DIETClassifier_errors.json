@@ -1,0 +1,38 @@
+[
+  {
+    "text": "Does the backache and leg pain happen at the same time?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "back",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 9,
+        "end": 25,
+        "confidence_entity": 0.6795434951782227,
+        "value": "back_and_leg",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you wake up at night from the back (back_or_leg) pain.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 51,
+        "value": "back_and_leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

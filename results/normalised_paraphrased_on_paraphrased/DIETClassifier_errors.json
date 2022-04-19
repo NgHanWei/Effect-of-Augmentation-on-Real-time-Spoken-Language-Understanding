@@ -1,0 +1,97 @@
+[
+  {
+    "text": "So just to confirm, you have pain in your back and leg?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 46,
+        "value": "back",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 42,
+        "end": 54,
+        "confidence_entity": 0.496645450592041,
+        "value": "back_and_leg",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Did the back pain and leg pain start togther?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "back",
+        "entity": "back_or_leg"
+      },
+      {
+        "start": 22,
+        "end": 25,
+        "value": "leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.8862941861152649,
+        "value": "back",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "back_or_leg",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.7162953019142151,
+        "value": "and leg",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Does the backache and leg pain happen at the same time?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "back",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 9,
+        "end": 25,
+        "confidence_entity": 0.8613316416740417,
+        "value": "back_and_leg",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Do you wake up at night from the back (back_or_leg) pain.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 51,
+        "value": "back_and_leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

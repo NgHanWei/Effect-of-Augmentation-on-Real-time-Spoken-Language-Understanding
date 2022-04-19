@@ -1,0 +1,55 @@
+[
+  {
+    "text": "So just to confirm, you have pain in your back and leg?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 46,
+        "value": "back",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 42,
+        "end": 46,
+        "confidence_entity": 0.730063259601593,
+        "value": "back",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "back_or_leg",
+        "start": 51,
+        "end": 54,
+        "confidence_entity": 0.6575601100921631,
+        "value": "leg",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Does one leg feel weaker than the other?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Do you wake up at night from the back (back_or_leg) pain.",
+    "entities": [
+      {
+        "start": 33,
+        "end": 51,
+        "value": "back_and_leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

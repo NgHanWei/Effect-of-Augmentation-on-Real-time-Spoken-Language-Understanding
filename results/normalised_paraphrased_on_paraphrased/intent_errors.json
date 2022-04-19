@@ -1,0 +1,98 @@
+[
+  {
+    "text": "You better tell me more.",
+    "intent": "VERBAL_short_statement",
+    "intent_prediction": {
+      "name": "HPIA_factors_make_pain_better",
+      "confidence": 0.5085657835006714
+    }
+  },
+  {
+    "text": "Is this running on the cloud?",
+    "intent": "GENERAL_chit_chat_introduction",
+    "intent_prediction": {
+      "name": "HPI_affecting_worklife",
+      "confidence": 0.3663874566555023
+    }
+  },
+  {
+    "text": "How much do you weigh.",
+    "intent": "DEMOG_weight",
+    "intent_prediction": {
+      "name": "HPIE_carrying_heavy_objects_weight",
+      "confidence": 0.7483406066894531
+    }
+  },
+  {
+    "text": "How often do you climb stairs.",
+    "intent": "SHDE_stairs_frequency",
+    "intent_prediction": {
+      "name": "GENERAL_how_is_patient",
+      "confidence": 0.41843071579933167
+    }
+  },
+  {
+    "text": "How many floors is your house?",
+    "intent": "SHLC_living_conditions_storey",
+    "intent_prediction": {
+      "name": "SHLC_living_conditions_stairs_in_characteristics",
+      "confidence": 0.7517754435539246
+    }
+  },
+  {
+    "text": "Do you do your chores at home?",
+    "intent": "HPI_affecting_house_chores",
+    "intent_prediction": {
+      "name": "SHLC_home_chores",
+      "confidence": 0.6895440220832825
+    }
+  },
+  {
+    "text": "Any tightness in chest cougor breathlessness.",
+    "intent": "SRRES_breathing_problems",
+    "intent_prediction": {
+      "name": "SRRES_chest_tight",
+      "confidence": 0.5236589908599854
+    }
+  },
+  {
+    "text": "Is there any weakness or weakness?",
+    "intent": "HPI_MULTI_symptoms_numbness+weakness",
+    "intent_prediction": {
+      "name": "HPI_symptoms_weakness",
+      "confidence": 0.9687660336494446
+    }
+  },
+  {
+    "text": "Is it okay to talk to you?",
+    "intent": "PH_asking_for_patient_history_consent",
+    "intent_prediction": {
+      "name": "GENERAL_back_or_leg",
+      "confidence": 0.6063441038131714
+    }
+  },
+  {
+    "text": "What makes you feel pain?",
+    "intent": "HPIE_factors_make_pain_worse",
+    "intent_prediction": {
+      "name": "HPIA_factors_make_pain_better",
+      "confidence": 0.5459313988685608
+    }
+  },
+  {
+    "text": "Is the leg pain then the same as the pain now.",
+    "intent": "HPIO_is_pain_getting_worse",
+    "intent_prediction": {
+      "name": "HPI_association_both_pains",
+      "confidence": 0.9049163460731506
+    }
+  },
+  {
+    "text": "Do you wake up at night from the back (back_or_leg) pain.",
+    "intent": "HPI_back_pain_sleep",
+    "intent_prediction": {
+      "name": "HPIC_pain_sharp_or_dull",
+      "confidence": 0.47907498478889465
+    }
+  }
+]

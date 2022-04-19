@@ -1,0 +1,58 @@
+[
+  {
+    "text": "You better tell me more.",
+    "intent": "VERBAL_short_statement",
+    "intent_prediction": {
+      "name": "HPIC_pain_characteristics",
+      "confidence": 0.4579950273036957
+    }
+  },
+  {
+    "text": "Is this running on the cloud?",
+    "intent": "GENERAL_chit_chat_introduction",
+    "intent_prediction": {
+      "name": "HPIC_pain_burning_tingling",
+      "confidence": 0.8698736429214478
+    }
+  },
+  {
+    "text": "How much do you weigh.",
+    "intent": "DEMOG_weight",
+    "intent_prediction": {
+      "name": "DEMOG_weight_before",
+      "confidence": 0.644999623298645
+    }
+  },
+  {
+    "text": "How many floors is your house?",
+    "intent": "SHLC_living_conditions_storey",
+    "intent_prediction": {
+      "name": "SHLC_living_conditions_stairs_in_characteristics",
+      "confidence": 0.623907208442688
+    }
+  },
+  {
+    "text": "Any tightness in chest cougor breathlessness.",
+    "intent": "SRRES_breathing_problems",
+    "intent_prediction": {
+      "name": "SRRES_chest_tight",
+      "confidence": 0.6374807953834534
+    }
+  },
+  {
+    "text": "When's that time when your back is painful?",
+    "intent": "HPIO_pain_at_particular_time",
+    "intent_prediction": {
+      "name": "HPIO_pain_trigger",
+      "confidence": 0.995642364025116
+    }
+  },
+  {
+    "text": "Is there any weakness or weakness?",
+    "intent": "HPI_MULTI_symptoms_numbness+weakness",
+    "intent_prediction": {
+      "name": "HPI_symptoms_weakness",
+      "confidence": 0.883331298828125
+    }
+  }
+]

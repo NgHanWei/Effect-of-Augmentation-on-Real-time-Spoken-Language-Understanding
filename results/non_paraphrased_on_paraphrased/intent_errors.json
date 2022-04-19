@@ -1,0 +1,98 @@
+[
+  {
+    "text": "You better tell me more.",
+    "intent": "VERBAL_short_statement",
+    "intent_prediction": {
+      "name": "HPIA_factors_make_pain_better",
+      "confidence": 0.902033269405365
+    }
+  },
+  {
+    "text": "Is this running on the cloud?",
+    "intent": "GENERAL_chit_chat_introduction",
+    "intent_prediction": {
+      "name": "HPIC_pain_burning_tingling",
+      "confidence": 0.5738114714622498
+    }
+  },
+  {
+    "text": "How much do you weigh.",
+    "intent": "DEMOG_weight",
+    "intent_prediction": {
+      "name": "DEMOG_weight_before",
+      "confidence": 0.7701019644737244
+    }
+  },
+  {
+    "text": "How many floors is your house?",
+    "intent": "SHLC_living_conditions_storey",
+    "intent_prediction": {
+      "name": "SHLC_living_conditions_stairs_in_characteristics",
+      "confidence": 0.9243149757385254
+    }
+  },
+  {
+    "text": "If you change your stool.",
+    "intent": "SRGIT_bowel_frequency",
+    "intent_prediction": {
+      "name": "SRRHEU_hair_loss",
+      "confidence": 0.5182071924209595
+    }
+  },
+  {
+    "text": "Do you do your chores at home?",
+    "intent": "HPI_affecting_house_chores",
+    "intent_prediction": {
+      "name": "SHLC_home_chores",
+      "confidence": 0.5084466934204102
+    }
+  },
+  {
+    "text": "Has the pain changed over time?",
+    "intent": "HPIO_pain_change_across_time",
+    "intent_prediction": {
+      "name": "HPIO_is_pain_getting_worse",
+      "confidence": 0.5268944501876831
+    }
+  },
+  {
+    "text": "I mean you're cleaning right?",
+    "intent": "SHO_occupation_confirm",
+    "intent_prediction": {
+      "name": "GENERAL_moving_to_physicals",
+      "confidence": 0.5238950252532959
+    }
+  },
+  {
+    "text": "When's that time when your back is painful?",
+    "intent": "HPIO_pain_at_particular_time",
+    "intent_prediction": {
+      "name": "HPIO_pain_trigger",
+      "confidence": 0.9790273904800415
+    }
+  },
+  {
+    "text": "Is there any weakness or weakness?",
+    "intent": "HPI_MULTI_symptoms_numbness+weakness",
+    "intent_prediction": {
+      "name": "HPI_symptoms_weakness",
+      "confidence": 0.9860880970954895
+    }
+  },
+  {
+    "text": "What makes you feel pain?",
+    "intent": "HPIE_factors_make_pain_worse",
+    "intent_prediction": {
+      "name": "HPIO_pain_trigger",
+      "confidence": 0.9625836610794067
+    }
+  },
+  {
+    "text": "On a scale of one to ten how painful is it.",
+    "intent": "HPISE_pain_vas",
+    "intent_prediction": {
+      "name": "GENERAL_opening_patient_problem",
+      "confidence": 0.5252135992050171
+    }
+  }
+]

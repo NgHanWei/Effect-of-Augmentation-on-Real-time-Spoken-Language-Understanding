@@ -1,0 +1,67 @@
+[
+  {
+    "text": "I would like to clarify, you mentioned earlier that you hurt your back 6 months ago carrying heavy buckets of water. Is that correct",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 66,
+        "end": 70,
+        "confidence_entity": 0.9997667670249939,
+        "value": "back",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "You mentioned that you have back and leg pain",
+    "entities": [
+      {
+        "start": 37,
+        "end": 40,
+        "value": "leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.999482274055481,
+        "value": "back",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Alright thank you I will move on to examine your back and leg",
+    "entities": [
+      {
+        "start": 49,
+        "end": 53,
+        "value": "back",
+        "entity": "back_or_leg"
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "value": "leg",
+        "entity": "back_or_leg"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "back_or_leg",
+        "start": 49,
+        "end": 61,
+        "confidence_entity": 0.9214058518409729,
+        "value": "back_and_leg",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

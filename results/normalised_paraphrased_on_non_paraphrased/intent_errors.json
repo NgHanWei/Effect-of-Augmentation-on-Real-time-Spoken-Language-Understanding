@@ -1,0 +1,346 @@
+[
+  {
+    "text": "I would like to clarify, you mentioned earlier that you hurt your back 6 months ago carrying heavy buckets of water. Is that correct",
+    "intent": "GENERAL_confirming_patients_details",
+    "intent_prediction": {
+      "name": "FH_how_is_family",
+      "confidence": 0.553162157535553
+    }
+  },
+  {
+    "text": "Ok, continue?",
+    "intent": "VERBAL_short_statement",
+    "intent_prediction": {
+      "name": "filler_phrase",
+      "confidence": 0.9172038435935974
+    }
+  },
+  {
+    "text": "Is this running on the cloud?",
+    "intent": "GENERAL_chit_chat_introduction",
+    "intent_prediction": {
+      "name": "HPI_affecting_worklife",
+      "confidence": 0.36638766527175903
+    }
+  },
+  {
+    "text": "How much do you weigh?",
+    "intent": "DEMOG_weight",
+    "intent_prediction": {
+      "name": "HPIE_carrying_heavy_objects_weight",
+      "confidence": 0.7483409643173218
+    }
+  },
+  {
+    "text": "What is your ethnicity?",
+    "intent": "DEMOG_race",
+    "intent_prediction": {
+      "name": "DEMOG_patient_name",
+      "confidence": 0.8272446990013123
+    }
+  },
+  {
+    "text": "How long do you exercise for each time?",
+    "intent": "SHDE_exercise_frequency",
+    "intent_prediction": {
+      "name": "HPIO_pain_frequency",
+      "confidence": 0.8661479353904724
+    }
+  },
+  {
+    "text": "How do you sleep at night?",
+    "intent": "HPIA_sleeping_position",
+    "intent_prediction": {
+      "name": "HPI_back_pain_sleep",
+      "confidence": 0.9760502576828003
+    }
+  },
+  {
+    "text": "Is your physical activities affected?",
+    "intent": "SHDE_exercise_affected",
+    "intent_prediction": {
+      "name": "GENERAL_opening_patient_problem",
+      "confidence": 0.43239524960517883
+    }
+  },
+  {
+    "text": "How often do you climb stairs?",
+    "intent": "SHDE_stairs_frequency",
+    "intent_prediction": {
+      "name": "GENERAL_how_is_patient",
+      "confidence": 0.41843047738075256
+    }
+  },
+  {
+    "text": "Do you have difficulty lifting up your foot?",
+    "intent": "MOVE_foot_drag",
+    "intent_prediction": {
+      "name": "SHLC_living_conditions_stairs_out_characteristics",
+      "confidence": 0.4876706302165985
+    }
+  },
+  {
+    "text": "Do you notice that you are standing shorter?",
+    "intent": "DEMOG_height_changes",
+    "intent_prediction": {
+      "name": "HPIE_stand_worse",
+      "confidence": 0.8145667314529419
+    }
+  },
+  {
+    "text": "Any sudden feelings of fever?",
+    "intent": "SRGEN_chills_rigor",
+    "intent_prediction": {
+      "name": "SRGEN_fever",
+      "confidence": 0.9291523098945618
+    }
+  },
+  {
+    "text": "Is there more pain when you wake up or when you sleep?",
+    "intent": "HPIO_pain_morning_night",
+    "intent_prediction": {
+      "name": "HPIA_rest_makes_pain_better",
+      "confidence": 0.3748474419116974
+    }
+  },
+  {
+    "text": "Do you feel worried about this?",
+    "intent": "PCE_concerns_affecting_life",
+    "intent_prediction": {
+      "name": "PCE_concerns_condition",
+      "confidence": 0.6115104556083679
+    }
+  },
+  {
+    "text": "Maybe could you just start with telling me your age this year?",
+    "intent": "DEMOG_age",
+    "intent_prediction": {
+      "name": "PS_pain_duration",
+      "confidence": 0.45439252257347107
+    }
+  },
+  {
+    "text": "How about your house chores?",
+    "intent": "HPI_affecting_house_chores",
+    "intent_prediction": {
+      "name": "SHLC_home_chores",
+      "confidence": 0.87893146276474
+    }
+  },
+  {
+    "text": "How are your family finances?",
+    "intent": "SHF_financially_stable",
+    "intent_prediction": {
+      "name": "PH_diabetes",
+      "confidence": 0.5062583684921265
+    }
+  },
+  {
+    "text": "Have you done any surgery for bone implantation?",
+    "intent": "SRMSK_bone_implants",
+    "intent_prediction": {
+      "name": "PH_surgery",
+      "confidence": 0.6102352142333984
+    }
+  },
+  {
+    "text": "Do you feel any sharpness in your back?",
+    "intent": "HPIC_pain_sharp_or_dull",
+    "intent_prediction": {
+      "name": "HPI_MULTI_symptoms_numbness+weakness",
+      "confidence": 0.7377074360847473
+    }
+  },
+  {
+    "text": "Who cooks in the family?",
+    "intent": "SHLC_home_cook",
+    "intent_prediction": {
+      "name": "FH_family_similar_problem",
+      "confidence": 0.6936110258102417
+    }
+  },
+  {
+    "text": "Has it always been 6?",
+    "intent": "HPISE_pain_vas_last_time",
+    "intent_prediction": {
+      "name": "HPI_similar_pains_in_the_past",
+      "confidence": 0.3643879294395447
+    }
+  },
+  {
+    "text": "Do you notice anything wrong with your bowels lately?",
+    "intent": "SRGIT_bowel_issues",
+    "intent_prediction": {
+      "name": "SRGIT_bowel_frequency",
+      "confidence": 0.4690055847167969
+    }
+  },
+  {
+    "text": "What is the exact time your right leg pain starts hurting?",
+    "intent": "HPIO_pain_at_particular_time",
+    "intent_prediction": {
+      "name": "PS_pain_duration",
+      "confidence": 0.4793637692928314
+    }
+  },
+  {
+    "text": "Is there anyone at home to look after you if you are sick?",
+    "intent": "SHLC_living_conditions_support",
+    "intent_prediction": {
+      "name": "FH_family_conditions",
+      "confidence": 0.375272274017334
+    }
+  },
+  {
+    "text": "Auntie you clean is it?",
+    "intent": "SHO_occupation_confirm",
+    "intent_prediction": {
+      "name": "GENERAL_confirming_patients_details",
+      "confidence": 0.410281240940094
+    }
+  },
+  {
+    "text": "What do you eat for your 3 meals daily?",
+    "intent": "SHDE_diet_food",
+    "intent_prediction": {
+      "name": "SRGIT_bowel_issues",
+      "confidence": 0.49050670862197876
+    }
+  },
+  {
+    "text": "What do you expect?",
+    "intent": "PCE_expectations",
+    "intent_prediction": {
+      "name": "MOVE_walking_ability",
+      "confidence": 0.8671852350234985
+    }
+  },
+  {
+    "text": "Do you notice if your hand control is getting worse?",
+    "intent": "DD_hands_clumsier",
+    "intent_prediction": {
+      "name": "SRGU_urine_frequency",
+      "confidence": 0.6875300407409668
+    }
+  },
+  {
+    "text": "I can see that the pain is greatly affecting you",
+    "intent": "NURS_empathise",
+    "intent_prediction": {
+      "name": "HPI_affecting_commute",
+      "confidence": 0.4651324152946472
+    }
+  },
+  {
+    "text": "Can i get your name please?",
+    "intent": "DEMOG_patient_name",
+    "intent_prediction": {
+      "name": "DEMOG_MULTI_patient_name+patient_NRIC_number",
+      "confidence": 0.4261561930179596
+    }
+  },
+  {
+    "text": "Do you remember how it was last time?",
+    "intent": "HPIO_pain_last_time",
+    "intent_prediction": {
+      "name": "PH_medical_checkups_results",
+      "confidence": 0.5571935772895813
+    }
+  },
+  {
+    "text": "Is the pain more painful in the morning?",
+    "intent": "SRRHEU_morning_stiffness",
+    "intent_prediction": {
+      "name": "HPIO_pain_morning_night",
+      "confidence": 0.7169011235237122
+    }
+  },
+  {
+    "text": "Does it feel like water going down your leg?",
+    "intent": "HPIC_pain_burning_tingling",
+    "intent_prediction": {
+      "name": "SRRHEU_butt_groin_sensation",
+      "confidence": 0.24349936842918396
+    }
+  },
+  {
+    "text": "How about your left?",
+    "intent": "HPIS_clarify_leg",
+    "intent_prediction": {
+      "name": "HPIS_pain_location_specific",
+      "confidence": 0.5358691811561584
+    }
+  },
+  {
+    "text": "How is your job like?",
+    "intent": "SHO_occupation_scope",
+    "intent_prediction": {
+      "name": "SHO_working_now",
+      "confidence": 0.6730219125747681
+    }
+  },
+  {
+    "text": "Before the 6 months, did you get any similar pains?",
+    "intent": "HPI_similar_pains_in_the_past",
+    "intent_prediction": {
+      "name": "SRGIT_bowel_frequency",
+      "confidence": 0.3621046543121338
+    }
+  },
+  {
+    "text": "What have you done about the back so far?",
+    "intent": "PH_how_is_patient_coping",
+    "intent_prediction": {
+      "name": "VERBAL_short_statement",
+      "confidence": 0.22880762815475464
+    }
+  },
+  {
+    "text": "Oh, please tell me more.",
+    "intent": "PS_ask_more_about_patient_problem",
+    "intent_prediction": {
+      "name": "filler_phrase",
+      "confidence": 0.3417995870113373
+    }
+  },
+  {
+    "text": "Any pain in your lower leg?",
+    "intent": "HPIS_check_other_pain_location",
+    "intent_prediction": {
+      "name": "HPISE_compare_pain_between_leg_back",
+      "confidence": 0.634382426738739
+    }
+  },
+  {
+    "text": "Does it hurt less when you are not working?",
+    "intent": "HPIA_rest_makes_pain_better",
+    "intent_prediction": {
+      "name": "HPIS_pain_location",
+      "confidence": 0.471475213766098
+    }
+  },
+  {
+    "text": "How about when straightening the leg or when bending it? Which one hurts more?",
+    "intent": "HPIE_pain_extension_or_flexion",
+    "intent_prediction": {
+      "name": "HPIO_when_start_getting_worse",
+      "confidence": 0.9354994893074036
+    }
+  },
+  {
+    "text": "Is it at your feet?",
+    "intent": "HPIS_pain_location_specific",
+    "intent_prediction": {
+      "name": "HPIS_sole_pain",
+      "confidence": 0.9848381876945496
+    }
+  },
+  {
+    "text": "How did the leg pain arise?",
+    "intent": "HPIO_pain_trigger",
+    "intent_prediction": {
+      "name": "HPIO_first_pain_trigger",
+      "confidence": 0.6250011324882507
+    }
+  }
+]
