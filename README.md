@@ -33,7 +33,7 @@ $ rasa data split nlu --nlu data/nlu/appended_original_nlu.yml --training-fracti
 ```sh
 $ rasa train --nlu --data data/nlu/non_paraphrased_training_data_from_appended_original_nlu.yml
 ```
-### Performing Paraphrasing on training set
+### Performing Paraphrasing on Training Set
 
 5. Paraphrase non_paraphrased_training_data_from_appended_original_nlu.yml by shifting the file to Pharaphraser folder, and convert it into XLSX format.
 ```sh
@@ -59,7 +59,7 @@ $ python run paraphraser.py
 ```sh
 $ rasa train --nlu --data data/nlu/paraphrased_test_data_from_paraphrased_appended_original_nlu.yml
 ```
-### Paraphrasing on entire dataset
+### Performing Paraphrasing on Test Set
 	
 9. Paraphrase appended_original_nlu.yml by shifting the file to Paraphraser folder, and converting it into XLSX format.
 ```sh
