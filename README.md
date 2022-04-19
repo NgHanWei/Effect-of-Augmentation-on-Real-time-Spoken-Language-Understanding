@@ -79,11 +79,11 @@ $ python run paraphraser.py
 ```
 11. Rename the resulting yaml file to paraphrased_appended_original_nlu.yml
 
-12. split the training data into 90/10
+12. Split the training data into 90/10
 ```
 $ rasa data split nlu --nlu data/nlu/appended_original_nlu.yml --training-fraction 9
 ```
-13. renamed the 10% test file to paraphrased_test_data_from_paraphrased_appended_original_nlu.yml
+13. Rename the 10% test file to paraphrased_test_data_from_paraphrased_appended_original_nlu.yml
 	
 ### Training and Testing remaining model permutations
 
