@@ -53,7 +53,7 @@ $ python run paraphraser.py
 ```
 7. Rename the resulting yaml file to paraphrased_training_data_from_non_paraphrased_training_data.yml
 	
-### Training Paraphrased Training Model
+### Training RASA NLU Model with Paraphrased Training Dataset
 	
 8. Train nlu model with paraphrased_training_data_from_non_paraphrased_training_data.yml
 ```sh
