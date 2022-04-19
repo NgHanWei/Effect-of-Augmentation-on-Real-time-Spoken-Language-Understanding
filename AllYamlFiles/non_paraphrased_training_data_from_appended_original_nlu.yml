@@ -1,0 +1,4021 @@
+version: "2.0"
+nlu:
+- intent: GENERAL_confirming_patients_details
+  examples: |
+    - Just to confirm your details you are Mandy, you are 60 years old and you work as a cleaner, am I right?
+    - So you are 60 year old and your name is Mandy, is that right?
+- intent: PH_kidney_stones
+  examples: |
+    - Any previous kidney stones?
+    - Any kidney stones?
+- intent: SHOTH_pets
+  examples: |
+    - Do you have any pets?
+    - Do you have pets?
+- intent: SHSAR_drugs
+  examples: |
+    - Any drugs?
+    - Do you take drugs?
+- intent: VERBAL_short_statement
+  examples: |
+    - Go on, tell me more
+    - Proceed?
+- intent: GENERAL_chit_chat_introduction
+  examples: |
+    - Is this a simulation?
+    - Are you a real human?
+    - Am I talking to an AI?
+- intent: PH_medical_checkups_diabetes
+  examples: |
+    - Did you check if you have diabetes?
+    - Did you check for any complications related to diabetes?
+    - Was there any check for other conditions related to diabetes?
+- intent: MULTI_empathise+change_topic
+  examples: |
+    - I can tell that you are frustrated by the pain. Thank you for coming today and we shall work together to figure out a solution.
+    - Seems like the pain is really preventing you from functioning in your daily life. Thank you for visiting the clinic today despite the pain, we will work together to help manage it.
+    - Thank you for coming to us today. Will try our best to help you.
+- intent: DEMOG_weight
+  examples: |
+    - May I know what is your weight?
+    - What is your weight?
+    - Are you overweight?
+    - Can you tell me your weight please.
+- intent: DEMOG_race
+  examples: |
+    - What is your race?
+    - Are you indian?
+    - Are you chinese?
+    - Are you malay?
+- intent: HPIS_pain_location_leg_knee
+  examples: |
+    - Do you feel pain in your knee?
+    - How about your knee?
+    - No pain in the knee?
+    - Is there pain in your knee?
+- intent: HPIA_cycling_makes_pain_better
+  examples: |
+    - Is it less painful when you cycle?
+    - Is the pain lesser when cycling?
+    - Does cycling help make it less painful?
+    - Is the pain better when you cycle?
+- intent: HPI_symptoms_weakness_duration
+  examples: |
+    - How long does the weakness stay in your [leg](back_or_leg)?
+    - How long does your [leg](back_or_leg) feel weak?
+    - How long is the weakness?
+    - How long does the weakness last for?
+- intent: HPI_symptoms_numbness_duration
+  examples: |
+    - How long does the numbness last for?
+    - How long does the numbness last?
+    - How long does the numbness stay in your [leg](back_or_leg)?
+    - How long is the numbness?
+- intent: PH_cholesterol
+  examples: |
+    - Any high cholesterol?
+    - Do you know if you have high cholesterol?
+    - Is your cholesterol level ok?
+    - High Cholesterol
+- intent: SHOTH_hobbies_last_time
+  examples: |
+    - Did you have any hobbies last time?
+    - What did you do in your younger days?
+    - Did you have hobbies when you were younger?
+    - What are your hobbies in your younger days?
+- intent: SHDE_exercise_frequency
+  examples: |
+    - How often do you exercise?
+    - What is the usual duration of your exercise?
+    - Do you exercise often?
+    - How many times a week do you exercise?
+- intent: FH_family
+  examples: |
+    - Can I ask if you are married?
+    - How many people do you have in your family?
+    - Do you have a partner?
+    - Do you have kids?
+- intent: FH_family_occupation
+  examples: |
+    - Does anyone else in your family work?
+    - Do your family members work?
+    - Who else in your family works?
+    - Are you the only one working in your family?
+- intent: SRCNS_dizziness
+  examples: |
+    - Any dizziness?
+    - Do you have any giddiness?
+    - Do you have any dizziness?
+    - Have you experienced any dizziness?
+- intent: GENERAL_introduction
+  examples: |
+    - So I am doctor and i work in the orthopedics wing of this hospital. and you are?
+    - Ok hi my name is doctor and i'm a resident. you are?
+    - Nice to meet you. I am aldred a year three medical student.
+    - Hello, I am a medical student at the hospital, and you are?
+    - Hi, so I am doctor from orthopedics, so you are mandy right?
+- intent: HPIO_pain_everyday
+  examples: |
+    - Does it occur everyday?
+    - Do you feel like you have pain everyday?
+    - Does the pain come everyday?
+    - Is there pain everyday?
+    - Do you feel it happen everyday?
+- intent: HPIA_sleeping_position
+  examples: |
+    - What sleeping position do you think helps with the pain?
+    - Does the pain feel better when you curl up?
+    - Does any particular sleeping position help?
+    - What position do you sleep in?
+    - Do you know which sleeping position makes the pain lesser?
+- intent: HPIA_rest_when_getting_up
+  examples: |
+    - Do you have to rest before you get up from bed?
+    - Was there ever a need to rest for an hour before you leave your bed?
+    - Do you have to rest when you wake up in the morning?
+    - Do you need to rest before you are able to leave the bed?
+    - Was there ever a need to rest before getting up from bed?
+- intent: HPIA_stand_without_bending_pain_better
+  examples: |
+    - Does the pain go away when you stand and not bend?
+    - Is there still pain when you stand and not bend forward?
+    - If you stand and don't bend forward, do you still feel the pain?
+    - If you stand still but don't bend forward, does the pain go away?
+    - Is there still pain when you stand without bending forward?
+- intent: HPISE_pain_severity
+  examples: |
+    - How bad is the pain?
+    - How bad is the [leg](back_or_leg) pain?
+    - How bad is the [back](back_or_leg) pain?
+    - How painful is your [back](back_or_leg)?
+    - How painful is it?
+- intent: HPI_associated_symptoms
+  examples: |
+    - Any symptoms associated to the pain?
+    - Were there any other symptoms?
+    - Is the pain associated with any other symptoms?
+    - Did you feel anything other symptoms related to the pain?
+    - Do you have other symptoms besides the pain?
+- intent: PH_diabetes
+  examples: |
+    - Do you have diabetes?
+    - Have you tested whether you have diabetes?
+    - Okay, do you have any diabetes?
+    - Diabetes
+    - Any diabetes?
+- intent: SHOTH_hobbies
+  examples: |
+    - What are your hobbies?
+    - What are some of your hobbies?
+    - What do you like to do in your free time?
+    - I'm referring to your hobbies
+    - What do you do in your free time?
+- intent: SHDE_exercise_affected
+  examples: |
+    - Can you still exercise?
+    - Has it affected your exercise?
+    - Is your exercise affected?
+    - Are you still able to exercise?
+    - Has it affected your ability to exercise?
+- intent: SHDE_stairs_frequency
+  examples: |
+    - Do you need to climb stairs frequently?
+    - Do you have to climb alot of stairs?
+    - Do you have to climb stairs alot?
+    - Do you climb steps frequently?
+    - Do you climb stairs a lot?
+- intent: SHLC_living_conditions_storey
+  examples: |
+    - Which floor do you stay on?
+    - Which level is your house on?
+    - What storey do you stay on?
+    - Which storey is your house at?
+    - Which level do you stay on?
+- intent: SRCNS_headache
+  examples: |
+    - Any headaches?
+    - Do you have any headache?
+    - Any pain at your head
+    - Any headache
+    - Does your head hurt
+- intent: SRRES_cough
+  examples: |
+    - Any chronic cough.
+    - Do you have any chronic cough.
+    - Have you been coughing?
+    - Any cough?
+    - Do you have cough?
+- intent: MOVE_foot_drag
+  examples: |
+    - Do you find your foot dragging on the ground when you walk?
+    - Any foot drop?
+    - Does your foot drag when you walk around?
+    - Does your foot drag across the floor when you walk?
+    - Do you know if your foot drags when you move around?
+- intent: DEMOG_height_changes
+  examples: |
+    - Have you noticed any change in your height?
+    - Did you notice that you have grown less tall?
+    - Has your height remained constant?
+    - Any changes in your height?
+    - Do you notice that you have grown shorter?
+    - Do you have any change in your height so far?
+- intent: HPIE_sudden_movements_worse
+  examples: |
+    - Do you feel more pain on sudden movements?
+    - Does your [back](back_or_leg) pain get worse on sudden movements?
+    - Is the pain worse when you make big sudden movements?
+    - Is there more pain when you suddenly move?
+    - Does it hurt more when you move suddenly?
+    - Does your [leg](back_or_leg) pain get worse on sudden movements?
+- intent: PH_personal_cancer_history
+  examples: |
+    - Do you have cancer before?
+    - No cancer history for you?
+    - Do you have any history of cancer?
+    - Any history of cancer yourself?
+    - Any personal history of cancer?
+    - Do you have any personal history of cancer?
+- intent: SHF_consultation_fees_payment
+  examples: |
+    - Will you have any issues paying for this consultation today?
+    - Will you be able to pay for the consultation today?
+    - Are you able to pay for the consultation today?
+    - Do you have enough money to handle this?
+    - Do you have money to pay for today's consultation?
+    - Can I check if you will have any issues paying for today's consultation?
+- intent: SRGEN_chills_rigor
+  examples: |
+    - Any sudden chilliness?
+    - No sudden chills recently? Sudden feverish sensations?
+    - Have you felt any sudden chills recently
+    - Have you had any chills recently?
+    - Do you feel any sudden bouts of chills
+    - Do you feel any sudden chills
+- intent: SRBRE_breast_lumps
+  examples: |
+    - Do you have any abnormal lumps in your breast?
+    - Do you notice lumps in your breast?
+    - Do you notice masses in your breast?
+    - Did you notice abnormal masses in your breast?
+    - Any masses in your breast?
+    - Any lumps in your breast?
+- intent: MOVE_limp
+  examples: |
+    - Do you limp?
+    - When there is pain, do you limp?
+    - Can you show me how you walk? I would like to check your gait
+    - Can you show me how you walk? I would like to check if you limp
+    - Do you walk with a limp?
+    - Do you know if you walk with a limp?
+- intent: GENERAL_question_to_doc
+  examples: |
+    - Ok, do you have any questions for me?
+    - Anything you want to clarify?
+    - Ok, do you have any questions you want to ask me?
+    - Anything you want to ask me?
+    - Do you have other questions for me?
+    - Do you have any questions for me?
+    - Would you like to ask me anything?
+- intent: GENERAL_how_travel_to_clinic
+  examples: |
+    - Did you come here by yourself?
+    - Did you come here to visit alone?
+    - Did someone drive you here?
+    - You took cab here?
+    - Did you take the bus?
+    - Did anyone accompany you to the clinic today?
+    - How did you come here today?
+- intent: PS_pain_confirm
+  examples: |
+    - So the problem we have here today is the pain?
+    - So just to confirm, you have pain in your [back](back_or_leg) and leg?
+    - So you have pain in you leg and [back](back_or_leg)?
+    - You mentioned that you have [back](back_or_leg) pain and leg pain
+    - So just to confirm, you have pain in your back and [leg](back_or_leg)?
+    - Ok, so the main problem is the pain?
+    - So you have pain in you [leg](back_or_leg) and back?
+- intent: PS_clarify_pain_or_ache
+  examples: |
+    - Does it feel like an ache?
+    - Is it achy?
+    - Just to clarify, it is pain and not aching?
+    - Just to clarify, it is pain, and not aching?
+    - Does the pain feel like an ache?
+    - Does it feel like an aching pain?
+    - Is it an aching pain?
+- intent: HPIO_when_start_getting_worse
+  examples: |
+    - When did you notice the pain getting worse?
+    - When do you feel like the pain has become worse?
+    - When did it start getting worse?
+    - When does the pain get worse?
+    - When does it get worse?
+    - When do you feel like the pain has increased?
+    - When did this [leg](back_or_leg) pain start getting worse?
+- intent: HPI_affecting_climbing
+  examples: |
+    - Do you feel like the pain is affecting your ability to climb stairs?
+    - Are you still able to climb with the pain?
+    - Is climbing affected because of your pain?
+    - Does the pain affect activities like climbing the stairs?
+    - Does your pain affect you when you climb stairs?
+    - Is the pain affecting your when you climb stairs?
+    - Are you still able to climb stairs despite the pain?
+- intent: DTH_past_physiotherapy
+  examples: |
+    - Have you done any physiotherapy for your pain?
+    - Did anyone get you to go for physiotherapy?
+    - Have you tried physiotherapy for your pain?
+    - Have you done any physiotherapy?
+    - Did you try physiotherapy to manage your pain?
+    - Any physiotherapy done before this?
+    - Have you been through any physiotherapy?
+- intent: PH_medical_checkups_results
+  examples: |
+    - How was your most recent medical examination?
+    - How was your health results from your last medical examination?
+    - How were your last medical checkup results?
+    - Did your last medical examination go ok?
+    - Do you remember how the latest checkup was like?
+    - How was your health from your last checkup?
+    - How were the results of your most recent checkup?
+- intent: FH_how_is_family
+  examples: |
+    - Is your family doing ok?
+    - How is the health of your family?
+    - How is your family's health?
+    - How are they doing?
+    - How is your family?
+    - Is everyone else in the family well.
+    - How are your relatives' health?
+- intent: SRCNS_vision
+  examples: |
+    - Have you experienced any blurry vision?
+    - Have you had any changes in your vision?
+    - Are you able to see clearly?
+    - Any changes in your eyesight?
+    - Any blurriness in your eyesight?
+    - Is your vision as per normal?
+    - Did you realize any changes in your vision?
+- intent: SRGIT_bowel_frequency
+  examples: |
+    - Any difference in your stools?
+    - Any difference in your poop?
+    - Did you notice any changes in your bowel movements in the past 6 months?
+    - Did you notice changes in your bowel movements?
+    - Any changes in bowel habits?
+    - Did anything change with your bowel?
+    - Any changes in bowel movements?
+- intent: MOVE_walking_ability
+  examples: |
+    - Any difficulties walking.
+    - Okay, do you find it difficult to walk?
+    - Do you find it difficult to walk.
+    - Are you able to walk normally?
+    - Are you able to walk?
+    - Do you have any issues walking?
+    - Do you have any issues when walking?
+- intent: DD_hands_buttoning_clothes
+  examples: |
+    - Are you able to button your clothes properly?
+    - Do you have issues buttoning clothes?
+    - Do you have any problems buttoning your clothes?
+    - Any trembling when you button your clothes?
+    - Can you button your clothes?
+    - Do you have difficulty with buttoning your clothes?
+    - Any difficulty buttoning your clothes?
+- intent: DEMOG_patient_NRIC_number
+  examples: |
+    - Do you have an NRIC number?
+    - As well as your IC?
+    - Can I have your IC number?
+    - Madam Tan, can you tell me your NRIC number?
+    - Can I have your NRIC number?
+    - What is your IC number?
+    - What is your NRIC number?
+    - Do you have an IC number?
+- intent: HPIO_pain_morning_night
+  examples: |
+    - Does the pain get worse at the end of the day?
+    - Does it hurt more in the morning or the same throughout the day?
+    - Is the pain worse in the morning or night?
+    - Is the pain worse in the morning and better at night?
+    - Do you feel a difference in pain levels between morning and night?
+    - Is your [back](back_or_leg) pain the worst at the end of the day?
+    - Does the [back](back_or_leg) pain get worse at the end of the day?
+    - Do you feel a difference in pain levels across the day?
+- intent: HPIR_pain_travel_start
+  examples: |
+    - So you say that the pain is starting at your [back](back_or_leg) and is radiating down your [leg](back_or_leg), yes?
+    - Does the pain start at your [back](back_or_leg)?
+    - Can you tell me where the pain usually start from?
+    - You say that the pain starts in your [back](back_or_leg) and shoots to your [leg](back_or_leg), is that correct?
+    - Okay, so the pain starts in your [back](back_or_leg) and shoots to your [leg](back_or_leg), is that correct?
+    - Does the pain start at your [back](back_or_leg) to your leg?
+    - Does the pain travel starting from the [back](back_or_leg)?
+    - Does the pain start in [back](back_or_leg)?
+- intent: HPIE_stand_worse
+  examples: |
+    - Is there pain in your [leg and back]{"entity": "back_or_leg", "value": "back_and_leg"} when you stand?
+    - Is there pain in your [leg](back_or_leg) when you stand?
+    - Does your [leg](back_or_leg) and [back](back_or_leg) hurt when you stand?
+    - Does standing make it more painful?
+    - Is there pain in your [leg](back_or_leg) and back when you stand?
+    - Is there pain in your [back](back_or_leg) when you stand?
+    - Does your [back](back_or_leg) hurt when you stand?
+    - Is there pain when standing?
+- intent: PH_high_blood_pressure
+  examples: |
+    - High blood pressure
+    - Do you have high blood pressure?
+    - Any HBP?
+    - Do you know if you have high blood pressure?
+    - Do you have HBP?
+    - Do you know whether you have high blood pressure?
+    - Have you tested your blood pressure level?
+    - Have you checked if you have high blood pressure?
+- intent: PH_immunization
+  examples: |
+    - Have you gotten any flu jabs?
+    - Have you gone for any recent immunization?
+    - Are you up to date with your immunization?
+    - Did you take any flu vaccinations?
+    - Have you been vaccined from flu recently?
+    - Did you get any flu jabs or vaccine recently?
+    - Did you recently get any vaccinations?
+    - Did you get any injections?
+- intent: SHSAR_smoking
+  examples: |
+    - Smoked before?
+    - Smoking?
+    - Do you smoke?
+    - Are you a smoker?
+    - Just a routine question, do you smoke?
+    - Can you tell me if you smoke?
+    - Have you ever smoked before?
+    - Ever smoked before?
+- intent: SRGEN_fever
+  examples: |
+    - Do you have a fever?
+    - Any fever right now?
+    - Do you have a fever during this time?
+    - No fever recently?
+    - Do you feel feverish recently?
+    - Do you have any fever?
+    - Any fever
+    - Any fever?
+- intent: SRRES_breathless
+  examples: |
+    - Do you have difficulty breathing?
+    - Do you have difficulty breathing.
+    - Do you experience difficulty in breathing.
+    - Do you have any breathlessness?
+    - Do you experience difficulty in breathing?
+    - Any breathlessness?
+    - Are you having difficulty breathing.
+    - Do you experience any shortness of breath?
+- intent: SREAR_hearing_aid
+  examples: |
+    - Are you able to hear without any help?
+    - How is your hearing?
+    - Do you use hearing aids?
+    - Are you wearing any hearing aids now?
+    - Are you able to hear fine?
+    - Are you using any hearing aids?
+    - Are you currently using hearing aids?
+    - Do you need the help of a hearing aid?
+- intent: PCE_concerns_affecting_life
+  examples: |
+    - Is this a worry for you?
+    - Are your shorter work hours affecting you?
+    - And how do you feel about that?
+    - What do you think about that?
+    - Is this of a concern to you?
+    - Is working getting affected a concern for you?
+    - Is your affected work a concern for you?
+    - Are your shorter work hours concerning you?
+- intent: DEMOG_age
+  examples: |
+    - Hi Mandy, how old are you?
+    - May I know what is your age?
+    - How old are you?
+    - Ok. please tell me how old you are.
+    - How old are you this year?
+    - May I know how old are you?
+    - Hello, how old are you?
+    - May I ask how old are you?
+    - What is your age?
+- intent: DEMOG_weight_before
+  examples: |
+    - How heavy were you last time?
+    - Do you know how much you weighed last time?
+    - What was your weight last time?
+    - Do you remember how much weighed last time?
+    - Last time, what was your weight?
+    - How much did you weigh last time?
+    - Do you remember how much you weighed before?
+    - Do you remember how much you weighed?
+    - What was your weight before?
+- intent: DEMOG_master_hand
+  examples: |
+    - What is your master hand?
+    - Right hander right?
+    - Are you right handed?
+    - Which is your master hand?
+    - Auntie, you write with your right hand, right?
+    - Are you normally right handed or left handed.
+    - Are you a right hander or a left hander?
+    - Do you use your right or left hand.
+    - Are you right handed or left handed?
+- intent: HPIO_pain_change_across_time
+  examples: |
+    - Has the pain changed over the past few months?
+    - Has the pain been changing with time?
+    - Did you notice any change in the pain?
+    - Did you notice the pain change over time?
+    - Has the [back](back_or_leg) pain changed with time?
+    - Did you notice any changes to the pain in the past few months?
+    - Has the [leg](back_or_leg) pain changed in time?
+    - Did you notice any changes in your [back](back_or_leg) pain in the past few months?
+    - Has the pain changed over time?
+- intent: HPIE_carrying_heavy_objects_weight
+  examples: |
+    - How much water do you have to carry?
+    - How heavy was it?
+    - The bucket of water how heavy?
+    - How heavy?
+    - How heavy was the bucket of water you were trying to carry?
+    - How heavy was the water?
+    - How much water do you usually carry?
+    - How heavy do you carry?
+    - How much water was in the bucket?
+- intent: HPI_affecting_house_chores
+  examples: |
+    - Can you still do housework at home?
+    - Do you do house work at home?
+    - Are you still able to do the chores at home?
+    - Has it affected your ability to do house chores?
+    - Does this pain affect your household chores.
+    - Does the pain affect you doing house chores at home?
+    - Can you still do house chores at home?
+    - Can you still do the housework at home despite the pain?
+    - Do you do the chores at home?
+- intent: PH_accidents
+  examples: |
+    - Any accidents previously?
+    - Any accidents before?
+    - Any previous accidents, like [back](back_or_leg) sprain or similar?
+    - Any accidents of any kind?
+    - car accidents
+    - Ok so any previous accidents that might have been the cause of this?
+    - Ah ok. how about any previous accidents? Anything kind of accident that could have caused your pains?
+    - Did you had any previous accidents?
+    - Have you gotten into any accidents before?
+- intent: PH_covid_vaccination
+  examples: |
+    - Did you get your covid shot?
+    - Have you done your covid vaccine?
+    - Did you get your covid vaccine already?
+    - Have you got your covid vaccine?
+    - Have you gotten your covid vaccination?
+    - Have you gotten your covid immunization?
+    - Have you got your covid shots?
+    - Have you been vaccined from covid?
+    - Have you received your covid vaccine?
+- intent: SHOTH_religion
+  examples: |
+    - Do you think you are religious?
+    - Are you religious?
+    - Can I check with you what is your religion?
+    - What is your religion?
+    - Do you have any religious beliefs?
+    - Do you believe in god?
+    - Are you spiritual?
+    - Can I know if you are religious?
+    - Do you have any spiritual beliefs?
+- intent: SHLC_living_conditions_helper
+  examples: |
+    - Do you have a helper?
+    - Do you have a maid?
+    - Does your family have a helper?
+    - Does your house have a miad?
+    - Is there a helper who takes care of you at home?
+    - Is there a helper who does your chores at home?
+    - Do you have a maid in the house?
+    - Do you own a maid
+    - Is there a maid in your house?
+- intent: SHF_financially_stable
+  examples: |
+    - Are you earning your own income?
+    - Are you making your own income?
+    - How are you doing financially?
+    - Finances wise, are you doing okay?
+    - Okay, how is your finances now?
+    - Are you financially ok?
+    - Are you financially stable?
+    - Do you have any medical savings?
+    - Are you on any financial aid?
+- intent: SRGEN_wounds
+  examples: |
+    - Do you have any wounds?
+    - Do you have any ulcers on your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Is there any ulcers on your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Have you noticed any wounds?
+    - Any ulcers on your [leg](back_or_leg)?
+    - Do you have any wounds on your [leg](back_or_leg)?
+    - Have you noticed any wounds on your [back](back_or_leg)?
+    - Have you noticed any wounds on your [leg](back_or_leg)?
+    - Do you have any wounds on your [back](back_or_leg)?
+- intent: SRMSK_bone_implants
+  examples: |
+    - Have you been implanted with metal?
+    - Do you have any implants in your [back](back_or_leg)?
+    - Have you had any metal implant bone surgery?
+    - Do you have any implants to your spine?
+    - Do you have any implants in your [leg](back_or_leg)?
+    - Have you had any bone implanation surgery?
+    - Do you have any metal implants?
+    - Do you have any metal implants in your bone?
+    - Any metal implants?
+- intent: PCE_concerns_medical_certificate
+  examples: |
+    - Do you need a letter of exemption from work today?
+    - Do you need a medical certificate to exempt you from work?
+    - Do you need a medical certificate today?
+    - Would you like me to issue a medical certificate for you?
+    - Do you want me to issue a MC for you today?
+    - Do you need a medical certificate for your absence at work?
+    - Will you need a letter of exemption from work today?
+    - Do you want a MC letter for today?
+    - Do you need a MC letter?
+- intent: DD_hands_chopsticks
+  examples: |
+    - Can you hold your chopsticks normally?
+    - Do you have issues holding chopsticks?
+    - Any trembling when you use chopsticks?
+    - Do you have difficulty using chopsticks?
+    - Any difficulty holding chopsticks?
+    - Any trembling when you hold chopsticks?
+    - Any difficulty using chopsticks?
+    - Are you able to hold chopsticks?
+    - Are you able to use chopsticks normally?
+- intent: DEMOG_MULTI_patient_name+age
+  examples: |
+    - Can I start by getting your name and age?
+    - Can I know what is your name and how old are you?
+    - Can I know what is your name and age?
+    - Let's begin with your name and age please.
+    - Tell me what is your name and how old are you?
+    - Let's begin with your name and age.
+    - Can I have your name and how old are you please.
+    - Let's start with your name and age?
+    - What is you name and age?
+    - Can I have your name and age?
+- intent: HPIS_stomach_pain
+  examples: |
+    - Any previous stomach issues?
+    - Do you have any stomach pain?
+    - Any previous stomach problems?
+    - Do you have any previous history of stomach pain?
+    - Any gastric pain?
+    - Do you experience any stomach or gastric pain?
+    - Any previous gastric problems?
+    - Any stomach pain?
+    - Any gastric issues?
+    - Any stomach pain problems?
+- intent: HPI_affecting_worklife_relationships
+  examples: |
+    - Is your pain affecting people at work?
+    - Can you still work well with people?
+    - How is everything between you and other people at work?
+    - Is the pain affecting your ability to get on with people at work?
+    - Is thie affecting relationships with people at work?
+    - How is everything between you and your colleagues?
+    - Can you still get along well with your colleagues?
+    - Are you still able to get on well with people at work?
+    - Is this affecting your work relationships?
+    - Is the pain affecting your colleagues?
+- intent: PH_heart_conditions
+  examples: |
+    - Do you have any heart problems?
+    - Any heart conditions?
+    - Any heart condition?
+    - Do you know if you have heart conditions?
+    - Do you have any diagnosis for heart related problems?
+    - Do you have any history of heart disease?
+    - Any heart disease?
+    - Do you have any heart conditions history?
+    - Have you checked if you have heart conditions?
+    - Do you have any heart conditions?
+- intent: PH_medical_checkups_recently_attend
+  examples: |
+    - Do you go for regular medical check ups?
+    - Did you go for a checkup recently?
+    - Did you go to see any doctor for a checkup recently?
+    - Do you schedule regular health checkups?
+    - Did you go for any recent medical checkups?
+    - Have you recently gone for any medical check ups?
+    - Have you done any medical examinations recently?
+    - Any recent check ups?
+    - Do you go for regular health check ups?
+    - Did you recently go for any regular health check ups?
+- intent: SHLC_getting_around
+  examples: |
+    - Can I know how you get around?
+    - How do you get to nearby places?
+    - How do you usually get to places?
+    - Can I know how you usually travel around to places?
+    - Do you usually travel yourself to places?
+    - Do you take public transport or taxi to go to places?
+    - How do you usually get around?
+    - Can you share how you will typically travel to places?
+    - How do you usually travel around?
+    - How do you usually get to shops and your appointments?
+- intent: SHLC_home_chores
+  examples: |
+    - Can I know who does the house chores at home?
+    - Do you have to do alot of house chores?
+    - Are you in charge of the house work?
+    - Are you in charge of the housework?
+    - Do you do the house chores at home?
+    - Do you do the house work?
+    - When at home, do you have to do the house chores?
+    - Who does the chores at home?
+    - Who does the house chores?
+    - Who does the tidying of the house?
+- intent: SRGEN_fatigue
+  examples: |
+    - Do you feel tired recently?
+    - Do you feel fatigue.
+    - Have you felt more sleepy than usual?
+    - Have you been feeling more tired nowadays?
+    - Do you experience any fatigue?
+    - Have you ever expierenced fatigue.
+    - Do you notice yourself feeling more tired now?
+    - Have you felt really tired suddenly?
+    - Does your body feel fatigue.
+    - Do you feel more tired nowadays?
+- intent: SRGEN_night_sweats
+  examples: |
+    - Noticed any night sweats?
+    - Do you have cold sweats at night?
+    - Do you sweat a lot at night?
+    - Do you wake up in the night sweaty?
+    - Any sweating at night?
+    - Any fever, sweating at night.
+    - How about any night sweats?
+    - I was sweating at night.
+    - Any night sweats
+    - Any night sweats?
+- intent: SRGEN_cramps
+  examples: |
+    - Any cramps feeling in your [leg](back_or_leg)?
+    - Do you experience any cramps?
+    - Do you have any cramps in your [leg](back_or_leg)?
+    - Do you feel any cramps?
+    - Any cramps?
+    - After walking a while, do your [legs]{"entity": "back_or_leg", "value": "leg"} cramp?
+    - Any cramps in your [leg](back_or_leg)?
+    - Do you experience any cramps in your [leg](back_or_leg)?
+    - Do your [legs]{"entity": "back_or_leg", "value": "leg"} cramp after walking?
+    - Is there any cramp feeling?
+- intent: SRGIT_vomiting
+  examples: |
+    - Did you vomit blood.
+    - Do you feel any nausea in the day? any vomiting?
+    - Have you experienced nausea?
+    - Do you feel like throwing up sometimes?
+    - And in nauseous or vomiting.
+    - Any vomiting of blood recently?
+    - Any nausea or vomiting?
+    - Have you experienced any vomiting?
+    - Did you vomit any blood?
+    - Do you feel nauseous recently?
+- intent: SRGU_urine_ability
+  examples: |
+    - Urination ok?
+    - Can you pee?
+    - Can you pass urine?
+    - Can you pass urine normally?
+    - Is your bladder ok?
+    - Are you able to pee?
+    - Are you able to urinate?
+    - Is your urination ok?
+    - Are you able to pass urine normally?
+    - Can you urinate?
+- intent: SRRHEU_hair_loss
+  examples: |
+    - Do you find yourself losing more hair?
+    - Did you notice more hair falling off?
+    - Any sudden increase in loss of hair?
+    - more hair loss now?
+    - No hair loss?
+    - Any sudden increase in hair fall?
+    - Noticed any hair loss?
+    - Any loss of hair?
+    - Any sudden hair loss.
+    - Any hair loss?
+- intent: HPIC_pain_sharp_or_dull
+  examples: |
+    - So it's a sharp pain from your [back](back_or_leg) and it goes down your right [leg](back_or_leg) correct?
+    - Does the pain feel like a sharp, tingly sensation?
+    - Is the pain sharp or dull?
+    - Is the [leg](back_or_leg) pain also dull?
+    - Is it like a tingly sensation down your [leg](back_or_leg)?
+    - Is the [leg](back_or_leg) pain sharp?
+    - Do you feel a shock feeling down your [leg](back_or_leg)?
+    - Is the [back](back_or_leg) pain sharp or dull?
+    - Is the [leg](back_or_leg) pain sharp or dull?
+    - Is the pain sharp?
+    - Do you think the pain is sharper or duller?
+- intent: HPIT_why_present_now
+  examples: |
+    - Why are you present now?
+    - Why did you decide to come after 6 months?
+    - What made you decide to come to the clinic now?
+    - What made you decide to come to the hospital now?
+    - Why did you decide to come today?
+    - What made you want to come to the hospital?
+    - Why did you decide to come after six months?
+    - What made you decide to come today after six months?
+    - What made you decide to come now?
+    - Why did you decide to see the clinic now?
+    - Why did you come to the hospital after 6 motnhs?
+- intent: SHLC_living_conditions_stairs_in_characteristics
+  examples: |
+    - Do you have to climb at home?
+    - Do you have to climb around in your house?
+    - Do you have stairs at home?
+    - Do you have to climb up and down at home?
+    - Do you have different floors in your house?
+    - Do you have to climb stairs in your house?
+    - Are there stairs in your house?
+    - Is it hard to walk at home?
+    - Do you need to climb stairs in your house?
+    - Do you have to climb stairs at home?
+    - Do you have stairs in your house?
+- intent: SHLC_home_cook
+  examples: |
+    - Does your husband or daughter cook?
+    - Are you the one cooking at home?
+    - When you are home, do you do the cooking?
+    - Do you do the cooking at home?
+    - Who does the cooking at home?
+    - Who prepares food at home?
+    - Are you the one in charge of cooking at home?
+    - Do you have to cook at home?
+    - Do you still do the cooking at home?
+    - Who cooks at home?
+    - Do you cook at home?
+- intent: SRGEN_weight_loss_pants
+  examples: |
+    - Do you notice your pants getting loser.
+    - Do you think your pants are looser compared to before?
+    - Do you feel like there is now more space in your pants?
+    - Are your pants looser now?
+    - Do you notice your jeans getting loser.
+    - Do you notice your jeans getting looser.
+    - Have you noticed your pants getting looser?
+    - Do you feel like you have more room around the waist of your jeans?
+    - Do you feel like you have more space around the waist of your pants?
+    - Are your pants looser compared to last time?
+    - Do you notice your pants getting looser.
+- intent: SRMSK_joint_pain
+  examples: |
+    - Do you feel pain in your neck?
+    - Did you suffer from any other forms of joint ache?
+    - Do you have any painful or stiff joints?
+    - Any painful joints?
+    - Do you have any neck pain?
+    - Any joint pains in your hands or your legs.
+    - Do you have any joint pains?
+    - Do you have any other joint pains other than your back?
+    - Any other join pains on other parts of your body?
+    - Any stiff joints?
+    - Do you have any other joint problems in your hands or other parts of the body?
+- intent: SRMSK_bone_health
+  examples: |
+    - Problem with the bones?
+    - Do you feel that your bones are weak.
+    - Do you have osteoporosis?
+    - Any problems regarding bones?
+    - Any problem with the bones?
+    - Any bone issues?
+    - Bone problems?
+    - How about any problems with your bones?
+    - Any problems with the bones?
+    - Any osteoporosis?
+    - Issue with the bones?
+- intent: SRRES_chest_tight
+  examples: |
+    - Is it tight when you breathe?
+    - Any tightness in your chest?
+    - Has your chest been tight?
+    - Do you have chest pain?
+    - Have you experienced any recent chest pain.
+    - Have you ever experienced chest pain?
+    - Do you experience any tightness in chest?
+    - Do you have any chest pain.
+    - Do you have chest pains?
+    - Have you experienced any recent chest pain?
+    - Do you have any chest pain
+- intent: MOVE_standing_stability
+  examples: |
+    - Can you stand without falling?
+    - Are you able to stand without falling?
+    - Are you able to stand independently?
+    - Do you feel like you can't stand straight?
+    - Can you stand straight?
+    - Can you stand steadily?
+    - Do you notice unsteadiness when you stand?
+    - Can you stand firmly?
+    - Do you feel like falling when you stand?
+    - Do you feel like you are unable to stand straight?
+    - Can you stand alright?
+- intent: DEMOG_MULTI_patient_name+patient_NRIC_number
+  examples: |
+    - Can I have your name and NRIC number?
+    - What is your full name and IC number?
+    - Hello good morning, I'm one of the medical students at the hospital, can I have your full name and NRIC number?
+    - Since this is the first time we are meeting today, could I have your full name and NRIC number?
+    - Hello Madam Tan, can I have your full name and NRIC number?
+    - Good afternoon, I'm one of the medical students who will be seeing you today, can I have your full name and NRIC number?
+    - Can I have your full name and NRIC number?
+    - Hello Mandy, can I have your full name and NRIC number?
+    - What is your name and NRIC number?
+    - I'm a medical students at the hospital, and since it is the first time I'm seeing you, can I have your name and NRIC?
+    - Hi there, what is your full name and NRIC number?
+    - What is your full name and NRIC number?
+- intent: HPIS_sole_pain
+  examples: |
+    - Does the bottom of your foot hurt when you walk?
+    - Is your sole painful?
+    - Is there pain in your sole?
+    - Does it shoot down to the sole of your foot?
+    - Does your sole hurt?
+    - Does the pain go down to your foot?
+    - Any pain on your foot?
+    - Does your feet hurt when you walk?
+    - Whole right leg, all the way down to your foot?
+    - The numbness is all the way down to the foot?
+    - Does the bottom of your foot hurt?
+    - Is there pain in the bottom of your feet?
+- intent: HPIO_pain_whole_day
+  examples: |
+    - Do you feel this [back](back_or_leg) pain for the whole day?
+    - Do you feel this [leg](back_or_leg) pain for the whole day?
+    - Do you feel this pain for the whole day?
+    - How often do you feel the pain?
+    - Do you feel pain for the whole day?
+    - So do you feel the pain in your [back](back_or_leg) throughout the whole day?
+    - So do you feel the pain in your [leg](back_or_leg) throughout the whole day?
+    - Do you feel pain the whole day?
+    - Does it hurt throughout the day?
+    - How often do you experience this pain in a day?
+    - How often does the pain come back?
+    - Is the pain sudden or constant throughout the day?
+- intent: HPIE_carrying_heavy_objects_worse
+  examples: |
+    - Does carrying heavy objects worsen the pain in your [back](back_or_leg)?
+    - Does carrying those carrying heavy objects affect you?
+    - Does the pain get worse when you are lifting things?
+    - Is the lifting of heavy things affecting the pain?
+    - Do you feel more pain when you are carrying the heavy things?
+    - Do you think that the carrying of heavy things make the pain worse?
+    - Does lifting heavy things worsen the pain?
+    - Does carrying heavy objects worsen the pain in your [leg](back_or_leg)?
+    - Does the pain get worse when you are carrying heavy things?
+    - Does carrying heavy objects affect you?
+    - Is carrying heavy objects a factor that worsens your pain?
+    - Does it get worse when you carry something heavy?
+- intent: HPI_pain_when_cough_sneeze
+  examples: |
+    - Is the pain made worse by coughing?
+    - Does it hurt more when you cough or sneeze?
+    - Does it hurt in your [leg](back_or_leg) when you cough or sneeze?
+    - Is there a difference when you cough or sneeze?
+    - When you are sneezing and coughing do you have pain in your [back](back_or_leg)?
+    - Do you feel the pain when you cough?
+    - Does it hurt when you sneeze?
+    - Do you feel the pain when you sneeze?
+    - When you cough do you have pain in your [leg](back_or_leg)?
+    - When you cough do you have pain in your [back](back_or_leg)?
+    - Do you feel the pain when you cough or sneeze?
+    - Does it hurt when you cough?
+- intent: HPI_affecting_commute
+  examples: |
+    - Is the pain affecting you getting around?
+    - Is it convenient to get around?
+    - Has the pain affected your commute?
+    - Did the pain affect your ability to commute?
+    - Are you able to travel around yourself?
+    - Has the pain made it harder for you to travel about?
+    - Has the pain affected how you travel around?
+    - Does the pain affect commuting?
+    - Is the pain affecting commuting?
+    - Is getting around convenient?
+    - Are you still able to travel around normally?
+    - Can you travel about properly with this pain?
+- intent: PH_hospitalisation
+  examples: |
+    - How about previously being warded?
+    - Have you went to the hospital recently
+    - Have you been hospitalised before?
+    - Have you ever been admitted into a hospital before?
+    - How about admissions to the hospital?
+    - Any previous admissions to the hospital?
+    - Have you visited the hospital recently?
+    - Any previous admissions?
+    - Have you been hospitalized anytime before?
+    - Any previous hospital visits?
+    - Did you visit any doctors in the hospitals recently?
+    - Have you been warded in a hospital?
+- intent: PH_family_cancer_history
+  examples: |
+    - Do you have any history of cancer in your family?
+    - As a family, have any history of cancer?
+    - How about any family members with cancer history?
+    - Do you know if your family members have a history of cancer?
+    - Is there anyone else with a history of cancer in your family?
+    - Do they have any history of cancer?
+    - I'm sorry to ask you thins, but does anyone in your family have any history with cancer?
+    - Any relatives that had cancer before?
+    - Any history of cancer in your family?
+    - Do you have any family members that had cancer?
+    - Do you have any notable past family history?
+    - Any family cancer history?
+- intent: FH_family_conditions
+  examples: |
+    - Does anyone in your family have a significant medical history?
+    - Do you know of any conditions that run in your family?
+    - Is there anyone in your family with a significant medical history.
+    - Any conditions that run in the family?
+    - Do your family members or relatives have exisitng medical problems?
+    - Do your relatives have any medical issues?
+    - Do your family members have any conditions?
+    - Any person with a significant medical history in your family.
+    - Any conditions running in your family?
+    - Any other medical conditions in your family?
+    - Is there any family member with a significant medical history.
+    - OK, anyone with any significant medical history in your family?
+- intent: SRRES_breathing_problems
+  examples: |
+    - Any issues with breathing?
+    - Do you notice any difficulty in breathing recently?
+    - Are you able to breathe properly?
+    - Any shortness of breath?
+    - Any tightness in chest, cough, or breathlessness?
+    - Any wheezing when you breathe?
+    - Any wheezing in breath?
+    - Any respiratory problems recently?
+    - Has anyone had respiratory problems?
+    - Any coughs, tightness or breathlessness?
+    - Can you breathe properly?
+    - Any problems with breathing?
+- intent: DEMOG_gender
+  examples: |
+    - Are you a male?
+    - Are you a lady?
+    - You are a man right?
+    - Are you a man?
+    - Mandy, what is your gender?
+    - You are a lady right?
+    - Mandy are you female or male?
+    - You are a male right?
+    - Are you male or female?
+    - You are a female right?
+    - Are you a woman?
+    - Are you female?
+    - Are you a guy or a girl?
+- intent: PS_pain_duration_question_same_for_both_pains
+  examples: |
+    - Did your [leg](back_or_leg) pain and [back](back_or_leg) pain start at the same time?
+    - So did this [back](back_or_leg) pain start at the same time as your [leg](back_or_leg) pain?
+    - Did the [leg](back_or_leg) pain and [back](back_or_leg) pain start at the same time?
+    - Did your [leg pain and back pain]{"entity": "back_or_leg", "value": "back_and_leg"} start at the same time?
+    - Did the [back](back_or_leg) pain and [leg](back_or_leg) pain start at the same time?
+    - Did both pains begin the same time?
+    - Did the [leg] (back_or_leg) pain and [back] (back_or_leg) pain start at the same time?
+    - Both [leg pain and back pain]{"entity": "back_or_leg", "value": "back_and_leg"} started same time?
+    - Did the [back pain and leg pain]{"entity": "back_or_leg", "value": "back_and_leg"} start at the same time?
+    - Did the [leg pain and back pain]{"entity": "back_or_leg", "value": "back_and_leg"} start at the same time?
+    - Did both pains start at the same time?
+    - Did the [back](back_or_leg) pain and [leg](back_or_leg) pain start togther?
+    - Did the pain start at the same time?
+- intent: HPIC_pain_burning_tingling_location
+  examples: |
+    - Where do you feel the pins and needle feeling in your [back](back_or_leg)?
+    - Where do you feel this tingling sensation in your [leg](back_or_leg)?
+    - Where do you feel the pins and needle feeling in your [leg](back_or_leg)?
+    - Where do you feel the pins and needle feeling?
+    - Where do you feel this tingling sensation?
+    - Can you tell me where do you feel this tingling sensation at?
+    - Where do you get this sensation at in your [back](back_or_leg)?
+    - Can you tell me where you feel this pins feeling?
+    - Where do you get this sensation at in your [leg](back_or_leg)?
+    - Where do you get this sensation at?
+    - Where do you feel this sensation?
+    - Can you tell me where do you feel this tingling sensation at your [leg](back_or_leg)?
+    - Can you tell me where do you feel this tingling sensation at your [back](back_or_leg)?
+- intent: HPISE_pain_vas_last_time
+  examples: |
+    - On a scale of 1 to 10, what was the pain last time?
+    - On a scale of 1 to 10, how would you rate the pain on your [leg](back_or_leg) before this?
+    - On a scale of 1 to 10, how painful was it last time?
+    - On a scale of 1 to 10, how would you rate the pain on your [back](back_or_leg) before this?
+    - How bad is the pain 6 months ago, on a scale of 1 to 10.
+    - How bad was your [back](back_or_leg) pain before this, on a scale of 1 to 10?
+    - On a scale of 0 to 10, with 0 being no pain, and 10 being the worst pain you’ve ever felt, how much would you rate this pain last time?
+    - How bad is the pain last time, on a scale of 1 to 10.
+    - From a scale of 1 to 10, how painful was the pain last time?
+    - How bad was your [back](back_or_leg) pain months ago, on a scale of 1 to 10?
+    - How bad was your [leg](back_or_leg) pain before this, on a scale of 1 to 10?
+    - How bad was your [leg](back_or_leg) pain months ago, on a scale of 1 to 10?
+    - Would you rate your pain a 6 last time as well?
+- intent: HPI_association_both_pains
+  examples: |
+    - Do you think both the pains are related to each other?
+    - So is it right to say that the [leg](back_or_leg) pain is related to your back pain?
+    - Does the [backache]{"entity": "back_or_leg", "value": "back"} and leg pain happen at the same time?
+    - Is the [leg](back_or_leg) pain always associated with the back pain?
+    - The leg pain is mainly related to the [back](back_or_leg) pain?
+    - Does the [back](back_or_leg) pain and leg pain always happen at the same time?
+    - The [leg](back_or_leg) pain is mainly related to the back pain?
+    - Does the [leg](back_or_leg) pain always come with the backpain?
+    - Is the [leg](back_or_leg) pain always associated with the [back](back_or_leg) pain?
+    - Is the leg pain always associated with the [back](back_or_leg) pain?
+    - Do both your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"} pain always happen at the same time?
+    - Do you think the [leg](back_or_leg) pain is related to the [back](back_or_leg) pain?
+    - Does the [leg](back_or_leg) pain always come with the [back](back_or_leg) pain?
+- intent: SHOTH_travel
+  examples: |
+    - Have you gone overseas?
+    - Did you leave Singapore recently?
+    - Did you travel abroad recently?
+    - Have you travelled to other countries recently?
+    - Did you travel recently?
+    - Any places did you travel to?
+    - Did you travel anywhere in the past few months?
+    - Did you fly overseas?
+    - Did you go anywhere overseas?
+    - Have you travelled anywhere?
+    - Have you gone overseas recently?
+    - Any travel history?
+    - Have you traveled to any places recently?
+- intent: SRGIT_bowel_issues
+  examples: |
+    - Do you experience any difficulties in controlling your bowels
+    - Do you have any blood in your stools?
+    - Any difficulty controlling you bowel?
+    - Do you have any problems pooping?
+    - Do you have any problems with passing motion?
+    - Do you have any problems controlling your bowel movements?
+    - Any problems passing motion?
+    - Any pain when passing motion?
+    - Any problems with your passing of motion?
+    - Any issues with pooping?
+    - Any problems with passing motion?
+    - Any pain in pooping?
+    - Any issues with passing motion?
+- intent: HPIO_pain_frequency
+  examples: |
+    - How long is the pain each time?
+    - When the pain comes, how long does it last for each time?
+    - Does the pain last for each time?
+    - How long does pain stay on?
+    - When you feel the pain, do you know how long it lasts?
+    - How long do you feel the pain for each time?
+    - When the pain comes on, how long does it last?
+    - How long does the pain stay when it comes on?
+    - How long does it stay around?
+    - How long does it last?
+    - How long does the pain linger everytime it happens?
+    - How long does the pain usually stay on for?
+    - How long does the pain last for each time?
+    - How long does it stay when you feel the pain?
+- intent: HPIO_pain_at_particular_time
+  examples: |
+    - So exactly when does the pain come during the day?
+    - What time does the right [leg](back_or_leg) pain come?
+    - Exactly when is the [back](back_or_leg) painful.
+    - So this [back](back_or_leg) pain exactly when the [back](back_or_leg) is painful.
+    - So this [leg](back_or_leg) pain exactly when the [leg](back_or_leg) is painful.
+    - What specific time are these?
+    - Is there any particular time you would feel pain?
+    - Exactly when the [back](back_or_leg) is painful.
+    - What time in the day do you feel this pain?
+    - So this [back](back_or_leg) pain exactly when is the [back](back_or_leg) painful.
+    - Exactly when the [leg](back_or_leg) is painful.
+    - What time exactly do you feel pain?
+    - Would there be any particular time you would feel the pain?
+    - Is there any particular time where you would feel this pain?
+- intent: SHO_working_now
+  examples: |
+    - Are you working now.
+    - Are you working?
+    - Are you working.
+    - Are you still working?
+    - Do you have an occupation?
+    - Are you currently working.
+    - Do you work.
+    - Do you have an occupation.
+    - Do you work?
+    - Are you still working.
+    - Do you have a job now.
+    - Are you working now?
+    - Ok I see that you are still working.
+    - Do you have a job now?
+- intent: SHO_occupation_duration
+  examples: |
+    - How long have you been in this job?
+    - When did you start this job?
+    - When did you start working as a cleaner?
+    - How long have you been working for?
+    - How long have you worked as a cleaner?
+    - When did you begin working?
+    - How long have you been working as a cleaner for?
+    - How many years have you been working?
+    - When did you start this job as a cleaner?
+    - What is the duration of your work?
+    - How many months have you been working?
+    - How long have you been working?
+    - When did you start working?
+    - Can you tell me how long you have been working for?
+- intent: SHDE_exercise
+  examples: |
+    - Do you do any kinds of sports?
+    - How has your exercise been?
+    - Do you exercise Mandy?
+    - What kind of sports do you do?
+    - What kind of physical activities do you do?
+    - What kind of exercises do you do?
+    - Do you do any kind of exercise?
+    - So do you exercise?
+    - Any sports?
+    - Do you do any kind of exercises?
+    - Do you do any sports?
+    - Do you do other physical activities?
+    - How do you keep yourself fit?
+    - How do you stay active?
+- intent: SHDE_carrying_heavy_objects
+  examples: |
+    - Did you carry anything heavy recently?
+    - Have you been lifting heavy objects?
+    - Have you been carrying heavy objects?
+    - Do you have to carry a lot of heavy objects when you work? A lot of bending?
+    - Do you lift heavy objects often?
+    - Do you usually carry heavy things?
+    - What do you lift?
+    - Do you lift weights?
+    - Did you recently carry or lift heavy things?
+    - Ok, so it says here that you work as a cleaner. Do you have to carry heavy items around?
+    - Do you usually lift heavy objects?
+    - Have you been carrying heavy thing?
+    - Have you been lifting heavy things?
+    - On a normal day, do you carry alot of heavy things?
+- intent: SHDE_change_in_diet
+  examples: |
+    - Are you on any special diet?
+    - Did you start doing any special diet?
+    - Did you notice changes in your diet?
+    - Are you still eating like your normal diet?
+    - Are you still eating the food as usual?
+    - Any changes to your diet or the food you eat?
+    - Any changes to what you eat?
+    - Have you changed what you eat?
+    - Any diet change?
+    - Have you have any change in diet?
+    - Do you have any change in your diet?
+    - Did you change your diet recently?
+    - Have you been changing the food you eat?
+    - Do you notice any change in diet in the past 6 months?
+- intent: SHLC_living_conditions_support
+  examples: |
+    - Is there anyone to take care of you at home?
+    - Is there someone taking care of you?
+    - Who takes care of you now?
+    - I see do you have people who take care of you.
+    - Is there anyone who can take care of you.
+    - Who is taking care of you?
+    - Do you have someone to take care of you?
+    - Do you have people who take care of you.
+    - Anyone helps to take care of you?
+    - Do you have someone who can take care of you at home?
+    - I see so do you have people to take care of you?
+    - Do you have someone taking care of you?
+    - Do you have someone who takes care of you at home?
+    - Anyone who can take care of you.
+- intent: SRRHEU_general_stiffness
+  examples: |
+    - Okay other than the pain do you feel like any stiffness of your [back](back_or_leg)?
+    - Do you feel any stiffness in your [back](back_or_leg)?
+    - Have you experienced any stiffness?
+    - Did you notice any stiffness?
+    - Apart from the pain is there any stiffness?
+    - Do you feel any stiffness in your [back](back_or_leg) lasting more than an hour?
+    - Any stiffness in your body?
+    - Do you notice any stiffness?
+    - Any stiffness in your [back](back_or_leg)?
+    - Do you feel like your body is rigid and stiff?
+    - Is your [back](back_or_leg) stiff?
+    - Do you experience any stiffness in your body?
+    - Does your [back](back_or_leg) feel stiff?
+    - Does your body feel stiff?
+- intent: NURS_good_news
+  examples: |
+    - That's good to hear.
+    - Keep it up.
+    - That's excellent.
+    - Fantastic.
+    - That's reassuring.
+    - Oh that is nice.
+    - Glad to hear that.
+    - Great to hear that.
+    - Wonderful.
+    - Wow that's good.
+    - I'm glad to hear that.
+    - Nice to hear that.
+    - It's alright.
+    - That sounds good.
+- intent: HPIA_upwards_downwards_better
+  examples: |
+    - Does the pain get better when you walk up stairs?
+    - Does it hurt less when you walk up stairs or walk down stairs?
+    - Is the [back](back_or_leg) pain better when you walk downhill?
+    - Is it better to walk up stairs or walk down stairs?
+    - Does the pain get better when you climb uphill?
+    - Is the [leg](back_or_leg) pain better when you walk downhill?
+    - Does the pain get better when you walk uphill?
+    - Is the [back](back_or_leg) pain better when you walk uphill?
+    - Does walking uphill help reduce your pain?
+    - Do you feel better when you climb uphill?
+    - Is the [leg](back_or_leg) pain better when you climb uphill?
+    - Do you feel better when you walk uphill?
+    - Does climbing uphill relieve your pain?
+    - Does the pain get better when you walk uphill or downhill?
+    - Is the [leg](back_or_leg) pain better when you walk uphill?
+- intent: HPISE_compare_pain_between_leg_back
+  examples: |
+    - Which one is worse your [back](back_or_leg) or your [leg](back_or_leg)?
+    - Is your [back](back_or_leg) pain or right [leg](back_or_leg) worse?
+    - Which one hurts more: your [back](back_or_leg) or your [leg](back_or_leg)?
+    - You have more pain in your [back](back_or_leg) or in your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Does your [back](back_or_leg) pain hurt more than your [leg](back_or_leg) pain?
+    - Which one is worse: your [back](back_or_leg) pain or your [leg](back_or_leg) pain?
+    - Is the pain more in your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Is the pain more in your [back](back_or_leg)?
+    - Which one is worse: your [back](back_or_leg) or your [leg](back_or_leg)?
+    - Between your [back](back_or_leg) and [leg](back_or_leg) pain, which one hurts more?
+    - Is your [back](back_or_leg) pain worse or your [leg](back_or_leg) pain worse?
+    - Is your [back](back_or_leg) pain or [leg](back_or_leg) pain worse?
+    - Does your [leg](back_or_leg) pain hurt more than your [back](back_or_leg) pain?
+    - Is the pain more in your [back](back_or_leg) or in your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Which one hurts more, your [back](back_or_leg) or your [leg](back_or_leg)?
+- intent: SHSAR_drinking
+  examples: |
+    - Do you drink any alcohol?
+    - Do you drink beer?
+    - How about drinking?
+    - Do you drink Mandy.
+    - Just a routine question, do you drink?
+    - Do you drink?
+    - Are you a drinker?
+    - Do you drink often?
+    - You drink alcohol?
+    - Alocohol?
+    - Do you drink alcohol?
+    - Do you drink wine?
+    - Dny drinking?
+    - Do you take alcohol?
+    - And do you drink alcohol?
+- intent: SRGEN_rashes
+  examples: |
+    - Have you noticed any patches on your body?
+    - Have you noticed any rashes or patches on your body?
+    - Did you notice any spots on your skin or body.
+    - Is there any itchy areas
+    - Do you notice any white spots along your skin or on your face?
+    - Do you have any rash in any part of your body?
+    - Any rashes?
+    - Any spots on your skin or face?
+    - Ok, I understand any like white? Do you notice any white spots along your skin on your face?
+    - Did you notice any spots along your skin or face.
+    - Do you find any sudden rashes forming recently
+    - Do you have any spots on your body.
+    - Any rash?
+    - Do you have any patches on your body?
+    - Any rashes formed?
+- intent: DTH_past_consultations
+  examples: |
+    - Have you gone to any orthopedic specialists.
+    - Have you seen a doctor before for this pain?
+    - Did you consult another doctor before this?
+    - Have you seen an orthopedic surgeon?
+    - Have you seen a doctor?
+    - Have you ever seen an orthopedist?
+    - Have you seen a specialist before?
+    - Have you seen a doctor before?
+    - Have you ever seen an orthopedic doctor before?
+    - Did you see a doctor before coming to the hospital?
+    - Have you seen any one for this pain before?
+    - Have you seen anyone for this pain?
+    - Have you consulted another doctor for your pain?
+    - Did you consult a doctor before this consultation?
+    - Have you ever seen an orthopedic for this?
+    - Any past consultations with your doctor?
+- intent: PH_menstrual_last
+  examples: |
+    - Did you menopause already?
+    - Have you had your menstruation this month?
+    - Can I check when was the last time you had your menstruation?
+    - Can I check if you have menopaused?
+    - Do you still have any menstruation?
+    - When was your latest menstruation date?
+    - Can I check if you are still having menstruation?
+    - Did you have menstruation last month?
+    - When was your latest menstruation?
+    - Are you still having your periods?
+    - When was your date of menopause?
+    - When was your last menstrual period?
+    - May I check if you are still having menstruation and when was the last time you had it?
+    - May I check with you the last date of your menstruation?
+    - Can I check with you when was your last menstrual period?
+    - When was the last time you had your menstruation?
+- intent: SHO_occupation_confirm
+  examples: |
+    - Just to confirm, you work as a cleaner?
+    - So you are a 60 years old cleaner?
+    - Auntie you are cleaner?
+    - Auntie, you work as cleaner?
+    - Ma'am you work as a cleaner right?
+    - Just to confirm, your occupation is a cleaner?
+    - You are a cleaner?
+    - So a cleaner?
+    - Madam your job is as a cleaner right?
+    - So auntie you work as a cleaner, correct?
+    - So you work as a cleaner?
+    - You work as a janitor?
+    - Just to clarify, you work as a cleaner?
+    - So you work as a cleaner, correct?
+    - So you work as a cleaner right auntie?
+    - Your job is cleaning?
+- intent: SRGIT_bowel_ability
+  examples: |
+    - How about passing motion?
+    - Are your stools ok?
+    - Can you ****?
+    - Are you able to pass motion normally?
+    - Is your pooping ok?
+    - Any constipations recently?
+    - Can you poop normally.
+    - Are you able to poop normally?
+    - Can you pass motion?
+    - Is your bowel movement ok?
+    - Can you poop?
+    - Have you been pooping ok?
+    - Did you have any recent constipations?
+    - Are you able to poo normally?
+    - Passing motion?
+    - Can you shit?
+- intent: HPIO_pain_intermittent_continuous
+  examples: |
+    - Is there pain there all the time?
+    - Is the pain there all the time?
+    - And is the pain there all the time or does it come and go?
+    - Does the pain stay all the time?
+    - Is the [leg](back_or_leg) pain constant?
+    - Is your [back](back_or_leg) pain there all the time?
+    - Is your [leg](back_or_leg) pain there all the time?
+    - Does the [back](back_or_leg) pain come and go?
+    - Is the pain continuous or intermittent?
+    - Is your [back](back_or_leg) pain continuous or intermittent?
+    - Does the pain come and go?
+    - Is there pain constantly?
+    - Is there pain all the time or does it come and go?
+    - And the pain is there all the time or it comes and goes.
+    - Is the [back](back_or_leg) pain constant?
+    - Is there pain all the time?
+    - Is your [leg](back_or_leg) pain continuous or intermittent?
+- intent: SHDE_diet_food
+  examples: |
+    - Do you have a balanced diet?
+    - Can you tell me what is your diet like?
+    - What do you normally eat?
+    - What do you eat on a normal day?
+    - How about your diet?
+    - What do you usually eat?
+    - How is your diet?
+    - Can you tell me what you diet usually consists of?
+    - What food do you eat?
+    - How's your diet like?
+    - What does your diet consist of?
+    - What is your typical diet like?
+    - Can you tell me about your diet?
+    - Can I know if you have a balanced diet?
+    - What do you eat?
+    - What is your diet usually like?
+    - What kind of food do you eat everyday?
+- intent: FH_family_similar_problem
+  examples: |
+    - Anyone else in your family has a history of such pain.
+    - Does your family have similar problems?
+    - Anyone else in your family who has a history of such pain.
+    - Any person with a similar pain in your family.
+    - Any family member has similar conditions?
+    - Any of your family members visited the hospital for something similar to you?
+    - Does your family members experienced any similar problems?
+    - Anyone else in your family with same symptoms as you?
+    - Is there anyone else in your family who has a history of such [back](back_or_leg) pain?
+    - Anyone with a history of such [back](back_or_leg) pain in your family?
+    - Okay anyone with a history of [back](back_or_leg) pain in your family.
+    - Anyone else in the family with similar symptoms?
+    - Does your family have any identical problems?
+    - Does any one of your family members have similar issues
+    - Anyone else in your family have the same problem?
+    - Is there anyone else in your family who has a history of such pain.
+    - Do you have similar conditions in the family?
+- intent: PCE_expectations
+  examples: |
+    - What are your expectations from today's consultation?
+    - Is there anything else you want from today?
+    - Is there anything else you would like from today?
+    - What do you hope for us to do for you?
+    - Anything else you want us to do for you in this visit?
+    - Is there anything else I can do for you.
+    - Okay, thanks for speaking Madam Tan. Is there anything you'd like us to do for you.
+    - What would you like me to do for you for this consult?
+    - What are your expectations for this consult?
+    - What do you expect to get out of this consult?
+    - Is there anything you'd like us to do for you.
+    - Do you have any expectations for today?
+    - Do you have any expectations?
+    - Is there anything that you want from this consultation.
+    - How do you hope we can help you?
+    - What would you like for us to accomplish today?
+    - Is there anything else you would like from the consultation today.
+- intent: HPIO_pain_sudden_or_gradual
+  examples: |
+    - Did the pain start suddenly or did it gradually get worse?
+    - Did it come gradually?
+    - Did it worsen suddenly or gradually?
+    - Did the pain come suddenly?
+    - Your [leg](back_or_leg) pain, would you say it is sudden or gradual
+    - Did it come on suddenly or gradually?
+    - Did it happen suddenly?
+    - Is the pain sudden or gradual
+    - Did the pain happen gradually?
+    - Did it happen gradually or suddenly?
+    - Is the pain gradual or sudden?
+    - The [back](back_or_leg) pain, is it sudden or gradual
+    - Ok. When you first noticed the pain, did it come on gradually or suddenly?
+    - Did the [back](back_or_leg) pain suddenly get worse?
+    - Does the pain come gradually or suddenly?
+    - Did the pain come gradually?
+    - Did the pain happen suddenly?
+    - Did the [leg](back_or_leg) pain suddenly get worse?
+- intent: HPIE_walk_worse
+  examples: |
+    - Is there pain in your [back](back_or_leg) when you walk?
+    - Is there pain when you walk?
+    - Does walking make it more painful?
+    - Do you need to stop walking?
+    - Is there pain in your [leg](back_or_leg) and back when you walk?
+    - Does your [leg](back_or_leg) hurt when you walk?
+    - Does your [back](back_or_leg) hurt when you walk?
+    - Are you able to walk without pain?
+    - Is it worse when walking?
+    - Has the pain been so bad that you had to stop walking to rest?
+    - Is there pain in your [leg and back]{"entity": "back_or_leg", "value": "back_and_leg"} when you walk?
+    - Is there pain when walking?
+    - Is there pain when you are walking?
+    - Does your [leg](back_or_leg) and [back](back_or_leg) hurt when you walk?
+    - Is there pain in your [leg](back_or_leg) when you walk?
+    - What happens when you are walking?
+    - Are you able to walk without any pain?
+    - Does the pain come when you walk?
+- intent: HPI_symptoms_weakness_trigger
+  examples: |
+    - When do you feel weak in your [back](back_or_leg)?
+    - When does your right [leg](back_or_leg) feel weak?
+    - When you feel weakness, what are you doing?
+    - When do you feel weakness?
+    - When do you feel weak in your [leg](back_or_leg)?
+    - When does your [back](back_or_leg) feel weak?
+    - Do you feel weakness when you are walking?
+    - When you feel weakness, what were you doing?
+    - Do you feel weakness when you walk?
+    - What are you doing when you feel that weakness?
+    - When does the weakness happen?
+    - What are you doing when you feel weak?
+    - What were you doing when you felt that weakness?
+    - When does your [leg](back_or_leg) feel weak?
+    - When you are walking do you feel the weakness?
+    - Do you feel weak when you are walking?
+    - What were you doing when you felt weak?
+    - When do you feel weak?
+- intent: HPI_symptoms_numbness_trigger
+  examples: |
+    - Do you feel numbness when you are walking?
+    - When do you feel numb?
+    - When does the numbness happen?
+    - When does your left [leg](back_or_leg) feel numb?
+    - Do you feel numbness when you walk?
+    - When does your [back](back_or_leg) feel numb?
+    - What were you doing when you felt that numbness?
+    - When do you feel numbness?
+    - Do you feel numb when you are walking?
+    - What were you doing when you felt numbness?
+    - When do you feel numb in your [back](back_or_leg)?
+    - What are you doing when you feel numb?
+    - When does your [leg](back_or_leg) feel numb?
+    - When you feel numbness, what were you doing?
+    - When you are walking do you feel the numbness?
+    - When do you feel numb in your [leg](back_or_leg)?
+    - What are you doing when you feel that numbness?
+    - What were you doing when you felt numb?
+- intent: HPI_symptoms_numbness_weakness_difference
+  examples: |
+    - Does your right [leg](back_or_leg) feel weaker than the left?
+    - Did you notice if the sensation in your right [leg](back_or_leg) is different from your left [leg](back_or_leg)?
+    - Do you feel that one [leg] (back_or_leg) has less strength than the other?
+    - Do both legs have the same strength?
+    - Do you feel less strength in one leg?
+    - Does your right [leg] (back_or_leg) feel weaker than your left?
+    - Do you feel that your right [leg] (back_or_leg) is weaker than your left leg?
+    - Is there any difference in strength between both legs?
+    - Do you feel that the right [leg](back_or_leg) is weaker than the left?
+    - Any difference in sensation between your [legs] (back_or_leg)?
+    - Is there any difference between weakness of both legs?
+    - Any difference in weakness?
+    - Does both legs feel the same?
+    - Any difference in feeling between your [leg] (back_or_leg)?
+    - Did you notice if the sensation in your right [leg] (back_or_leg) is different from your left leg?
+    - Any sensation difference?
+    - Do you feel that your right [leg](back_or_leg) is weaker than your left [leg](back_or_leg)?
+    - Does one leg feel weaker than the other?
+- intent: SHLC_living_conditions_stairs_out_characteristics
+  examples: |
+    - Can you take the lift to your home?
+    - How do you go up to your house?
+    - Is there a lift you can take to your house?
+    - Do you have lift at home?
+    - Do you have to take a lift up to your house?
+    - Is there a lift landing in your HDB?
+    - Do you have to climb stairs to your house?
+    - How do you go up to the 5th floor?
+    - To get to your house do you have any lift you can take?
+    - Can you take the lift up to your house?
+    - Is it difficult to go to the 5th floor with your pain?
+    - Do you climb up or take lift?
+    - Is there a lift landing at your house?
+    - Can you take a lift up to your house?
+    - Does the floor you stay on have a lift?
+    - Do you have any lift landing?
+    - Do you have a lift up to your house?
+    - Do you have to climb up to your house?
+- intent: PCE_concerns_condition
+  examples: |
+    - Do you have any pressing concerns you would like me to address today?
+    - Do you have any worries regarding the pain?
+    - Do you have any concerns about your condition?
+    - Do you have any concerns you want to let me know?
+    - Any concerns about your condition?
+    - Do you have any questions about your pain?
+    - Any questions you have regarding your condition?
+    - Do you have any concerns about the pain?
+    - So what are you concerned about?
+    - Any concerns?
+    - Do you have any concerns?
+    - Do you have concerns regarding the pain?
+    - Any worries about your pain?
+    - Do you have any worries about your condition?
+    - Any questions you have for me regarding your pain?
+    - Do you have concerns you wish to share?
+    - Any worries about your condition?
+    - Any worries you have?
+- intent: PH_MULTI_highbloodpressure+diabetes+cholesterol
+  examples: |
+    - Any high blood pressure, high cholesterol, diabetes?
+    - Do you have high cholesterol or high blood pressure?
+    - Do you have high cholesterol and diabetes?
+    - Any high blood pressure any high cholesterol?
+    - High blood pressure, high cholesterol or diabetes?
+    - Anything wrong with your blood pressure, cholesterol and diabetes?
+    - Any issues with your blood pressure, cholesterol or diabetes?
+    - Anything wrong with your blood pressure, cholesterol or sugar levels?
+    - Any high blood pressure, high cholesterol or diabetes?
+    - Do you have high blood pressure, cholesterol, or diabetes?
+    - Do you have high blood pressure and diabetes?
+    - Any diabetes or high blood pressure?
+    - Do you have high blood pressure and high cholesterol?
+    - How are your blood pressure, cholesterol and diabetes so far?
+    - Any high blood pressure or high cholesterol?
+    - Any high blood pressure, cholesterol, diabetes?
+    - Do you have high blood pressure, high cholesterol or diabetes?
+    - Any high cholesterol or diabetes?
+    - Do you have high levels of diabetes, cholesterol and blood pressure?
+- intent: PH_surgery
+  examples: |
+    - Any previous operations?
+    - Any operations before this?
+    - Ok have you undergone surgery before?
+    - Any previous surgery?
+    - Did you go for any operations before?
+    - Did any surgeries before?
+    - Have you undergone any previous surgery?
+    - Did any surgical procedures?
+    - Have you had previous surgeries before?
+    - Did you undergo any operations before?
+    - Any past surgeries?
+    - Any operations before?
+    - Have you had any surgeries before?
+    - Have you undergo any surgery before?
+    - Have you undergone any past surgery
+    - Have you had any previous surgery?
+    - Have you had any surgeries done?
+    - Did you undergo any surgeries before?
+    - Ok so you have not undergone any previous surgeries, am I correct?
+    - Any previous surgeries
+- intent: SRGU_urine_issues
+  examples: |
+    - Any difficulty controlling your bladder?
+    - Do you have difficulty controlling your bladder?
+    - Any problems with urination?
+    - Do you have pain peeing?
+    - Do you have problems peeing?
+    - Can you control your bladder?
+    - Do you have any problems with urination?
+    - Any problems passing urine?
+    - Do you have any problems controlling your bladder?
+    - Did you have difficulty controlling your urine?
+    - Any pain passing urine?
+    - I wanted to ask you if you have any problems with your urinary habits?
+    - Any urinary incontinence?
+    - Do you have difficulty controlling your urine?
+    - Do you feel pain when you are urinating?
+    - Do you have difficulty or pain on passing urine?
+    - Any problems with your urine?
+    - Difficulty controlling your bladder?
+    - Do you have pain when passing urine?
+    - Any problems with your urinary habits?
+- intent: SRGU_urine_frequency
+  examples: |
+    - Have you been urinating more?
+    - Have you been peeing more?
+    - Any changes in urinating habits?
+    - Any changes in bladder habbits?
+    - Any changes in toilet habits?
+    - Do you notice if you need to urinate more recently?
+    - Do you notice if you need to urinate more frequently?
+    - Go toilet more?
+    - Urinating more frequently?
+    - Did you notice if you have been going to the toilet more often nowadays?
+    - Are you passing more or less urine?
+    - Have you been going toilet more frequently?
+    - Are you going to the toilet less?
+    - Are you passing larger or smaller amounts of urine?
+    - Have you been going toilet more recently?
+    - Are you going to the toilet more or less?
+    - Any changes in peeing habits?
+    - Urinating more recently?
+    - Do you feel that you have to pass urine more frequently recently?
+    - Have you been going toilet more?
+- intent: MOVE_walking_independent
+  examples: |
+    - Are you able to walk by yourself.
+    - Are you able to walk without aids?
+    - Do you need anyone's help in walking.
+    - Are you able to walk on your own now?
+    - Right now are you walking around on your own.
+    - You can walk without anything.
+    - Can you walk on your own.
+    - Can you walk without help?
+    - Can you walk without anything.
+    - Can you walk yourself?
+    - Are you able to walk on your own now Mandy?
+    - Are you able to walk on your own now.
+    - Can you walk independently?
+    - What walking aids do you walk with?
+    - Do you need anyone to help you when you are walking?
+    - Are you able to walk on your own.
+    - Right now you're walking on your own.
+    - Do you to walk without aids?
+    - Do you walk without aids?
+    - Can you walk without aids?
+- intent: GENERAL_patient_guess
+  examples: |
+    - Could I ask if you have any idea what is causing your pain?
+    - Do you know what the pain is caused by?
+    - Do you have any idea on this?
+    - Any thoughts of why this pain arises?
+    - What do you think causes your [back](back_or_leg) and leg pain?
+    - Do you have any guesses regarding this?
+    - And could I ask if you have any idea what is causing your [back](back_or_leg) and [leg](back_or_leg) pain?
+    - Any ideas of why you are feeling this pain?
+    - Do you have any idea what could be causing the pain?
+    - What do you think is causing the pain?
+    - Do you have any idea what this could be?
+    - Do you have an idea of what is causing the pain in your [back](back_or_leg) and leg pain?
+    - What do you think is causing the [back](back_or_leg) and [leg](back_or_leg) pain?
+    - Is there anything that you think could have caused this pain.
+    - What do you think causes your back and [leg](back_or_leg) pain?
+    - Do you have any guesses on what this could be?
+    - Do you happen to know what might be causing these pain?
+    - What do you think caused this [back](back_or_leg) pain and [leg](back_or_leg) pain.
+    - Do you have an idea of what is causing the pain in your back and [leg](back_or_leg) pain?
+    - Do you have any idea what this pain may be caused by?
+    - Do you have any idea of why you are feeling this pain?
+- intent: HPIE_upwards_downwards_worse
+  examples: |
+    - Is the [leg](back_or_leg) pain worse when you climb downhill?
+    - Is the [back](back_or_leg) pain worse when you walk uphill?
+    - Is climbing upstairs worse or climbing downstairs worse?
+    - Is the [leg](back_or_leg) pain worse when you walk downhill?
+    - Is it more painful to walk down stairs?
+    - Is the [leg](back_or_leg) pain worse when you walk uphill?
+    - Does the pain get worse when you walk uphill or downhill?
+    - Is the [back](back_or_leg) pain worse when you climb downhill?
+    - Is there more pain when you walk uphill or downhill?
+    - Does it hurt more when you walk up stairs or walk down stairs?
+    - Does the pain get worse when you climb uphill or downhill?
+    - Is the [back](back_or_leg) pain worse when you walk downhill?
+    - Is it more painful to walk uphill or downhill?
+    - Okay, how about climbing, is climbing upwards worse or climbing downwards worse.
+    - When you are walking up the stairs or down the stairs, is the pain worse?
+    - Does walking uphill or downhill cause more pain?
+    - Is it worse to walk up stairs or walk down stairs?
+    - Is the pain worse on walking up the stairs or down the stairs?
+    - Okay, how about climbing stairs is climbing up worse or climbing down worse?
+    - Does the pain get worse when you walk uphill?
+    - Okay, how about climbing is climbing up worser or climbing down worse.
+- intent: DTH_drug_allergies
+  examples: |
+    - Ok any drug allergies?
+    - What about allergies are you allergic to anything?
+    - Allergic to any medication?
+    - Madam Tan do you have any drug allergies?
+    - Do you know if you are allergic to any drug?
+    - Allergic to drugs?
+    - Alright then, how about drug allergy?
+    - Do you know what are you allergic to?
+    - Do you have any drug allergies, Madam Tan?
+    - Do you have any drug allergies
+    - Allergic to any drugs?
+    - Are you allergic to any medication?
+    - Sensitive to any medication?
+    - Do you have any allergies?
+    - Are there any drug allergies?
+    - Do you have any drug allergies?
+    - Any drug allergies?
+    - Any allergy?
+    - Are you allergic to anything?
+    - Do you know if you have any drug allergies?
+    - Any drug allergy?
+- intent: SRGIT_appetite_loss
+  examples: |
+    - Did you notice any changes to your eating amount?
+    - Do you have any loss in appetite recently?
+    - Did you lose any appetite?
+    - Appetite?
+    - What about your appetite?
+    - Any loss of appetite?
+    - Any appetite loss in the past 6 months?
+    - Any change in appetite?
+    - was any change in your appetite recently?
+    - Has your appetite remained the same?
+    - How bout your appetite?
+    - How has your appetite been?
+    - Did you notice if your appetite has been getting poorer?
+    - Any appetite change?
+    - Any changes to your eating habits or amount?
+    - Any recent loss of appetite?
+    - Has your appetite been the same compared to last time?
+    - How is your appetite?
+    - So have you experience any loss in appetite recently?
+    - Did you notice if your appetite has been getting worse recently?
+    - How about your appetite?
+- intent: DD_hands_clumsier
+  examples: |
+    - Is your hand control ok?
+    - Are you able to write with a pen normally?
+    - Can you write?
+    - Do you notice any difference in your hands?
+    - Can write normally?
+    - Do you notice any difference in your hand strength?
+    - Are your hands ok?
+    - Do you notice if your hands are getting clumsier?
+    - Are you able to control your hands?
+    - Any difference in clumsiness of hands?
+    - Any difference in hand dexterity?
+    - Can you write normally?
+    - Do you notice any difference in hand dexterity?
+    - Are you able to use a pen?
+    - Are you able to write normally?
+    - Any difference in hand control?
+    - Are your hands more clumsy?
+    - Are you able to write?
+    - Do you notice any difference in your hands control?
+    - Is your hand normal?
+    - Do you notice if you hand control is getting weaker?
+- intent: NURS_empathise
+  examples: |
+    - Oh no it sounds bad.
+    - That must be quite hard for you
+    - Oh no you must feel quite bad
+    - I'm so sorry to hear that.
+    - I see, that must be very difficult
+    - I see, that must be quite difficult
+    - I feel sorry to hear that
+    - I'm sorry to hear that
+    - That sounds bad.
+    - That sounds tough
+    - Ohno, sorry to hear that
+    - You must be having a hard time
+    - I see, it seems to be bothering you alot
+    - Oh no it seems to be quite bad
+    - Ok sure, so this pain has really affected you quite a great deal
+    - That doesn't sound very good
+    - You must be feeling quite bad
+    - I hope you feel better soon
+    - Oh no that sounds bad.
+    - No it sounds bad.
+    - I see that must be difficult
+- intent: DEMOG_patient_name
+  examples: |
+    - How may I address you?
+    - May I know what's your name?
+    - Hello. How may I address you?
+    - How can I address you?
+    - How do I address you?
+    - Hi good afternoon, my name is. How may I address you?
+    - What is your name?
+    - Can I know how can I address you?
+    - Before we start, can you tell me your name?
+    - How would you like me to address you?
+    - I'm the doctor seeing you today, how may i address you?
+    - Hello Madam Tan, how may I address you?
+    - I'm one of the medical students, how may I address you?
+    - Can I know how you would like me to address you?
+    - Hi there, how would you like me to address you?
+    - Hi good morning, Madam Tan, my name is Jocelyn and I am a student that will be talking to you today. Before I start may I know how do I address you?
+    - I'm doctor, how may i address you?
+    - I'm one of the medical students at the hospital, how can I address you?
+    - Can you tell me your name?
+    - Good morning, how may I address you?
+    - Hi, what is your name?
+    - Hi I'm a year 3 medical student from NUHS, how may I address you?
+- intent: HPIO_pain_last_time
+  examples: |
+    - Did you have pain six months ago?
+    - Do you remember how you felt 6 months ago?
+    - Did you have [back](back_or_leg) pain six months ago?
+    - Did you have [leg](back_or_leg) pain six months ago?
+    - Do you know if it was painful like this last time?
+    - Six months ago did you have pain.
+    - How is the pain 6 months ago?
+    - Was there pain in your [leg](back_or_leg) six months ago?
+    - Was there pain last time?
+    - Do you remember if there was pain like this 6 months ago?
+    - Before six months ago, did you have [back](back_or_leg) pain?
+    - Was there pain in your [back](back_or_leg) six months ago?
+    - Was there other pain before this last time?
+    - How was the pain last time?
+    - Did you have pain two months ago?
+    - Was there pain 6 months ago?
+    - Was there any pain before this pain 6 months ago?
+    - Did you have pain before this six months ago.
+    - How was the pain 6 months ago?
+    - Do you remember how it felt last time?
+    - Was there any other pain before this?
+    - Before six months ago, did you have [leg](back_or_leg) pain?
+- intent: HPI_MULTI_symptoms_numbness+weakness
+  examples: |
+    - Do you feel any sensation in your [leg](back_or_leg)?
+    - Do you have a loss of sensation in your [leg](back_or_leg)?
+    - Do you have sensations.
+    - Do you experience any numbness or weakness?
+    - Any sensation?
+    - Is there any numbness or weakness?
+    - Do you notice a change in sensation in your leg?
+    - Is there numbness or weakness?
+    - Do you feel any sensation in your knee or ankle?
+    - Any numbness or weird sensation?
+    - Do you notice a change in feeling.
+    - Any numbness or weakness.
+    - Do you notice a change of sensation in your [leg](back_or_leg)?
+    - Any kind of feeling of numbness or weirdness.
+    - Do you feel any sensation in the back of your [leg](back_or_leg).
+    - Do you notice anything in your leg area?
+    - Do you notice anything in your [leg](back_or_leg) area?
+    - Is there any numbness or weakness.
+    - Any sensation.
+    - Do you have any sensation?
+    - Do you feel numbness or weakness?
+    - Any numbness or weakness?
+- intent: SRGU_MULTI_passing_urine+passing_motion
+  examples: |
+    - Do you have any problems when you urine and pass motion?
+    - Do you have any problems with urination or passing motion?
+    - Any issues with passing motion and urination?
+    - Can you pass urine or pass motion normally.
+    - Do you find it difficult to pass motion or pass urine?
+    - Do you have any problems with passing motion or passing urine?
+    - Any issues regarding urine or motion?
+    - Have you ever lost control over your bowels and urine?
+    - Any issues with passing urine or passing motion?
+    - Have you ever lost control over your bowels as well as your urine?
+    - Any issues with passing urine or bowels
+    - Can you still go to the toilet ok?
+    - Do you have any issues with passing urine or passing motion?
+    - Do you have any problems when urinating or passing motion?
+    - Do you have any bowel or bladder incontinence.
+    - Did you lose control over your bowels and urine?
+    - Any issues with urinating and passing motion?
+    - Do you have any issues with passing urine and passing motion?
+    - Do you have any problems when you urinate or pass motion?
+    - Do you experience any problem with passing urine or passing motion?
+    - Everything ok with your bowels and urine?
+    - Any problems passing urine and motion?
+- intent: SRRHEU_morning_stiffness
+  examples: |
+    - Are your legs very stiff in the morning?
+    - Is the pain very bad when you wake up in the morning?
+    - Any stiffness in the morning?
+    - Do you have very bad [back](back_or_leg) pain and sitffness in the morning when you wake up?
+    - Any morning stiffness in your [back](back_or_leg) when you wake up?
+    - Do you have very bad back pain and stiffness in the morning when you wake up?
+    - Do you feel stiffness when you wake up?
+    - Any issues with the pain when you wake up in the morning?
+    - Do you feel stiffness in the morning?
+    - Is it worse when you wake up in the morning?
+    - Is it more painful in the morning?
+    - Is the pain more painful when you wake up?
+    - Do you think your [back](back_or_leg) feels stiff when you wake up in the morning?
+    - Any early morning stiffness in your [back](back_or_leg) lasting more than an hour in the morning.
+    - Do you feel that it gets bad in the morning?
+    - Do you feel sore when you wake up
+    - Do you have difficulties waking up in the morning?
+    - Is the back pain very bad in the morning when you just wake up?
+    - Do you feel any soreness in the morning
+    - Any pains when you get up every morning
+    - Does your [back](back_or_leg) feel stiff when you get up in the morning?
+    - Any aches when you wake up
+- intent: GENERAL_greet
+  examples: |
+    - Hello Mandy.
+    - Hello
+    - Hello Madam Mandy.
+    - Good morning
+    - Afternoon Madam Mandy.
+    - Hi Madam Tan.
+    - Good afternoon Madam Tan.
+    - Hello Madam time.
+    - Hello Madam Tan.
+    - Greetings
+    - Good day
+    - Hi Mdm Tan.
+    - Afternoon Madam MD.
+    - Good evening
+    - Hello hi Madam Tan.
+    - Hi Mandy.
+    - Hey
+    - Hey there
+    - Good afternoon.
+    - Hi there
+    - Hello Mdm Tan.
+    - Hello Madam MD.
+    - Hi, good afternoon Madam Tan, I'm one of the doctors here today.
+- intent: GENERAL_how_is_patient
+  examples: |
+    - How are you feeling?
+    - Hello Madam Tan how are you feeling today?
+    - Hello how are you today?
+    - Hi im doctor goh, how are you?
+    - Hello how are you?
+    - Feeling good?
+    - Hi mandy, how are you today?
+    - How are you right now?
+    - Are you feeling good today?
+    - Hello how are you
+    - I see. How are you feeling?
+    - Hi, how are you today?
+    - How are you feeling today?
+    - How are you feeling today Mandy?
+    - I see, how are you feeling today mandy?
+    - So how are you feeling?
+    - Hi Mandy, how are you?
+    - How are you mandy?
+    - Alright, how are you feeling now?
+    - How are you
+    - How are you doing?
+    - How are you feeling
+    - How are you today?
+- intent: HPI_affecting_worklife
+  examples: |
+    - Has your job been affected?
+    - Is your [back](back_or_leg) pain affecting your work?
+    - Is it affecting your work a lot?
+    - Is the pain impacting your job?
+    - Are you still able to go to work.
+    - Okay, and you feel that it's been affecting your work.
+    - How has your [leg](back_or_leg) pain and back pain been affecting your work?
+    - Has the pain affected your work?
+    - Is the pain causing trouble to your job?
+    - How about your work?
+    - This pain must be affecting your job too.
+    - Has this been affecting your job as a cleaner?
+    - Has the pain impacted your work?
+    - How does this pain affect your job.
+    - So far any issues with work.
+    - Is it affecting your work?
+    - How have the pain affected your work?
+    - How has your [back](back_or_leg) pain and leg pain been affecting your work?
+    - How has your leg pain and [back](back_or_leg) pain been affecting your work life?
+    - How have they impacted your work?
+    - Is this pain affecting your work life?
+    - How has this pain affected your job?
+    - Is your [leg](back_or_leg) pain affecting your work?
+- intent: MOVE_walking_stability
+  examples: |
+    - Is your walking unsteady?
+    - Can you walk alright?
+    - Unsteady walking?
+    - Do you notice shakiness when walking?
+    - Do you feel stable when you walk?
+    - Do you notice if you have been walking unsteadily?
+    - Are you steady when you walk?
+    - Are you stable when you walk?
+    - Do you walk unsteadily?
+    - Can you walk properly?
+    - Do you feel unsteady when you walk?
+    - Can you walk steady?
+    - Are you able to walk without falling?
+    - Has your walking been unsteady recently?
+    - Do you feel like falling when you walk?
+    - Can you walk steadily?
+    - Do you find it hard to balance when you walk?
+    - Is your walking steady?
+    - Have you noticed unsteadiness in your walking?
+    - Do you notice yourself walking less steadily?
+    - Do you fall frequently?
+    - Okay, do you find it hard to balance when you walk?
+    - Has your walking been steady?
+- intent: HPIA_factors_make_pain_better
+  examples: |
+    - What do you do to make the pain better?
+    - Is there anything that makes this pain better for you?
+    - Anything that makes the pain better?
+    - Is there anything that makes the [back](back_or_leg) pain better?
+    - What makes the [leg](back_or_leg) pain better?
+    - What makes the pain go away a bit?
+    - What makes the pain better?
+    - What makes it less painful for you?
+    - Is there anything that makes the [leg](back_or_leg) pain better?
+    - What will make it less painful?
+    - What makes the pain feel better?
+    - So does anything help relieve the pain?
+    - Does anything make the [leg](back_or_leg) pain better?
+    - What makes your [leg](back_or_leg) pain better?
+    - Anything you do makes the pain better?
+    - Anything makes it better?
+    - What makes the [back](back_or_leg) pain better?
+    - So what can help relieve the pain?
+    - Anything that makes it better?
+    - What makes your [back](back_or_leg) pain better?
+    - Does anything make the [back](back_or_leg) pain better?
+    - Does anything make the pain better?
+    - What makes your pain better?
+    - What do you do to feel better?
+- intent: HPIE_factors_make_pain_worse
+  examples: |
+    - When will you feel more pain?
+    - Anything makes the [leg](back_or_leg) pain worse?
+    - Is there anything that makes the pain worse.
+    - What makes the [back](back_or_leg) pain worse?
+    - What do you do that increases the pain?
+    - What do you feel increases the pain?
+    - Anything that makes the [back](back_or_leg) pain worse?
+    - What makes the [leg](back_or_leg) pain worse?
+    - When will you feel the pain becoming worse?
+    - What increases the pain?
+    - Does anything make the [back](back_or_leg) pain worse?
+    - What makes the pain worse?
+    - How about worse?
+    - When will the pain increase?
+    - Is there anything that makes the [leg](back_or_leg) pain worse?
+    - What makes you feel more pain?
+    - Anything that makes the pain worse?
+    - Is there anything that makes the pain worse?
+    - Does anything make the pain worse?
+    - Does anything increase in the pain?
+    - Is there anything that makes the [back](back_or_leg) pain worse?
+    - Is there anything that makes this pain worse?
+    - What do you do that makes the pain worse?
+    - What makes the pain increase?
+- intent: HPISE_distance_constant
+  examples: |
+    - Are you able to walk the same distance as before, comparing to before this pain?
+    - Even before the pain, you could only walk a maximum of this much?
+    - Has there been a change in the distance that you can walk before the pain comes?
+    - Is it always one busstop?
+    - Are you able to walk the same distance as compared to before this pain?
+    - Is it always one bus stop?
+    - Is it usually the same distance?
+    - So it's always the same distance?
+    - Your maximum distance has always been like this?
+    - Are you able to walk the same distance?
+    - Oh no, is it always a constant distance?
+    - Does the pain always start exactly after you walk that distance?
+    - Are you able to walk the same distance as before because of the pain?
+    - Is there a change in your maximum distance.
+    - Does the pain always happen after that distance?
+    - Does your pain always start after exactly one busstop?
+    - Does your pain always start after exactly 1 busstop?
+    - Is there a change in how much you can walk.
+    - Is this distance always a busstop?
+    - Is there a change in the distance that you can walk.
+    - Does the pain always start exactly after you walked one busstop?
+    - Has your maximum walking distance always been the same?
+    - Does this distance change or is it always the same?
+    - Is it always this distance?
+- intent: SRGEN_weight_loss
+  examples: |
+    - How has your weight been?
+    - Did you notice if you have been losing weight recently?
+    - So no loss in weight i recken?
+    - Any major change in weight?
+    - Did you lose any weight recently?
+    - Did you experience any weight loss in the past few months?
+    - How can I lose weight?
+    - Any loss in weight
+    - Do you have any loss of weight?
+    - Any recent loss of weight?
+    - Have you lost weight?
+    - Did you notice any weight loss in the past few months?
+    - And the loss of weight.
+    - Have you seen any significant weight loss the past few months?
+    - Any loss in weight in the past half year?
+    - Are you lighter now?
+    - Did you notice any loss of weight?
+    - Do you feel lighter?
+    - Any loss of weight?
+    - Do you know if you are lighter now?
+    - Do you lose any weight recently?
+    - Have you gotten lighter?
+    - Mandy have you experienced any loss of weight?
+    - Did you notice any lost of weight?
+- intent: DTH_other_medications
+  examples: |
+    - Can you tell me if you have tried any medication?
+    - Are you taking any TCM?
+    - Are you on any long term medicine
+    - Have you been taking supplements?
+    - Do you take any medications?
+    - Are you taking any long term medications?
+    - Okay you're on any long term medications.
+    - Are you taking any tablets or medicines?
+    - Are you taking any supplements?
+    - Are you taking any pills or medication?
+    - Are you taking any medication on a normal basis?
+    - Okay, are you on any long term medications.
+    - Have you been taking any drugs?
+    - Do you take any medication?
+    - Are you on any long term medication?
+    - Are you taking any pills now?
+    - Are you taking other long term medicine?
+    - Are you taking any pills from other doctors?
+    - Are you taking any traditional chinese medicine?
+    - Do you take any medication on a normal basis?
+    - Any other medications you are taking now?
+    - Are you taking any tablets now?
+    - Are you on medication?
+    - Are you taking any medications?
+    - Are you taking other medicine?
+- intent: DTH_medications_for_pain
+  examples: |
+    - Are you taking any medication for the pain?
+    - Are you taking any pills for the pain?
+    - Have you tried using painkillers for this?
+    - Are you taking any tablets for the pain?
+    - Are you taking any painkillers for your pain?
+    - Have you been taking any pain killer?
+    - Have you taken any painkillers for your pain.
+    - Do you take any medications for the pain?
+    - Have you been taking panadol for your pain?
+    - Have you been taking any painkillers?
+    - Did you take any pain killer?
+    - Have you been taking any medications for that?
+    - Are you taking any pain killers?
+    - Have you been taking any tablets for the pain?
+    - Have you taken anything for the pain?
+    - Did you take any pain killer for your pain?
+    - Are you taking any pain killer for your pain?
+    - Are you having any medications right now for the pain?
+    - Did you take any medication for the pain?
+    - Are you taking any pain killer?
+    - Have you been prescribed painkillers for your pain?
+    - Do you have any medications you are taking now for the pain?
+    - Are you taking any medication to relieve the pain?
+    - Have you been taking any pills for the pain?
+    - Are you using any medication for your pain?
+- intent: PH_asking_for_patient_history_consent
+  examples: |
+    - This is the first time I am meeting you so I would like to learn more about your history, is that ok?
+    - Now I will be moving on to ask you some general questions about your health is that ok?
+    - Ok i see. Before we start, I would like to ask you a few questions.
+    - I also need to know a bit more about your past medical history, lifestyle and family to help guide treatment.
+    - Will you be alright if I ask you a few more questions about your health?
+    - Uk hi mandy, before we start, ill like to take some history with you, is that ok?
+    - So before we start, can i ask you a few questions?
+    - I’m going to ask you some questions about your daily life to see how your lifestyle could be affecting your health. is that ok?
+    - Ok, ill like to get some information from you regarding your overall health.
+    - I'm Dr Foong, and I will be asking you some questions on your history?
+    - I'll be taking some notes as we speak. Is that ok with you?
+    - Can I ask you a few questions to learn more about you?
+    - Is it ok if I ask you a few questions about your personal history and life?
+    - Is it alright if I ask some questions related to your life and history?
+    - For me to be able to help you today I would need to take a history. This would involve me asking you a few questions about your health and social circumstances. Is that okay?
+    - Thank you for sharing, I'm going to ask you a few more questions is that ok?
+    - Ok so before we start, I'll like to take some time to go through some personal details and history, is that ok?
+    - I am doctor foong and i will begin asking you some questions.
+    - So before we go ahead i would like to go through some details.
+    - I am doctor foong, and I will begin asking some questions.
+    - Is it ok if I ask you some questions just to learn more about you?
+    - Is it okay to talk to you?
+    - I would like to ask you a few questions about your personal history, is that ok with you?
+    - I start to ask about some personal history. Is that OK?
+    - Ok hi mandy, before we start, can i ask u a few questions about your medical history?
+- intent: HPIE_distance_walk_worse
+  examples: |
+    - Is there pain in your [leg](back_or_leg) and back when you walk longer distances?
+    - Does your [back](back_or_leg) pain intensify when you walk longer distances?
+    - Do you need to stop when you walk long distances?
+    - Does your [leg](back_or_leg) pain intensify when you walk long distances?
+    - Does the pain get worse when you walk further?
+    - Does it hurt more when you walk longer distances?
+    - Does the pain in your [back](back_or_leg) get worse when you walk further?
+    - Does the pain get worse when you walk longer distances?
+    - Do you need to take a break when you walk long distances?
+    - Do you need to stop when you walk for long?
+    - Does your [leg](back_or_leg) and [back](back_or_leg) hurt when you walk longer distances?
+    - Does it hurt more when you walk?
+    - Does it hurt more when you walk further distances?
+    - Does your [leg](back_or_leg) hurt when you walk longer distances?
+    - Does the pain in your [leg](back_or_leg) get worse when you walk further?
+    - Does your [leg](back_or_leg) hurt when you walk further?
+    - How do you usually walk long distances?
+    - Does the pain in your [leg](back_or_leg) get worse when you walk longer distances?
+    - Is there pain in your [leg and back]{"entity": "back_or_leg", "value": "back_and_leg"} when you walk longer distances?
+    - Does your [back](back_or_leg) hurt when you walk further?
+    - Are you able to walk long distances?
+    - Are you able to walk for long?
+    - Does walking longer distances increase the pain?
+    - Does the pain in your [back](back_or_leg) get worse when you walk longer distances?
+    - Does your [back](back_or_leg) hurt when you walk longer distances?
+    - Is there pain when you walk long distances?
+- intent: GENERAL_moving_to_physicals
+  examples: |
+    - Now just move on to examine you.
+    - Let's do some physicals
+    - Ok, we are done. I'll like to do some physical examinations on you now.
+    - Now I'll move on to examine you.
+    - I think I'll proceed to examine you if that's fine.
+    - Can I take a look at it through physical examination?
+    - Let's move onto physical examination.
+    - Let's move on to the physical examination.
+    - Ok lets move on to physicals.
+    - Ok lets do physical examination shall we
+    - Physical examination.
+    - Ok lets move on physicals shall we?
+    - Sure, can I take a look? Physical examination.
+    - Ok lets move on to the physical examination.
+    - I'd like to examine you.
+    - Let's move on physicals
+    - I want to check your physicals.
+    - Physicals
+    - Ok, I will now be examining you.
+    - I'll examine you today.
+    - Okay let's proceed with the examination.
+    - Alright, let's move on to a physical examination.
+    - Alright thank you I will move on to examine your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"}
+    - Ok, let's start a physical examination.
+    - Let's move on to physicals
+    - Okay I think I'll go ahead and examine you.
+    - Alright, let's move on to the physical examination.
+- intent: SHO_occupation
+  examples: |
+    - What is your job?
+    - So tell me Mandy, what do you work as?
+    - Can I ask what do you work as?
+    - Can I know what is your current occupation?
+    - What is your occupation?
+    - What kind of work do you do?
+    - May I ask what are you working as?
+    - Mandy, what do you work as?
+    - What do you do?
+    - Auntie what is your work?
+    - So what do you work as Mandy?
+    - May I know what you work as?
+    - Now to find out more about your lifestyle, what do you work as?
+    - Could you tell me about your job.
+    - Auntie what is your job?
+    - What are you working as?
+    - May I ask what you work as?
+    - Can I know what is your job?
+    - Can you tell me your work?
+    - What do you work as Mandy?
+    - What work do you do?
+    - What do you work as?
+    - What do you do for a living?
+    - I see. May I know what do you work as?
+    - Could you tell me a bit about your job.
+    - What kind of work?
+    - What kind of job?
+- intent: HPIC_pain_burning_tingling
+  examples: |
+    - Is there any burning feeling in your [leg](back_or_leg)?
+    - Do you feel like there is a poking sensation?
+    - Do you feel any tingling sensations?
+    - Is there ever a burning sensation down your [leg](back_or_leg)?
+    - Do you ever experience a burning sensation?
+    - Do you feel like you have any pins and needles feeling?
+    - Any sensation of ants crawling.
+    - Does it feel like there is a burning sensation in your [leg](back_or_leg)?
+    - Any sensation of fluid?
+    - Any tingling sensation?
+    - Does it feel like someone is poking your [leg](back_or_leg)?
+    - Any tingling sensation down your [leg](back_or_leg)?
+    - Do you feel any tingling feeling?
+    - Is there a burning sensation?
+    - Do you feel any ant bite sensation?
+    - Do you sometimes feel as if there is water flowing down your [leg](back_or_leg)?
+    - Does the pain feel like pins and needle?
+    - Any tingling sensation down your [back](back_or_leg)?
+    - Any sensation of ants biting?
+    - Does it feel like water running down?
+    - Any ant crawling, pins and needle?
+    - Do you feel any tingly feeling?
+    - Do you suggest you like this water flowing down your [leg](back_or_leg)?
+    - Any pin and needles feeling in your [leg](back_or_leg)?
+    - Any ant crawling or pins and needle feeling at your [leg](back_or_leg)?
+    - Do you feel any ant crawling or pins and needle feeling?
+    - Do you feel like there is a burning sensation?
+    - Do you feel like water trickling down?
+- intent: SHLC_living_conditions
+  examples: |
+    - Do you have someone living with you?
+    - Are you currently staying with anybody?
+    - Who do you live with?
+    - Mandy, before we end. I just wanted to find out who are you living with?
+    - Do you stay with any of your family members at home.
+    - How is your living conditions?
+    - What are you staying in?
+    - Do you stay with anyone at home.
+    - Do you stay alone?
+    - Are you living with anyone now Mandy?
+    - Who do you live.
+    - What kind of housing do you live in?
+    - How are your living conditions?
+    - Do you live alone?
+    - Who do you stay with?
+    - Do you have someone staying with you?
+    - Can I just check do you stay alone?
+    - How is your living condition
+    - I just wanted to find out who are you living with?
+    - Where do you stay?
+    - Who are you living with?
+    - How is your living situation?
+    - Can I know who do you live with?
+    - Who do you stay with at home?
+    - Where do you live?
+    - Do you live with someone?
+    - Are you currently staying with anyone?
+    - Who lives with you?
+- intent: HPIS_clarify_leg
+  examples: |
+    - Is your right [leg](back_or_leg) hurting.
+    - Just to confirm, you only feel pain in the right?
+    - Which [leg](back_or_leg) do you have pain?
+    - Is there pain in your other [leg](back_or_leg)?
+    - Are you sure it's only on your right [leg](back_or_leg)?
+    - The pain is only on your right [leg](back_or_leg)?
+    - How about your left [leg](back_or_leg)?
+    - There is no pain in your left [leg](back_or_leg)?
+    - Is it only on your right [leg](back_or_leg)?
+    - Which [leg](back_or_leg) is it?
+    - The pain is only on your right?
+    - Do you have pain in your left [leg](back_or_leg)?
+    - Is your left [leg](back_or_leg) painful?
+    - Is it your left [leg](back_or_leg) or right [leg](back_or_leg)?
+    - Your left [leg](back_or_leg) is not painful?
+    - Which [leg](back_or_leg) is more painful?
+    - So no pain on your left [leg](back_or_leg)?
+    - Do you have pain on the other side
+    - So you do not feel pain in your left [leg](back_or_leg)?
+    - Your left [leg](back_or_leg) is ok?
+    - So there is no pain in your left [leg](back_or_leg)?
+    - So just to check, no pain in your right?
+    - Any pain in your left [leg](back_or_leg)?
+    - Which is the [leg](back_or_leg) that is hurting.
+    - Which [leg](back_or_leg) do you feel more pain?
+    - How about your other [leg](back_or_leg)?
+    - Which [leg](back_or_leg) hurts.
+    - Which [leg](back_or_leg) is the pain?
+    - So no pain on your left?
+    - Right, is it confined to the right leg only?
+- intent: HPIO_is_pain_getting_worse
+  examples: |
+    - Did it get worse over half the year?
+    - Does the [leg](back_or_leg) pain get worse over the course of the day?
+    - Is the [leg](back_or_leg) pain then the same as the pain now?
+    - Has the pain been progressively getting worse?
+    - How did the pain changed in time?
+    - Is the pain getting worse?
+    - Is the [back](back_or_leg) pain then the same as the pain now?
+    - Is the [back](back_or_leg) pain getting worse?
+    - Did the pain get worse over six months.
+    - How did the pain progress?
+    - Has it gotten worse since then?
+    - How did it progress
+    - Is the [back](back_or_leg) pain getting worse over the past six months?
+    - Is it getting worse
+    - Does the [back](back_or_leg) pain get worse over the course of the day?
+    - Is the pain getting worse
+    - Has your [leg](back_or_leg) pain been getting worse?
+    - Is the [leg](back_or_leg) pain getting worse?
+    - Has it gotten worse recently?
+    - Has your [back](back_or_leg) pain been getting worse?
+    - I see. is it getting worse?
+    - Does the [leg](back_or_leg) pain get worse over time?
+    - Is it been getting worse?
+    - Has it been getting worse?
+    - Does the [back](back_or_leg) pain get worse over time?
+    - Is the pain worsening since then?
+    - Has the pain changed since 6 months ago? or has it remained the same?
+    - Is the pain the same now as 6 months ago?
+    - Has it gotten worse?
+    - Did your pain get worse over the six months.
+- intent: SHO_occupation_scope
+  examples: |
+    - What are some things you have to do for your job?
+    - Is there a lot of bending involved?
+    - Do you have to carry many heavy objects when you work?
+    - Does your job require you to carry heavy things at work?
+    - Do you have to carry heavy objects when you work?
+    - Have you been carrying heavy things at work?
+    - What do you have to do in your job?
+    - What do you do in the shopping center?
+    - Can you share what does your job require you to do?
+    - What do you have to do during your work schedule?
+    - What do you have to do as a cleaner?
+    - Do you have to move around a lot at work?
+    - What else do you have to do at work?
+    - What do you do as a cleaner?
+    - What is a typical day as part of your job?
+    - Do you carry many heavy objects when you work?
+    - Would you like to share with me what do you do as a cleaner?
+    - Does your job require you to move around a lot?
+    - Can you share what are some of your job scope?
+    - Do you move around a lot at work?
+    - What do you have to do as part of your job?
+    - Is there a lot of bending involved in your job?
+    - What is it like during your work day?
+    - How do you do your job?
+    - Is there a lot of physical activities at work?
+    - What do you do in a shopping center?
+    - What are some things you have to do during your job?
+    - What are some things you have to do as part of your job?
+    - Is there a lot of moving around at work?
+    - What are some things you have to do at work?
+- intent: PH_scans
+  examples: |
+    - So have you had any scans prior to this visit?
+    - Any X Ray scans done?
+    - So it seems like you have not gotten any X Rays, is that correct?
+    - Did any X Ray?
+    - Have you ever had a magnetic resonance imaging before?
+    - Have you had any scans or tests?
+    - Any MRI scans last time?
+    - Any spine imaging?
+    - Have you ever had an X Ray?
+    - Have you done any MRI scans?
+    - Have you done any imaging?
+    - Have you went through X Ray?
+    - Any scans done before this?
+    - Have you done a bone density scan?
+    - So have you done any kinds of imaging before?
+    - Any MRI scans done?
+    - Auntie, have you gone through any test from my colleagues?
+    - Did you do any MRIs previously?
+    - Have you done any x-rey?
+    - Have you ever had a magnetic resonance image performed?
+    - Have you ever done a bone density scan before?
+    - Have you done any X Ray?
+    - Did you do X Ray?
+    - Have you went through any imaging?
+    - Done any scans?
+    - Did any imaging?
+    - You done any X Ray?
+    - Is X Ray done for you?
+    - Have you done any previous test recently
+    - Have you ever had a MRI?
+    - Have you done any scans so far?
+- intent: HPISE_max_walking_distance
+  examples: |
+    - How long is this distance usually.
+    - How many busstops can you walk?
+    - How far.
+    - Do you know how many metres can you walk before it starts to hurt?
+    - How many busstops can you walk with you [leg](back_or_leg) pain?
+    - How far do you feel the pain?
+    - How long can you walk before the pain comes?
+    - How about in terms of the distance that you can walk?
+    - So how long can you walk before the pain comes?
+    - How far can you walk?
+    - So how long can you walk before it starts to be painful?
+    - Do you know what is your maximum walking distance?
+    - Could you tell me how far you can walk?
+    - How long can you walk before it starts to be painful?
+    - Tell me what is the longest you can walk?
+    - What is the furthest distance you are able to walk?
+    - How many metres can you walk?
+    - What is the furthest you can walk?
+    - How about in terms of the maximum distance that you can walk.
+    - What distance do you usually walk before you experience this pain?
+    - What is the furthest distance you can walk, in terms of busstops?
+    - Can you share how far you can walk?
+    - So how long is this distance usually?
+    - What is the longest distance you are able to walk?
+    - How long do you walk for before you experience this pain?
+    - What is the furthest you can walk before it starts to hurt?
+    - What is the furthest distance you can walk before the pain becomes unbearable?
+    - How far can you walk before it starts to hurt badly?
+    - What is the furthest distance you can travel?
+    - Do you know how far can you walk?
+    - How far before your pain comes on?
+    - How about the max distance that you can walk.
+- intent: HPI_similar_pains_in_the_past
+  examples: |
+    - Have you ever felt this pain?
+    - Did you experience any pain before working as a cleaner?
+    - Has this [leg](back_or_leg) and back pain happened previously?
+    - Is this your first time coming in for this pain?
+    - Was there any similar episodes of this pain?
+    - Did you experience this before?
+    - Have you ever experienced something like this in the past?
+    - Did you have this pain in the past?
+    - Have you felt this pain before?
+    - Have you had such pains before?
+    - Have you ever felt this pain last time?
+    - Is this the first time you've ever had anything like this?
+    - Is this the first time you have experienced [leg](back_or_leg) pain?
+    - Did you have any similar pain last time?
+    - Have you ever felt this pain before?
+    - Have you had this problem before?
+    - Is this the first time you have experienced [back](back_or_leg) pain?
+    - Is this the first time you have had this pain?
+    - Any similar pains in the past?
+    - Is this the first time you are coming in with this pain?
+    - Is this the first time you have experienced this pain?
+    - Did you experience any pain before you worked?
+    - Have you experienced a similar [back](back_or_leg) pain prior to this?
+    - Have you experienced any similar pains in the past?
+    - This is the first time you've ever had anything like this.
+    - Any past history of similar pains?
+    - Has this leg and [back](back_or_leg) pain happened previously?
+    - Did you have anything like this in the past?
+    - Did you have anything similar to this last time?
+    - Do you experience pain before you worked as a cleaner?
+    - Is this the first time you have felt this?
+    - Have you experienced this pain before?
+- intent: PH_how_is_patient_coping
+  examples: |
+    - How do you relieve the pain?
+    - Have you applied anything to your [leg](back_or_leg) before for the pain?
+    - What have you done to relieve the pain?
+    - What can I do to relieve my pain?
+    - Did you try any treatment?
+    - How do I relieve pain?
+    - How have you been treating your [leg](back_or_leg) pain?
+    - Okay what do you do when the pain comes?
+    - What have you tried to relieve the pain?
+    - Have you done anything for your pain?
+    - Have you been coping well with this?
+    - How have you been treating your [back](back_or_leg) pain?
+    - And what have you done to try and relieve the pain?
+    - What do you do when the pain comes about?
+    - How are you handling the pain?
+    - Have you used any treatment for your pain before?
+    - What are you using to deal with your [leg](back_or_leg) pain?
+    - What have you used to relieve the pain?
+    - How are you coping with this?
+    - What have you used so far for the pain?
+    - What are you doing to cope with the pain?
+    - What have you done about the [leg](back_or_leg) so far?
+    - What are you doing to relieve the pain?
+    - What are you using to deal with your [back](back_or_leg) pain?
+    - Have you ever had a treatment for your pain?
+    - How have you been coping with this pains?
+    - Okay and what do you do when the pain comes?
+    - Are you doing anything to manage the pain?
+    - What do you do when you feel the pain?
+    - Have you applied anything to your [back](back_or_leg) before for the pain?
+    - Have you tried getting any treatment for your pain?
+    - How are you coping?
+- intent: SRRHEU_butt_groin_sensation
+  examples: |
+    - Is there any sensation over your buttox when you pass motion?
+    - Are you able to feel the toilet paper when you wipe your buttock?
+    - Do you have any numbness over your buttox where your pass motion?
+    - Do you notice difference in your lower abdomen area?
+    - When you wipe after going to the toilet, does it feel different down below?
+    - Do you notice if you have a loss of sensation in the groin area?
+    - Can you feel the toilet paper when you wipe your buttock?
+    - When you pass motion and wipe your buttox, do you feel less sensation.
+    - Do you notice difference in your groin area?
+    - Can you describe your feeling for you groin area?
+    - Do you notice a change of sensation in your buttock area?
+    - Do you notice a change in sensation in your bottom area?
+    - Do you notice difference in your bottom area?
+    - Any numbness in the anal area.
+    - Do you notice anything in your buttock area?
+    - When you pass motion and use a tissue, do you feel like your sensation is a bit less.
+    - Is there any sensation over your buttocks?
+    - Any numbness in the anal area?
+    - Is there numbness over your buttox when you pass motion.
+    - Are you able to feel sensations in your bottom area?
+    - Do you notice difference in your butt area?
+    - Can you describe your feeling for your butt area?
+    - Any changes to your butt areas?
+    - Are you able to feel sensations in your buttock area?
+    - Is there any numbness or sensation over your buttox?
+    - Can you feel the tissue paper when you wipe
+    - Any changes to your buttock area?
+    - Any numbness around the anus?
+    - When you pass motion and use a tissue to wipe your buttocks, do you feel less sensation.
+    - Do you have any numbness over your anus region?
+    - Any numbness around the anus.
+    - Any changes in your groin area?
+    - Do you notice a change in sensation in your buttock area?
+- intent: HPI_symptoms_weakness
+  examples: |
+    - Do you have weakness in your [leg](back_or_leg)?
+    - Does your [leg](back_or_leg) feel weak
+    - Do you feel a loss of strength suddenly.
+    - Do you feel a loss of strength suddenly?
+    - Do you feel any weak feeling.
+    - Do you have any weakness in your left [leg](back_or_leg).
+    - Okay, do you notice any weakness.
+    - Do you experience any weakness in your [leg](back_or_leg)?
+    - Do you have a weakness in your right [leg](back_or_leg).
+    - Do you have a weakness in your [leg](back_or_leg)?
+    - Do you feel weak in your [legs]{"entity": "back_or_leg", "value": "leg"}.
+    - Do you suddenly feel a loss of strength?
+    - Do you feel week in your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Feeling weakness in your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Do you have weakness in the [leg](back_or_leg)?
+    - Do you have any weak feeling.
+    - Do you experience weakness in your [leg](back_or_leg)?
+    - Is there any weakness?
+    - Do you have any weakness in your right [leg](back_or_leg)?
+    - Any weakness in your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Do you have a weakness in your left [leg](back_or_leg)?
+    - Do you have any weakness in your [leg](back_or_leg).
+    - Do you notice any weakness?
+    - Do you feel any weakness.
+    - Do you have any weakness in your right [leg](back_or_leg).
+    - Do you have any weakness in the [leg](back_or_leg).
+    - Do you feel any weakness?
+    - Do you have any weakness in the [leg](back_or_leg)?
+    - Do you have any weakness in your [leg](back_or_leg)?
+    - Feeling weakness in your [leg](back_or_leg)?
+    - Do you feel any weakness in your [leg](back_or_leg)?
+    - Do you have any weakness in your left [leg](back_or_leg)?
+    - Do you experience any weakness in your [leg](back_or_leg).
+    - OK, along with this pain is there any weakness.
+    - How about weakness.
+- intent: PH_medical_problems
+  examples: |
+    - Any longterm medical conditions?
+    - Besides this do you have any medical history?
+    - Conditions I should be aware of.
+    - Other than this, have you have any long term ilness?
+    - Do you have long term health problems?
+    - Any chronic illness?
+    - Any prior medical conditions?
+    - Any health conditions?
+    - Do you have blood related disease?
+    - Do you have long term medical conditions?
+    - Tell me about your past health?
+    - Have you had any medical history?
+    - Do you have any long term illnesses?
+    - Any chronic conditions I should be aware of?
+    - Do you have chronic illness?
+    - Medical problems?
+    - Do you have any chronic illnesses?
+    - Any longterm illness?
+    - Medical ailments?
+    - Any chronic diseases?
+    - Any medical problems?
+    - Any other health conditions I should be aware of?
+    - Any bad illness?
+    - Ok, how about any past medical problems? everything ok?
+    - Do you have long term health conditions?
+    - Any bad illness before the pain started?
+    - Any medical conditions?
+    - Do you have any long term illness?
+    - Do you have any long term medical conditions?
+    - Any past health history?
+    - Ok so any medical history?
+    - Do you have any long term health problems?
+    - Do you have any past medical history
+    - Any past medical history?
+    - Any long term health problems?
+    - Any kind of medical issues before?
+    - Do you have any medical conditions?
+- intent: PS_ask_more_about_patient_problem
+  examples: |
+    - Tell me more about why you are not feeling well
+    - Can you tell me about your problem.
+    - OK, I understand. Can you tell me what happened right from the beginning.
+    - Could you specify?
+    - Tell me more about why you are feeling like this
+    - Please tell me more about your [leg](back_or_leg).
+    - Can you specify?
+    - Why is that so?
+    - Ok, sure. can you tell me more?
+    - So tell me more about your [back](back_or_leg).
+    - Why is that?
+    - Is there anything you can share with me?
+    - Please tell me more
+    - Can you tell me more
+    - Ok, can you tell me more about your [leg](back_or_leg)?
+    - Ok, can you tell me more about your [back](back_or_leg)?
+    - Tell me more about your [back](back_or_leg).
+    - Tell me a little more about this pain.
+    - Is there anything else about this [leg](back_or_leg) pain?
+    - Ok, I understand. Can you tell me what happened right from the beginning?
+    - Tell me somemore.
+    - Tell me some more.
+    - Is there anything else about this [back](back_or_leg) pain?
+    - Is there anything else about this [backache]{"entity": "back_or_leg", "value": "back"}?
+    - Tell me more.
+    - Understand you have this issue of this [back](back_or_leg) as well as some [leg](back_or_leg) pain for six months. Could you tell me a bit more exactly.
+    - Can you tell me what is your problem?
+    - Would you like to tell me more.
+    - And please tell me more about your [leg](back_or_leg).
+    - Can you tell me what happened right from the beginning.
+    - And please tell me more about your [back](back_or_leg).
+    - Could you tell me a bit more exactly.
+    - Tell me more about your [leg](back_or_leg).
+    - So auntie can you tell me more about your [back](back_or_leg) and [leg](back_or_leg)?
+    - So tell me more about your [leg](back_or_leg).
+    - Can you tell me more about your [back](back_or_leg)?
+    - Tell me a little more.
+    - Please tell me more about your [back](back_or_leg).
+    - Can you tell me a bit more exactly.
+- intent: HPISE_pain_vas
+  examples: |
+    - If you can rate the pain from 1 to 10, how would you rate it?
+    - From a scale of 1 to 10, how painful is it?
+    - So on a scale of zero to 10, zero being no pain at all and 10 being the worst pain you ever felt, how would you rate your pain?
+    - Ok so from a scale from 1 to 10, how would you rate this pain?
+    - On a scale of 1 to 10, how would you rate this pain?
+    - See the diagram. can you estimate how bad is the [back](back_or_leg) pain, from 1 to 10?
+    - On a scale of 0 to 10, with 0 being no pain, and 10 being the worst pain you’ve ever felt, how much would you rate this pain?
+    - Ok, can you rate the pain from 1 to 10?
+    - See the diagram. can you estimate how bad is the [leg](back_or_leg) pain, from 1 to 10?
+    - How bad is the pain on a scale of one to ten
+    - Please take a look at the chart in front of you. how would rate the pain, from 1 to 10?
+    - Look at the chart. Can you rate the [back](back_or_leg) pain from 1 to 10?
+    - How bad is the pain from 1 to 10 now?
+    - Take a look at the chart. how painful is your [leg](back_or_leg), from 1 to 10?
+    - Ok similarly, can you rate the pain from 1 to 10?
+    - On a scale of 1 to 10, how painful is it?
+    - Take a look at the chart. how painful is your [back](back_or_leg), from 1 to 10?
+    - This is how bad is the pain on a scale of one to 10.
+    - Ok if you were to rate this pain a 1 to10, how much would it be? You can look at the VAS chart for some reference.
+    - On a scale of zero to 10, zero being no pain and ten being the worse pain you've ever felt. How would you rate the pain?
+    - Okay, okay, so on a scale of 1 to 10, one being no pain, 10 being the worst pain in your life. How painful is this [leg](back_or_leg) pain?
+    - Can you rate the pain from 1 to 10?
+    - Looking at the chart, how would you rate the pain?
+    - So on a scale of 1 to 10, how would you rate your [leg](back_or_leg) pain?
+    - If you rate the pain from 1 to 10, what would you give now?
+    - On a scale of 1 to 10, how would you rate the pain on your [leg](back_or_leg)?
+    - Ok so from a scale from 1 to 10, how painful is it now?
+    - On a scale of 1 to 10, how would you rate the pin on your [leg](back_or_leg)?
+    - Can you tell me your pain score? How painful is it?
+    - On a scale of 1 to 10, one being no pain and 10 being the worst pain, how painful is it?
+    - From a scale of 1 to 10 with 1 being the least pain and 10 being the most pain, how painful is your [back](back_or_leg) now?
+    - Look at the chart in front of you, how would you rate your pain now?
+    - From this chart, how would you rate the [leg](back_or_leg) pain?
+    - Okay, okay, so on a scale of 1 to 10, one being no pain, 10 being the worst pain in your life. How painful is this [back](back_or_leg) pain?
+    - Look at the chart. Can you rate the [leg](back_or_leg) pain from 1 to 10?
+    - Ok, take a look at the chart in front of you. How much do you the pain is, from a scale of 1 to 10?
+    - So on a scale of 1 to 10, how would you rate the pain?
+    - On a scale of zero to 10, zero being no pain and 10 being the worse pain, how painful is it?
+    - On a scale of 1 to 10, how would you rate your [leg](back_or_leg) pain?
+- intent: HPI_symptoms_numbness
+  examples: |
+    - Do you have any numbness in your [leg](back_or_leg)?
+    - Do you have any numbness in your right [leg](back_or_leg)?
+    - OK, along with this pain is there any numbness.
+    - Do you feel any numb feeling.
+    - Any recent numbness in your [leg](back_or_leg)?
+    - Do you notice any numbing feeling?
+    - Is there any numbness?
+    - Do you feel any numbness?
+    - Do you notice any numbness?
+    - Is there any numbness in your [leg](back_or_leg).
+    - Is there numbness in your [leg](back_or_leg)?
+    - Does your right [leg](back_or_leg) feel numb.
+    - Is there numbness in the area.
+    - Do you notice any numbing feelings?
+    - Do you feel numb in your [legs]{"entity": "back_or_leg", "value": "leg"}.
+    - Do you feel numbness?
+    - How about numbness.
+    - Does your right [leg](back_or_leg) feel numb?
+    - Is there any feeling of numbness?
+    - Does your [leg](back_or_leg) feel numb
+    - Is there any numbness in your [leg](back_or_leg)?
+    - Do you have any numbness in your right [leg](back_or_leg).
+    - Any recent numbness in your limbs?
+    - Along with this pain, is there numbness.
+    - Any numbness in the area.
+    - Do you have numbness in your [leg](back_or_leg)?
+    - Can you feel your [leg](back_or_leg)?
+    - Ok then do you feel numb?
+    - Do you have numbness in your left [leg](back_or_leg)?
+    - Do you have any numbness in your [leg](back_or_leg).
+    - Ok, then do you feel any numbness?
+    - Ok, along with this pain is there numbness.
+    - Do you have any numb feeling.
+    - Is there any feeling of numb.
+    - Can you feel your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Is there any feeling of numbness.
+    - Do you have numbness over your illness region.
+    - Any recent numbness in your limbs.
+    - Do you have any numbness in your left [leg](back_or_leg).
+- intent: HPI_back_pain_sleep
+  examples: |
+    - Are you able to sleep?
+    - Is the pain causing you to wake up at night?
+    - Any pain when you sleep at night?
+    - Any pain at night?
+    - Does the [backache] (back_or_leg) prevent you from sleeping?
+    - Can you tell me if you experience a [back](back_or_leg) pain at night?
+    - Any pain when you sleep?
+    - Does it affect your sleep?
+    - Do you wake up from the pain at night?
+    - Do you wake up because of the pain at night?
+    - Any night pain?
+    - Is the pain affecting your sleep?
+    - Can you tell me if you experience a [leg](back_or_leg) pain at night?
+    - Does it hurt when you sleep at night?
+    - Does the [back](back_or_leg) pain wake you up at night?
+    - Is it causing you to wake up at night?
+    - Do you have any [backache](back_or_leg) at night that wakes you up from sleep?
+    - Do have your backache at night thats wakes you up from sleep?
+    - Does the [backache] disturb your sleep?
+    - Do you have [back](back_or_leg) ache and night that wakes up from sleep?
+    - Does your [back](back_or_leg) hurt at night when sleeping?
+    - Do you have back at night that wakes you up from sleep?
+    - Can you sleep properly with the pain?
+    - Does the [back] (back_or_leg) pain wake you up?
+    - Are you waking up at night because of the pain?
+    - Do you wake up at night from the [back] (back_or_leg) pain?
+    - Does pain affect your sleep?
+    - Does the pain wake you up from your sleep?
+    - Does your [back](back_or_leg) ache wake you up at night?
+    - Does the pain wake you up at night?
+    - Does pain wake you?
+    - Does your [leg](back_or_leg) hurt at night when sleeping?
+    - Are you able to sleep well?
+    - So does your [back](back_or_leg) wake you up at night?
+    - Does the pain wake you at night?
+    - Do you have the [backache](back_or_leg) then wakes up from sleep?
+    - Is it affecting your sleep?
+    - So does the backache wake you up at night.
+    - Do you feel the pain when you sleep?
+    - How about your sleep?
+- intent: HPIS_check_other_pain_location
+  examples: |
+    - Any other pain in other parts of your [leg](back_or_leg)?
+    - Is there anything else other than the pain?
+    - Is there any other discomfort other than your backache and pain?
+    - Ok, is there anything else bothering you other than the pain?
+    - Does it hurt anywhere else?
+    - Do you have any other aches or pains?
+    - Do you have pain when you bend your knee?
+    - Other than that, anything else?
+    - Do you have pain in your [calf](back_or_leg)?
+    - Any pain in your arms?
+    - Do you experience pain when you raise your leg?
+    - Do you have anything else besides the [back](back_or_leg) and the leg pain?
+    - I see. other than this pain, is there anything else?
+    - Any other pain in your [leg](back_or_leg)?
+    - Any other pain in the body?
+    - Do you have any other pain elsewhere?
+    - Do you feel any pain in other parts of your [leg](back_or_leg)?
+    - How about your hip?
+    - Is there anything else?
+    - Are you feeling any discomfort other than your backache and leg pain?
+    - Any pain in your upper [leg](back_or_leg)?
+    - Anything else affecting you other than the pain?
+    - Aside from the [back](back_or_leg) pain and [leg](back_or_leg) pain, is there anything else?
+    - I see. is there anything else?
+    - Is there any pain anywhere else?
+    - Anything else you would like to share?
+    - Is there anything else affecting you other than the pain?
+    - Aside from the back pain and [leg](back_or_leg) pain, is there anything else?
+    - Do you have anything else besides the [leg](back_or_leg) and back pain?
+    - Do you have pain when you raise your leg?
+    - Anything else you want to let me know?
+    - Anything else?
+    - Ok, is there anything else bothering you?
+    - Does your hip hurt?
+    - Is there any other pain besides your [back](back_or_leg) ache and [leg](back_or_leg) pain?
+    - I see. Other than this pain, is there anything else?
+    - Anything else you want to tell me?
+    - Aside from the [back](back_or_leg) and leg pain, is there anything elese?
+    - Anything else affecting you besides the pain
+    - Are you feeling any discomfort other than your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"} pain?
+    - Do you experience pain when you bend your knee?
+    - Any calf pain?
+- intent: GENERAL_opening_patient_problem
+  examples: |
+    - Could you tell me a bit more exactly what brought you here today?
+    - What is troubling you?
+    - Please take a seat how may I help you today
+    - I see you have sat, how may I help you today
+    - Hi Mandy, my name is. I'm a year three medical student. What brings you here today?
+    - Hi, how can i help you today?
+    - So what seems to the problem here?
+    - I'm a medical student at the hospital, how may I help you?
+    - What brings you to the hospital today?
+    - Can I check what brought you here today?
+    - Why did you come here today?
+    - Hi, how can i help you today.
+    - What seems to be the issue here today?
+    - What brings you here today Mandy?
+    - Hi mandy, what brings you here today?
+    - What brings you here mandy?
+    - I see. what seems to be the problem?
+    - What's wrong?
+    - How may i help you today
+    - What is wrong with you?
+    - How can i help you today
+    - Ok great, how can I help you today?
+    - What brings you here?
+    - What brings you here today?
+    - What brings you here today, Mandy?
+    - Hello, I'm one of the medical students. How may I help you today.
+    - Please take a seat how can I help you
+    - Can you tell me what brings you here?
+    - Hi mandy, what brings you to the hospital today
+    - What brings you to the hospital today
+    - What happened?
+    - Ok so how  can I help you Mandy?
+    - Can you tell me about your pain?
+    - What happened to you, Madam Tan?
+    - What brings you here
+    - What seems to be the problem?
+    - Hi im dr mandy, how can i help you?
+    - What brings you to the clinic today?
+    - Hi, What brings you to the clinic today?
+    - Alright mandy, what's troubling you?
+    - Alright Mandy, what brings you here today?
+    - What can i do for you?
+    - So what brings you here today with Mandy?
+    - Oh what happened.
+    - What seems to be the issue
+- intent: HPIA_rest_makes_pain_better
+  examples: |
+    - Do you need to sit down before the pain disappears?
+    - Do you feel the pain go away when you sit?
+    - Do You feel any pain in your [leg](back_or_leg) when you rest?
+    - Ok then when you sleep, do you get woken up by the pain? Or it hurts when you lie down?
+    - So do you have any pain when you're resting?
+    - Is there pain at rest
+    - Does it hurt when you sleep?
+    - Does it hurt when you sleep or rest?
+    - Does it hurt less when you take a break?
+    - Do you have any pain when you're resting?
+    - Does it hurt when you sleep or lie down?
+    - Is it less painful when you rest?
+    - Does your [leg](back_or_leg) hurt when you lie down or sit?
+    - Does the [back](back_or_leg) pain come back during the night?
+    - Does it hurt when you stop moving.
+    - Does the pain go away with some rest
+    - Do you feel you have to sit down bend your back forward to relieve the pain?
+    - Does it hurt during rest?
+    - Does the pain feel better when you sit?
+    - Does the pain feel better when you rest?
+    - Does it hurt when you rest?
+    - Does it hurt less when you rest?
+    - Does it hurt when you lie down or rest
+    - Do you feel the same pain when you lie down?
+    - Does the pain go away with rest?
+    - Does the [back](back_or_leg) hurt when you sleep?
+    - Does the [back](back_or_leg) hurt when you are seating?
+    - Does it hurt when you lie down or sleep?
+    - Does the pain on your [back](back_or_leg) come back when you sleep?
+    - Is it better when you rest?
+    - Ok, so you said that it hurts when you work. how about when you rest? Does it still hurt?
+    - Does your [back](back_or_leg) hurt when you rest?
+    - Do you have any pain when resting?
+    - Do you feel better when you rest?
+    - Do you feel any [back](back_or_leg) pain when you sleep?
+    - Does your [back](back_or_leg) hurt when you lie down?
+    - Does your [leg](back_or_leg) hurt when you rest?
+    - Does the [leg](back_or_leg) pain come back during the night?
+    - Does the pain go away after you rest?
+    - Is it better when you lie down?
+    - Does the pain on your [leg](back_or_leg) come back when you sleep?
+    - Does your [leg](back_or_leg) hurt when you lie down?
+    - Is it better when you sit?
+    - Is it better if you sit down on a chair?
+    - Does the [leg](back_or_leg) hurt when you are seating?
+    - Does the [leg](back_or_leg) hurt when you sleep?
+- intent: HPIE_pain_extension_or_flexion
+  examples: |
+    - Is your [back](back_or_leg) pain better when you bend forward?
+    - Does it hurt more when you bend your [leg](back_or_leg) forwards or backwards
+    - Then when you bend backwards or forwards, which one hurts more?
+    - What makes the pain worse for you?
+    - Does it hurt more when you bend forwards than backwards?
+    - Is it better when you bend forward?
+    - Does it get worse when you band backward than forwards?
+    - Does the pain feel better when you bend forwards or backward?
+    - Does it hurt more when you bend front or back?
+    - Does flexing your [back](back_or_leg) make the pain better or worse?
+    - Does it feel better when you bend backward?
+    - Does it hurt more when you straighten your [leg](back_or_leg) or bending it?
+    - Is there less pain when you lean backward.
+    - Does your pain feel better when you lean backward?
+    - Is the pain worse when bending forward or leaning [back](back_or_leg)?
+    - Does leaning forward make the pain better.
+    - Is there less pain when you lean forward.
+    - What makes the [back](back_or_leg) pain worse for you?
+    - Does it hurt when you bend forwards than backwards?
+    - Does your [leg](back_or_leg) hurt more when you bend backwards or forwards
+    - Is it worse on bending forward or backwards?
+    - Does it hurt worse bending forwards or backwards?
+    - Does the pain feel better when you bend forward?
+    - Does your [back](back_or_leg) hurt more when you bend backwards or forward
+    - Does it hurt more when you bend forwards or backwards?
+    - Does flexing make the pain better or worse?
+    - When you lean forward does the pain get better?
+    - Does it hurt more when you bend forwards?
+    - Does it feel better when you bend forward?
+    - Does leaning forwards make the pain better.
+    - Does your pain feel better when you lean forward?
+    - Is the pain worse when you bend backwards?
+    - Leaning forward, does it make your pain better.
+    - Does the pain get worse when you bend forwards or backwards?
+    - Does the pain feel better when you bend backward?
+    - Does it hurt more when you bend backwards or forwards
+    - Does it hurt more bending forward or backwards?
+    - Does bending backwards make your pain worse?
+    - Were you bending forwards?
+    - Does it hurt more when you extend your [leg](back_or_leg), or bending it?
+    - Does it get worse when you bend forward or backward?
+    - Does flexing your [back](back_or_leg) make the pain better?
+    - Ok, so when you have this pain, does it get worse when you bend your [leg](back_or_leg) forward or backwards?
+    - Is it better when you bend backwards?
+    - Is it worse on bending foward or backwards
+    - I see. Does bending your [leg](back_or_leg) alleviate the pain?
+- intent: HPI_affecting_daily_activities
+  examples: |
+    - Is it affecting your daily activities such as bathing or using the toilet?
+    - Is the pain affecting your general life?
+    - Do you need helping with showering or moving around.
+    - Does this pain cause any other problems in your daily activities?
+    - Has this pain impacted your everyday life?
+    - Does it affect your lifestyle?
+    - Do you require help with showering or eating?
+    - How about cooking?
+    - Is the pain affecting your lifestyle?
+    - Is your [leg](back_or_leg) pain affecting your daily living?
+    - Do you require any help with moving around?
+    - Is it affecting your daily activities?
+    - Is the pain affecting you and can you still cook?
+    - Is the pain affecting you at home?
+    - Do you need help moving around.
+    - Is your [leg](back_or_leg) pain affecting your life?
+    - How has this pain been affecting you?
+    - Has this pain impacted your daily activity?
+    - Does it affect your activities when you're walking around?
+    - How has your [leg](back_or_leg) pain and back pain been affecting your life?
+    - Is the pain affecting your life?
+    - Do you need help with showering or eating.
+    - How has the pain affected your activities in life?
+    - Is the pain affecting your life in general?
+    - Is it affecting your day to day a lot?
+    - Is the pain affecting your activites like bathing or cooking?
+    - Is this pain affecting your daily activities?
+    - How about your daily living?
+    - Does the pain affect your lifestyle?
+    - How about carrying out daily activities?
+    - How about cooking, are you still able to cook?
+    - Has this pain impacted your life?
+    - How has your leg pain and [back](back_or_leg) pain been affecting your life?
+    - Is your [back](back_or_leg) pain affecting your life?
+    - Is it affecting your activities like getting up, sitting down or using the toilet?
+    - Does it affect your activities?
+    - How have they affected your daily activities?
+    - Has this pain caused any inconvenience in your life?
+    - How about at home activities?
+    - Is the pain affecting your activities like getting up, sitting down, or using the toilet?
+    - How have the pain been affecting your life?
+    - Is it affecting your daily activities like getting up, sitting down or using the bathroom?
+    - Is this pain affecting your day to day?
+    - How about at home?
+    - How has the pain affected other aspects of your life?
+    - So you feel it's been affecting your life.
+- intent: HPIO_first_pain_trigger
+  examples: |
+    - How did the [backache]{"entity": "back_or_leg", "value": "back"} start?
+    - Was there anything when your pain first started?
+    - Do you remember what you were doing when your [back](back_or_leg) pain first started?
+    - Do you remember what you did to make the pain start?
+    - When did you first notice the pain?
+    - I see. When did you first notice the pain?
+    - Do you remember what you were doing when the [back](back_or_leg) and [leg](back_or_leg) pain first started?
+    - What were you doing when the [back](back_or_leg) pain and [leg](back_or_leg) pain first started?
+    - What were you doing when the [back](back_or_leg) pain started?
+    - What were you doing when the [leg](back_or_leg) pain started?
+    - How did the pain first start?
+    - Were you lifting any heavy objects when this [leg](back_or_leg) pain started?
+    - When did you first notice this pain?
+    - Was there any preceding incident when you first felt the pain.
+    - How did it first start?
+    - Were you carrying anything heavy when you first felt this pain?
+    - How did this [leg](back_or_leg) pain first started?
+    - Were you doing any activities when this [back](back_or_leg) pain started?
+    - What were you doing when the pain first started?
+    - How did the [back](back_or_leg) pain first arise?
+    - How did this [back](back_or_leg) pain start?
+    - Do you remember what caused the pain to start?
+    - How did the pain start?
+    - What were you doing when the [leg](back_or_leg) pain first started?
+    - Tell me more about the first time you had the [leg](back_or_leg) pain
+    - How did the [leg](back_or_leg) pain first arise?
+    - Was there any proceeding incident when the pain first started?
+    - Were you lifting any heavy objects when this [back](back_or_leg) pain started?
+    - So were you doing anything when this pain started?
+    - So this pain, was there anything that when it first started, was there anything preceding incident?
+    - When did you first notice it?
+    - Was there anything when it first started, was there any preceding incident.
+    - What were you doing when the [back](back_or_leg) pain first started?
+    - I see. When did you first notice this pain?
+    - Was there any preceding incident before your [back](back_or_leg) pain.
+    - How did this [leg](back_or_leg) pain start?
+    - Were you doing any activities when this [leg](back_or_leg) pain started?
+    - Tell me more about the first time you had the pain
+    - What happened the first time you felt this pain?
+    - Do you remember doing anything that caused the pain to begin?
+    - What were you doing when the pain first begin?
+    - How did this [back](back_or_leg) pain started?
+    - How did this [leg](back_or_leg) pain started?
+    - How did the pain first arise?
+    - Tell me more about the first time you had the [back](back_or_leg) pain
+    - Was there any preceding incident before your [leg](back_or_leg) pain.
+    - How did this [back](back_or_leg) pain first started?
+- intent: filler_phrase
+  examples: |
+    - Okay, it's fine.
+    - I understand.
+    - Okay, sure.
+    - So.
+    - All right.
+    - Alright, I see.
+    - Oh.
+    - Um.
+    - Ohhhhhhhhhhhhhhhhhhh
+    - Awesome.
+    - That's fine.
+    - Okay, no problem.
+    - Ok, got it.
+    - Okay.
+    - Mm, I see.
+    - What?
+    - It's fine.
+    - Nope.
+    - OKOK.
+    - Alright.
+    - OK.
+    - Alright,
+    - any.
+    - Kay.
+    - Err, alright.
+    - Okay, it's fine
+    - Ohh.
+    - Sorry.
+    - That's great.
+    - Key.
+    - Okay, okay.
+    - Ok and...
+    - No.
+    - Got it.
+    - Alright, OK so.
+    - Alright, ok.
+    - Ok.
+    - Yes, um.
+    - OK, I get it now.
+    - Ok, alright okay.
+    - Ok, erm.
+    - Alright good.
+    - No problem.
+    - Cool.
+    - Ok, so.
+    - Ohh okay.
+    - Okay and.
+    - Understand.
+- intent: GENERAL_changing_topic
+  examples: |
+    - Now I'm going to ask you about your social history
+    - Now i'd like to find out more about your health in general
+    - Ok now i'll move on to other questions
+    - Ok so I just have a few questions about your lifestyle because that can be affecting your pain.
+    - Now i'd like to find out more about other health information
+    - Now i'd like to move on to other questions
+    - Ok, will just ask a few questions for the rest of your body.
+    - Now i'd like to ask some other questions
+    - So now I'm going to ask you some general questions about your general health
+    - Now I'm going to ask you about your past medical history
+    - To better help you out I would like to know more about you.
+    - Okay, sorry just to find a little bit more about your pain again.
+    - Ok, we will try to address the pain as much as possible.
+    - Now I'm going to ask you some general questions about your general health
+    - Ok, now we'll move on to other questions
+    - Ok I would like to talk about your family history now
+    - Okay, so I'll just be asking about your lifestyle now.
+    - That's all right I would like to know more about your lifestyle.
+    - Let's proceed with your history taking
+    - I'll like to ask a few other questions about your medical history.
+    - Let's proceed with your history taking.
+    - Ok, let's move on to talk about your medications, because these may affect your current condition.
+    - Alright, thank you for your time, Mandy. I think I will now be proceeding to see Doctor and will come back to you in a few minutes. Is that okay.
+    - Ok, i think we are done with the first part, lets move on to talking about your pain, alright?
+    - Ok, I will ask you a bit more about your pain.
+    - Okay, sure, don't worry, will try to address the back pain as much as possible and what are your expectations for this consult.
+    - Ok so I just have a few questions about your lifestyle.
+    - Okay, I understand your feeling very distressed right now. Rest assured, I'm here to rest assured I'm here to help you to find out the cost of this pain.
+    - To help you I would like to know more about you.
+    - I'm going to ask you a bit more about your lifestyle now because sometimes our lifestyle can affect our diseases.
+    - Ok, now i'd like to ask some questions to make sure you're healthy overall
+    - Now we will move on to other health information
+    - Okay, yes Mandy sorry just to find out a little more about the pain again.
+    - Ok i think we are done with the history taking, now lets move on.
+    - I'm going to ask you some general questions about your health and these are important to know just to have a full picture of your overall health
+    - Now i'd like to find out more about your health in general as it may have an effect on what you're experiencing
+    - Let's continue your history.
+    - Now I'm going to ask you about your past medical history just to know what has been going on with you medically
+    - Okay I think we're done with the first part.
+    - Okay we will do our best to reduce your pain.
+    - Okay, we will do our best to reduce your pain
+    - So just a quick screen of your overall system just to make sure everything's okay.
+    - Alright I'll just ask a few other questions about your family history.
+    - Thank you for sharing, I'm going to ask you just a few more questions
+    - We will do our best to find out what is happening
+    - I'll just ask a few questions about your medical history.
+    - I would like to know more about you
+    - Okay I think we're done with the history.
+    - Now I'm going to ask you some general questions about your health and these are probably yes or no questions
+    - To better help you out, I would like to know more about you
+    - That's good. I would like to know more about your lifestyle.
+    - Alright I'll just ask a few other questions.
+    - Okay I would like to talk about your family history.
+    - Ok so I just have a few questions about your lifestyle because that can be affecting it.
+- intent: HPIR_pain_travel
+  examples: |
+    - Where does the pain travel to?
+    - Does the pain shoot down your [leg](back_or_leg)?
+    - Does the pain spread?
+    - Does the pain shoot down?
+    - Does the pain go down your whole right [leg](back_or_leg) all the way down to your foot?
+    - Do you feel the pain move anywhere?
+    - Does the [back](back_or_leg) pain radiate anywhere?
+    - Does the pain in your [leg](back_or_leg) move around?
+    - Does the pain shoot down your [back](back_or_leg)?
+    - Does the [leg](back_or_leg) pain shoot from anywhere?
+    - Does it spread?
+    - Does the pain on the [leg](back_or_leg) travel down?
+    - Does the pain move around?
+    - Can you show me where the pain shoots from and to?
+    - Does the pain stay in your [back](back_or_leg) or does it move anywhere.
+    - Where does the pain shoot to?
+    - Okay, so this pain does it move from your [back](back_or_leg) to your [leg](back_or_leg)?
+    - Do you feel the pain travelling anywhere else?
+    - Does the pain travel?
+    - Does the [back](back_or_leg) pain travel?
+    - Does the [leg](back_or_leg) pain travel?
+    - Does the pain travel anywhere else?
+    - How does the pain shoot down?
+    - Does the pain shoot down anywhere?
+    - Does it go to anywhere else?
+    - Any pain that shoots down your [leg](back_or_leg)?
+    - Does the pain radiate to other parts of your body?
+    - Do you feel the pain in your [leg](back_or_leg) travelling anywhere?
+    - Does the pain in your [back](back_or_leg) move around?
+    - Does the pain go to your [leg](back_or_leg)?
+    - Aside from the outer part of your leg does the [leg](back_or_leg) pain go anywhere else?
+    - Can you show me where the pain travels to?
+    - Where does the pain go to?
+    - Does the [back](back_or_leg) pain go anywhere else?
+    - Can you point to me how the pain shoots down your [leg](back_or_leg)?
+    - Does the [leg](back_or_leg) pain spread?
+    - How does the pain travel down your [leg](back_or_leg)?
+    - Can you tell me where the pain shoots from?
+    - Where does your [back](back_or_leg) pain shoot to?
+    - Does your [leg](back_or_leg) pain move anywhere else?
+    - Do you feel pain shooting down your [leg](back_or_leg)?
+    - Do you feel the pain move around?
+    - Does it go to the buttock?
+    - Does the pain go down your right [leg](back_or_leg)?
+    - Where does your [leg](back_or_leg) pain shoot to?
+    - Can you tell me where the pain travels down?
+    - Do you feel the pain in your [back](back_or_leg) travelling anywhere?
+    - Is it your whole right [leg](back_or_leg) all the way down to your foot?
+    - How does the pain shoot down your [leg](back_or_leg)?
+    - Does the [back](back_or_leg) pain radiate to other parts?
+    - Where does it go to?
+    - Does your [backache]{"entity": "back_or_leg", "value": "back"} go anywhere else?
+    - Does the pain go down your [leg](back_or_leg)?
+    - Do you feel the pain going down?
+    - Does the [back](back_or_leg) pain spread?
+- intent: HPIS_pain_location_specific
+  examples: |
+    - At the middle or is it more towards a certain site?
+    - Can you show me where the pain is?
+    - Can you show me where is your [leg](back_or_leg) pain please?
+    - Can you show me where your [back](back_or_leg) hurts exactly?
+    - Your [back](back_or_leg) pain, is it the middle or towards a certain side?
+    - Can you tell me where your [leg](back_or_leg) hurts exactly?
+    - Is it the middle or towards a certain side?
+    - So auntie can you point to me where the pain is?
+    - Left side right side?
+    - So its in the centre of your [back](back_or_leg)?
+    - Can you tell me where exactly is it?
+    - Can you show me where the [leg](back_or_leg) is?
+    - Could you tell me specifically where is the pain?
+    - The pain is at the middle or more towards a particular side.
+    - Is it at the thigh?
+    - Can you show me where is your [leg](back_or_leg) pain?
+    - Is it in the left or right of your [back](back_or_leg)?
+    - Can you show me where is your [back](back_or_leg) pain?
+    - Where exactly is the pain on your [leg](back_or_leg)?
+    - Is it your upper or lower [leg](back_or_leg)
+    - Can you show me where your [leg](back_or_leg) hurts exactly?
+    - Is it at your foot?
+    - Ok can you tell me where exactly the pain is?
+    - Is it on the centre or on the [back](back_or_leg)?
+    - Can you point to me where the pain is?
+    - Where exactly do you get this pain?
+    - Where is it exactly?
+    - Can you show me where is your [back](back_or_leg) pain please?
+    - Where exactly on your [back](back_or_leg)?
+    - Can you point to me where the [back](back_or_leg) pain is?
+    - Can you show me where the [back](back_or_leg) is?
+    - Can you show me where it hurts?
+    - Where exactly is the pain on your [back](back_or_leg)?
+    - Can you point to me where the [leg](back_or_leg) pain is?
+    - Can you point out your [leg](back_or_leg) pain?
+    - Can show me where the pain is?
+    - Is it anywhere in particular in your [leg](back_or_leg)?
+    - Where exactly is the pain?
+    - Can you tell me where exactly is the pain?
+    - Can you point it out to me?
+    - Can you point it to me?
+    - Which part of your lower [back](back_or_leg)?
+    - Is the pain at the left or right of your lower spine?
+    - So the centre of your [back](back_or_leg) hurts?
+    - Can you point to me where is it?
+    - Is it at the calf?
+    - Lower spine, left or right?
+    - Can you point to where the pain is?
+    - Ok wheres the pain in your [back](back_or_leg) exactly?
+    - Is it at the thigh or at the calf?
+    - Where exactly is the [leg](back_or_leg) pain?
+    - Is the pain at the middle or more towards a particular site?
+    - Is it anywhere in particular in your [leg](back_or_leg)? for example, at the side of your [leg](back_or_leg)?
+    - Is it anywhere in particular?
+    - Can you point to the location of the pain?
+    - Could you show me where it hurts
+- intent: HPIC_pain_characteristics
+  examples: |
+    - Can you decribe to me how it feels
+    - Can you decribe how your [leg](back_or_leg) feels?
+    - Could you tell me more about it.
+    - Can you tell me more about the pain in your [leg](back_or_leg)?
+    - Let's start by describing the pain for me
+    - Can you describe the pain?
+    - Can you describe how the pain feels?
+    - So how would you describe the pain?
+    - Can you tell me how it feels?
+    - How would you describe the pain in your [leg](back_or_leg)?
+    - Tell me more about this [backache]{"entity": "back_or_leg", "value": "back"}
+    - Ok tell me about your [back](back_or_leg) pain
+    - What kind of pain?
+    - Tell me about the [leg](back_or_leg) pain
+    - Can you describe the pain for me?
+    - How would you describe the pain in your [back](back_or_leg)?
+    - Can you tell me more about it.
+    - Ok tell me about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - Ok tell me about your [leg](back_or_leg) pain
+    - Tell me about your [leg](back_or_leg)
+    - Can you decribe to me how the pain feels?
+    - How would you describe the [leg](back_or_leg) pain
+    - How would you describe the [back](back_or_leg) pain?
+    - Can you tell me more about your [backache]{"entity": "back_or_leg", "value": "back"}?
+    - Ok can you decribe to me how it hurts
+    - Can you tell me more about the pain you're experiencing on your [leg](back_or_leg)?
+    - Tell me about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - Can you tell me more about this [leg](back_or_leg) pain?
+    - Can you tell me more about your [back](back_or_leg) pain
+    - Can you tell me how the pain feels like?
+    - Can you describe the pain to me?
+    - and how would you describe the pain?
+    - Do you feel any shooting pain?
+    - Tell me more about your [back](back_or_leg) pain?
+    - How does the pain feel like?
+    - Tell me more about your [leg](back_or_leg) pain.
+    - Can you tell me more about the pain you're experiencing on your [back](back_or_leg)?
+    - What type of pain?
+    - Can you describe to me in detail how the pain feels?
+    - Tell me more about your [leg](back_or_leg) pain first
+    - Tell me more about the [leg](back_or_leg) pain
+    - How does it feel like?
+    - What kind of [back](back_or_leg) pain?
+    - Can you tell me more about the pain you're experiencing's on your [leg](back_or_leg)?
+    - I see. can you tell me more about the [leg](back_or_leg) pain?
+    - Can you describe how it feels?
+    - So does this pain shoot down your [leg](back_or_leg)? Or its like a throbbing sensation?
+    - What kind of [leg](back_or_leg) pain
+    - Can you tell me about your [leg](back_or_leg) pain?
+    - Tell me about your [leg](back_or_leg) pain?
+    - Can you tell me more about the [back](back_or_leg) pain?
+    - Tell me more about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - Can you tell me more about your [leg](back_or_leg) pain?
+    - So can you tell me more about this pain on the [back](back_or_leg) and [leg](back_or_leg) that you are feeling?
+    - Please tell me more about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - Okay, can you describe the type of pain that you feel?
+- intent: HPIS_pain_location
+  examples: |
+    - Where is your [back](back_or_leg) aching?
+    - Can you tell me where is your [back](back_or_leg) pain?
+    - Where's the pain?
+    - Where is your [back](back_or_leg) ache?
+    - Where is the pain
+    - Where is your pain at?
+    - Can you tell me where is it?
+    - Does it hurt on the middle of your [leg](back_or_leg)?
+    - Where do you feel pain
+    - Where is at [back](back_or_leg) pain at?
+    - Can you tell me where the pain of your [leg](back_or_leg) is located at?
+    - Can you tell me where the pain of your [back](back_or_leg) is located?
+    - Where is your peanut
+    - Tell me where is the pain at.
+    - Where are you experiencing your pain.
+    - Can you tell me where is the [back](back_or_leg) pain?
+    - Where is the pain?
+    - Can you tell me where the [leg](back_or_leg) pain is?
+    - Pain in your [leg](back_or_leg)
+    - Can you tell me where the pain is?
+    - Where is this pain located at?
+    - Pain on your [leg](back_or_leg)
+    - So where does it hurt?
+    - Where does it hurt?
+    - Where is it?
+    - Can you tell me where the [back](back_or_leg) pain is?
+    - Does it hurt on the top of your [leg](back_or_leg)?
+    - Does it hurt on the top of your [back](back_or_leg)?
+    - How about the location of the pain?
+    - Which part of your [leg](back_or_leg) is painful?
+    - Where is the [leg](back_or_leg) pain at?
+    - Which part of your [back](back_or_leg) is painful?
+    - Does it hurt at the bottom of your [back](back_or_leg)?
+    - Is it anywhere on the [leg](back_or_leg)?
+    - Where is the [leg](back_or_leg) pain?
+    - Where is the [back](back_or_leg) pain at?
+    - Tell me where is your [leg](back_or_leg) pain.
+    - Where is the [backache](back_or_leg)?
+    - Can you tell me where your pain is at?
+    - Does it hurt at the bottom of your [leg](back_or_leg)?
+    - Where is the pain on your [back](back_or_leg)?
+    - Tell me where is your [back](back_or_leg) pain.
+    - Yes, so where do you experience this pain?
+    - Pain on the [leg](back_or_leg).
+    - Where is the pain on your [leg](back_or_leg)?
+    - Can you tell me where it is?
+    - Does it hurt on the middle of your [back](back_or_leg)?
+    - Where does it hurt on your [leg](back_or_leg)?
+    - Where is this [leg](back_or_leg) pain of yours?
+    - Where is the pain at?
+    - Where is this pain of yours located?
+    - Where is your [leg](back_or_leg) pain?
+    - Can you point to the location of the pain?
+    - Where do you feel the [back](back_or_leg) pain?
+    - Can you tell me the location of the pain on your [leg](back_or_leg)?
+    - Where does it hurt on your [back](back_or_leg)?
+    - Can you tell me where?
+    - Where do you feel pain in your [back](back_or_leg)
+    - Perhaps you can tell me where the pain is
+    - Where is your pain?
+    - Where is it
+- intent: out_of_scope
+  examples: |
+    - Oh my God wait wait wait.
+    - How bout?
+    - So you just have to speak as though you are talking to an actual patient in the clinic
+    - Yes you are
+    - Just talk like you would to an actual patient, try not to talk to anyone else
+    - Like bone and muscle, this person, this person comes in with like.
+    - Can you see what I'm seeing from outside
+    - Can you speak a bit louder
+    - Okay, that's great. That's great. I have no idea what to do for you. I'm sorry if I'm not a doctor.
+    - How about?
+    - Do you have?
+    - The moment you put on the headset and enter the clinic, you are not supposed to speak to anyone else outside since the headset will capture everything you are saying
+    - She just moved on to the next position.
+    - Right, yes, I do see that.
+    - Okay that's great.
+    - Okay, sure, I mean that's okay, can.
+    - I can see you now
+    - Nah
+    - I never know how do I get out of this thing?
+    - No, doesn't really affect me cause this app doesn't. This app doesn't use the thingy.
+    - Am I supposed to just speak?
+    - Yea I think it's fine.
+    - I need to write this down.
+    - I can see the control over there
+    - Do I just talk to her?
+    - Point to bye bye alright we can just go somewhere by Italy.
+    - Do I just keep continuing.
+    - How should I paraphrase that.
+    - I can see the data in front of me in this screen over here
+    - Oh no what do I do now do I just talk already or what
+    - No worries.
+    - Okay, so when you're in this screen, right? This is the patient and then you'll basically be talking to her during this program. So this like 3 times a week thing.
+    - You can start to look around your environment, when you are ready then just speak to the patient as you would in the clinic
+    - You
+    - What do I do now?
+    - I hate you too, like my nose.
+    - Whatever you're saying will be actually seen over here in the screen, and then you will just converse as though you are in the actual clinic. and then we were actually like be able to see what you're saying, what the patient is saying, and then this data will be taken and used for further training to improve the model.
+    - Okay thanks for showing me.
+    - Do I need to do a certain task.
+    - I'm worried.
+    - Do I just keep continuing. Or do I need to do a certain task.
+    - Um, OK, so let me just I case that so for example like hello.
+    - Okay, shooting pain ah.
+    - Yeah, I guess so
+    - okay, do a lot wrong.
+    - Sorry I don't understand.
+    - We saw so yeah.
+    - Hello can you hear me?
+    - Have you had any?
+    - A few years, okay?
+    - I don't know
+    - No, I don't have proceed with this case Ora.
+    - Sorry never mind.
+    - Well, I don't know proceed this thing.
+    - Okay thanks.
+    - 17152
+    - Exit
+    - Okay, so this pain.
+    - Ok, you can try saying something like
+    - Wow ok I'm in the scene already and I see the patient in front of me. Do I just talk to her already or what
+    - So for example, I would say something like
+    - Wow
+- intent: PH_injuries
+  examples: |
+    - Any injuries?
+    - Was there any injury to your [back](back_or_leg)?
+    - Did you have any history of injury to your [back](back_or_leg)?
+    - Did you have any history of injury to your [back](back_or_leg) before?
+    - Was there any trauma to your [back](back_or_leg) or [leg](back_or_leg)?
+    - Did you fall down recently?
+    - Did you fall down before you had a [leg](back_or_leg) pain?
+    - Did you fall recently?
+    - Any trauma to your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"} or to your [legs]{"entity": "back_or_leg", "value": "leg"}?
+    - Any falls recently?
+    - Recently did you injure any part of your body.
+    - Did you injure your [back](back_or_leg) in the past?
+    - Do you have recent falls?
+    - Did you have any [back](back_or_leg) injury?
+    - Did you have any injury to your [back](back_or_leg)?
+    - Do you have any previous [back](back_or_leg) injuries that I should know of?
+    - Any pathological fractures?
+    - Was there any trauma to your [back](back_or_leg)?
+    - Have you had any falls recently?
+    - So do you have any history of previous falls also?
+    - Did you hit your [leg](back_or_leg)?
+    - Did you have any falls or injury to your [back](back_or_leg) recently?
+    - Do you fall down recently?
+    - Did you injure yourself recently?
+    - Was there any trauma to your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"}?
+    - Have you sprained your [back](back_or_leg)?
+    - Did you have any injuries to your [leg](back_or_leg) previously?
+    - Did you have a fall recently?
+    - Did you sprain your [leg](back_or_leg)?
+    - Was there any injury to your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"}?
+    - Did you hit your [back](back_or_leg)?
+    - Did you fall down before the pain?
+    - Was there any incident before your [back](back_or_leg) started hurting?
+    - Do you have any injuries?
+    - Fall down
+    - Was there any injury to your [leg](back_or_leg)?
+    - Have you had a fall recently?
+    - Did you injure your [back](back_or_leg) before this?
+    - Do you hurt yourself recently?
+    - Did you injure any part of your body.
+    - Is there any falls recently?
+    - Was there any injury to your [back](back_or_leg) or [leg](back_or_leg)?
+    - Have you fallen before Mandy?
+    - Did you fall down before you had a [back](back_or_leg) pain?
+    - Was there any incident that happened before your pain started?
+    - Was there any trauma to your [leg](back_or_leg)?
+    - Any previous injuries?
+    - Have you injured your [back](back_or_leg) before?
+    - Did you have any [leg](back_or_leg) injury?
+    - Did you have recent falls?
+    - Did you fall?
+    - Did you have injure your [back](back_or_leg) before this?
+    - Did you sprain your [back](back_or_leg)?
+    - Did you have any injury to your [back](back_or_leg) before?
+    - Did you hit yourself recently?
+    - Were you injured before?
+    - Have you sprained your [leg](back_or_leg)?
+    - Did you hurt yourself recently?
+    - Was there any incident before your [leg](back_or_leg) started hurting?
+    - Any trauma to your [leg](back_or_leg)?
+    - Any previous traumas?
+    - Any trauma to your [back](back_or_leg)?
+    - Did you fall down?
+    - So now do you have any history of previous falls also.
+    - Did you injure your [back](back_or_leg) before?
+- intent: HPIO_pain_trigger
+  examples: |
+    - Is there anything that triggers it?
+    - When does the pain come on?
+    - Is it movement that triggers your [leg](back_or_leg) pain?
+    - When do you get the [leg](back_or_leg) pain?
+    - What triggers the [back](back_or_leg) pain?
+    - When do you get the [back](back_or_leg) pain?
+    - What sets off the pain?
+    - What makes the pain come on?
+    - What causes your [leg](back_or_leg) pain?
+    - Is it movement that causes your [back](back_or_leg) pain?
+    - Were you perhaps carrying something heavy when you experience the pain?
+    - Could you tell me when the pain started?
+    - Do you notice any particular triggers for the pain?
+    - When did you feel [back](back_or_leg) pain?
+    - What causes the pain?
+    - What do you do that makes the pain happen?
+    - Do you notice any particular triggers for the [leg](back_or_leg) pain?
+    - Did something significant happen to cause this pain.
+    - Is it movement that causes your pain?
+    - When does the pain come about?
+    - When do your experience this pain?
+    - Was there something significant that happened to cause this pain.
+    - Is there something that you do that would trigger the pain?
+    - How did the [back](back_or_leg) pain arise?
+    - What triggers the pain?
+    - Could you tell me how the [leg](back_or_leg) pain comes on?
+    - When do you experience the [leg](back_or_leg) pain?
+    - Is there anything that triggers the pain?
+    - When do you get the pain?
+    - Do you notice any particular triggers for the [back](back_or_leg) pain?
+    - When is your [back](back_or_leg) painful?
+    - When is the [leg](back_or_leg) painful?
+    - Could you tell me how the [back](back_or_leg) pain comes on?
+    - Was there any significant event that happened before you experienced this pain?
+    - When did you feel [leg](back_or_leg) pain?
+    - When is your [leg](back_or_leg) painful?
+    - When does this [back](back_or_leg) pain usually come on.
+    - When does the pain arise?
+    - When do you experience the [back](back_or_leg) pain?
+    - Was it because you were carrying something heavy that you experienced this pain?
+    - So the pain comes when you are carrying out activities?
+    - Could you tell me how the pain comes on?
+    - What triggers the [leg](back_or_leg) pain?
+    - Is it movement that causes your [leg](back_or_leg) pain?
+    - When does the pain usually happen?
+    - What causes the [back](back_or_leg) pain?
+    - When is the [back](back_or_leg) painful?
+    - Is it movement that triggers your [back](back_or_leg) pain?
+    - Did something happen that caused this pain?
+    - What triggers the pain to come on?
+    - Is it movement that triggers your pain?
+    - Did something happen that made you feel this pain?
+    - Could you tell me how the [backache](back_or_leg) pain comes on?
+    - So what triggers this pain?
+    - What causes your pain?
+    - Did anything significant happened before you experienced this pain?
+    - When does this [leg](back_or_leg) pain usually come on.
+    - When do you feel the pain?
+    - What causes your [back](back_or_leg) pain?
+    - What triggers the pain to happen?
+    - Did something big happen before you had this pain.
+    - Were you carrying something heavy when you felt the pain?
+    - What would trigger your [leg](back_or_leg) pain?
+    - What brings the pain on?
+    - What causes the [leg](back_or_leg) pain?
+    - Does the pain come on when you are moving?
+    - When did you feel the pain?
+- intent: PS_pain_duration
+  examples: |
+    - When did your [back](back_or_leg) pain begin
+    - Ok, when did the [leg](back_or_leg) pain start?
+    - When did this begin?
+    - How many days has your [back](back_or_leg) hurt?
+    - How long have you experienced your [leg](back_or_leg) pain?
+    - When did the [leg](back_or_leg) pain start?
+    - How long has it been?
+    - Ok, I understand it's been there going on for six months, is that right.
+    - Ok, how long have you had this pain?
+    - So how long have you had the [leg](back_or_leg) pain?
+    - When did your pain start?
+    - How long have you experienced this pain on your [leg](back_or_leg)?
+    - Can you tell me more about when was the first time you felt the pain?
+    - How long have you had this pain
+    - How long has  the [back](back_or_leg) pain been?
+    - How long has the [back](back_or_leg) pain been?
+    - When did this pain start?
+    - How long have you suffered with this [back](back_or_leg) pain?
+    - Has the [leg](back_or_leg) pain been going on for a long time?
+    - Can you tell me when it started?
+    - Ah ok. so how long have you had this pains?
+    - How many days has your [leg](back_or_leg) hurt?
+    - Can you tell me more about the pain starting from when you first experienced it until now?
+    - When did this first begin?
+    - How long has this been going on for?
+    - I see. when did this pain start?
+    - Ok how about your [leg](back_or_leg), how long did you have this pain?
+    - You have had pain for the past six months, is that right?
+    - [leg](back_or_leg) pain how long?
+    - When did the pain start?
+    - How long has your [leg](back_or_leg) been hurting?
+    - How long have you had this [leg](back_or_leg) pain of yours?
+    - How long have you experienced this [leg](back_or_leg) pain?
+    - Can you tell me how long you have had this pain?
+    - Has the [back](back_or_leg) pain been going on for a long time?
+    - How long has it been like that?
+    - How many months has the [back](back_or_leg) pain lasted?
+    - Ok, your pain has been going on for the past six months, is that correct?
+    - How long has the pain been?
+    - How long have you experienced the pain on your [leg](back_or_leg)?
+    - How long did you have the [leg](back_or_leg) pain?
+    - When did this pain first start?
+    - How long did tou have the [back](back_or_leg) pain already?
+    - When did this [backache]{"entity": "back_or_leg", "value": "back"} and [leg](back_or_leg) pain first start?
+    - When did the pain first start?
+    - How many weeks has this [back](back_or_leg) pain last?
+    - [back](back_or_leg) pain how long?
+    - Can you now tell me how long has the [back](back_or_leg) pain last?
+    - When did it began?
+    - Ah I see. How long have you had these pains?
+    - How many weeks has this [leg](back_or_leg) pain last?
+    - How long have you had this [back](back_or_leg) pain?
+    - Ok, I see that you have been having this pain for the past six months, is that correct?
+    - When did the [back](back_or_leg) pain start?
+    - Tell me more about your pain, starting from when did your [back](back_or_leg) pain first start?
+    - How long did you have the [back](back_or_leg) pain?
+    - When did it start
+    - How long have had this pain?
+    - I see, how long had this been going on for?
+    - When did this began?
+    - How long has the [back](back_or_leg) painting?
+    - So how long have you experienced the pain on your [leg](back_or_leg)?
+    - So how long have you experienced this pain?
+    - How many months has the [leg](back_or_leg) pain lasted?
+    - How long have you had this pain?
+    - Ok, I understand it's been there for the past six months, is that correct?
+    - How long have you suffered with this [leg](back_or_leg) pain?
+    - When did it start getting painful?
+    - When did this start?
+    - So how long have you had your [leg](back_or_leg) pain?
+    - How long has the [back](back_or_leg) pain been
+    - Tell me more about your pain, starting from when did your [leg](back_or_leg) pain first start?
+- intent: GENERAL_back_or_leg
+  examples: |
+    - Let's talk about your [leg](back_or_leg) pain.
+    - Ok i think we are done with the history taking, now lets move on.
+    - Ok, let's talk about their [back](back_or_leg) in first.
+    - Tell me more about the [back](back_or_leg)
+    - Ok, so let's talk about the [back](back_or_leg) pain first.
+    - Let's start with the [leg](back_or_leg) first
+    - Let's start with the [leg](back_or_leg) pain
+    - Did you mean both your [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"}?
+    - The [leg](back_or_leg)
+    - The pain on your [back](back_or_leg).
+    - I see. Let's talk about your [back](back_or_leg) first OK?
+    - Let's talk about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - I see. lets talk about your [leg](back_or_leg) first ok?
+    - Sorry i mean [leg](back_or_leg)
+    - Ok, let's talk about the [back](back_or_leg) in.
+    - Alright then. Let's move on to your [back](back_or_leg) and [leg](back_or_leg) pain shall we?
+    - Let's talk about your [leg](back_or_leg) pain first
+    - I see, let's start with your [leg](back_or_leg) pain
+    - Ok. Lets talk about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - Now i would like to talk about your [back](back_or_leg)
+    - Ok lets talk about the [leg](back_or_leg)
+    - I would like to talk about your [leg](back_or_leg) now.
+    - Ok we are done with the [leg](back_or_leg). Lets move on to the [back](back_or_leg)
+    - Ok lets talk about your [leg](back_or_leg) then.
+    - I see, Let's talk about your [leg](back_or_leg) first ok?
+    - sure lets talk about your [leg](back_or_leg)
+    - Let's talk about your [leg](back_or_leg) first
+    - [leg](back_or_leg)
+    - I see, lets talk about your [back](back_or_leg) pain first ok?
+    - I see. Let's talk about your [leg](back_or_leg) first first ok?
+    - Ok lets move on to your [leg](back_or_leg)
+    - I see, lets start with your [leg](back_or_leg) first
+    - Alright, Let's start with the pain on your [leg](back_or_leg) first.
+    - Ok then, lets talk about your [leg](back_or_leg).
+    - Let's talk about the [leg](back_or_leg) pain first
+    - Your [back](back_or_leg)
+    - How about your [back](back_or_leg)?
+    - Let's move on to your [leg](back_or_leg) shall we?
+    - Let's start with the [back](back_or_leg) first
+    - Were you talking about your [leg and back]{"entity": "back_or_leg", "value": "back_and_leg"}?
+    - I'm referring to the pain on your [leg](back_or_leg).
+    - Your [backache]{"entity": "back_or_leg", "value": "back"}
+    - I see. Lets talk about your [leg](back_or_leg) first ok?
+    - Alright, now lets talk about your [back](back_or_leg) pain.
+    - Let's talk about the pain on your [leg](back_or_leg)
+    - Sorry i mean [back](back_or_leg)
+    - Alright, how about your [leg](back_or_leg)?
+    - oh the [back](back_or_leg)
+    - both the [back and leg]{"entity": "back_or_leg", "value": "back_and_leg"}?
+    - The [back](back_or_leg)?
+    - The [back](back_or_leg)
+    - I see. Let's talk about your [leg](back_or_leg) first ok?
+    - Okay, so maybe I'll start with the [back](back_or_leg) pain and then we will progress to the [leg](back_or_leg) pain.
+    - How about your [leg](back_or_leg) pain.
+    - Ok lets talk about your [backache]{"entity": "back_or_leg", "value": "back"}
+    - Let's talk about this [backache]{"entity": "back_or_leg", "value": "back"}
+    - [back](back_or_leg)
+    - I see, lets start with your [leg](back_or_leg) pain
+    - Are you talking about your [leg and your back]{"entity": "back_or_leg", "value": "back_and_leg"}
+    - The pain on your [leg](back_or_leg).
+    - Ok lets talk about the [leg](back_or_leg) pain. which [leg](back_or_leg) is affected?
+    - Alright, lets talk about your [back](back_or_leg) pain now.
+    - Ok lets talk about the [back](back_or_leg) pain first
+    - I meant the [leg](back_or_leg)
+    - How about your [leg](back_or_leg)?
+    - Alright, how about your [back](back_or_leg)?
+    - Alright, let's talk about your [back](back_or_leg) pain now
+    - Ok, I think we are done with the first part, lets move on to talking about your pain, alright?
+    - How about your [back](back_or_leg) pain.
+    - Let's start witht eh [back](back_or_leg) first
+    - I see. lets talk about your [backache]{"entity": "back_or_leg", "value": "back"} first
+    - Were you referring to your [back and your leg]{"entity": "back_or_leg", "value": "back_and_leg"}?
+    - Your [leg](back_or_leg)
+    - Ok lets talk about your [back](back_or_leg) pain
+    - Let's start with the [leg](back_or_leg) first.
+    - I meant the [back](back_or_leg)
+    - The [backache]{"entity": "back_or_leg", "value": "back"}
+    - both of [them]{"entity": "back_or_leg", "value": "back_and_leg"}
+- synonym: back_and_leg
+  examples: |
+    - back and leg
+    - them
+    - leg and back
+    - back and your leg
+    - leg and your back
+    - leg pain and back pain
+    - back pain and leg pain
+- synonym: back
+  examples: |
+    - backache
+    - backaches
+    - bag
+    - backing
+    - becky
+    - back ache
+- synonym: leg
+  examples: |
+    - legs
+    - lake
+    - link
+    - Lake
+    - lip
+- synonym: leg pain
+  examples: |
+    - linkedin
+- synonym: pain
+  examples: |
+    - pin
+- synonym: pain at
+  examples: |
+    - p net
+    - peanut
+- synonym: pain is
+  examples: |
+    - penis
+- synonym: urine
+  examples: |
+    - you re

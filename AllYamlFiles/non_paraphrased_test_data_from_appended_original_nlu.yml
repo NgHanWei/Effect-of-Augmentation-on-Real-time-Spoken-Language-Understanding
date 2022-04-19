@@ -1,0 +1,678 @@
+version: "2.0"
+nlu:
+- intent: GENERAL_confirming_patients_details
+  examples: |
+    - I would like to clarify, you mentioned earlier that you hurt your back 6 months ago carrying heavy buckets of water. Is that correct
+- intent: PH_kidney_stones
+  examples: |
+    - Do you have kidney stones?
+- intent: SHOTH_pets
+  examples: |
+    - Do you have pets at home?
+- intent: SHSAR_drugs
+  examples: |
+    - Do you do drugs?
+- intent: VERBAL_short_statement
+  examples: |
+    - Ok, continue?
+- intent: GENERAL_chit_chat_introduction
+  examples: |
+    - Is this running on the cloud?
+- intent: PH_medical_checkups_diabetes
+  examples: |
+    - Did you check for any conditions related to diabetes?
+- intent: MULTI_empathise+change_topic
+  examples: |
+    - I'm sorry to hear that, thank you for coming today and we shall work together to figure out a solution.
+- intent: DEMOG_weight
+  examples: |
+    - How much do you weigh?
+- intent: DEMOG_race
+  examples: |
+    - What is your ethnicity?
+- intent: HPIS_pain_location_leg_knee
+  examples: |
+    - Any pain in the knee?
+- intent: HPIA_cycling_makes_pain_better
+  examples: |
+    - Does it hurt less when you cycle?
+- intent: HPI_symptoms_weakness_duration
+  examples: |
+    - How long does the weakness last?
+- intent: HPI_symptoms_numbness_duration
+  examples: |
+    - How long does your [leg](back_or_leg) feel numb?
+- intent: PH_cholesterol
+  examples: |
+    - Do you have high cholesterol?
+- intent: SHOTH_hobbies_last_time
+  examples: |
+    - What were your hobbies last time?
+- intent: SHDE_exercise_frequency
+  examples: |
+    - How long do you exercise for each time?
+- intent: FH_family
+  examples: |
+    - Are you married?
+- intent: FH_family_occupation
+  examples: |
+    - Who else in the family works?
+- intent: SRCNS_dizziness
+  examples: |
+    - Do you feel giddy?
+- intent: GENERAL_introduction
+  examples: |
+    - Hello i'm a medical student at the hospital.
+- intent: HPIO_pain_everyday
+  examples: |
+    - Does the pain occur everyday?
+- intent: HPIA_sleeping_position
+  examples: |
+    - How do you sleep at night?
+- intent: HPIA_rest_when_getting_up
+  examples: |
+    - Do you ever need to rest for one hour before getting out of bed?
+- intent: HPIA_stand_without_bending_pain_better
+  examples: |
+    - Does the pain get better when you stand and not bend forward?
+- intent: HPISE_pain_severity
+  examples: |
+    - How painful is your [leg](back_or_leg)?
+- intent: HPI_associated_symptoms
+  examples: |
+    - Are there any other symptoms?
+- intent: PH_diabetes
+  examples: |
+    - Do you know if you have diabetes?
+- intent: SHOTH_hobbies
+  examples: |
+    - What hobbies do you have?
+- intent: SHDE_exercise_affected
+  examples: |
+    - Is your physical activities affected?
+- intent: SHDE_stairs_frequency
+  examples: |
+    - How often do you climb stairs?
+- intent: SHLC_living_conditions_storey
+  examples: |
+    - Which floor is your house on?
+- intent: SRCNS_headache
+  examples: |
+    - Do you experience any headache?
+- intent: SRRES_cough
+  examples: |
+    - Are you coughing?
+- intent: MOVE_foot_drag
+  examples: |
+    - Do you have difficulty lifting up your foot?
+- intent: DEMOG_height_changes
+  examples: |
+    - Do you notice that you are standing shorter?
+- intent: HPIE_sudden_movements_worse
+  examples: |
+    - Is it worse on sudden movements?
+- intent: PH_personal_cancer_history
+  examples: |
+    - Sorry to ask, but do you have any history of cancer?
+- intent: SHF_consultation_fees_payment
+  examples: |
+    - Do you have enough money to pay for today's consultation?
+- intent: SRGEN_chills_rigor
+  examples: |
+    - Any sudden feelings of fever?
+- intent: SRBRE_breast_lumps
+  examples: |
+    - Do you have any lumps in your breast?
+- intent: MOVE_limp
+  examples: |
+    - Do you limp because of the pain?
+- intent: GENERAL_question_to_doc
+  examples: |
+    - Any questions for me?
+- intent: GENERAL_how_travel_to_clinic
+  examples: |
+    - How did you come to the clinic today?
+- intent: PS_pain_confirm
+  examples: |
+    - You mentioned that you have back and [leg](back_or_leg) pain
+- intent: PS_clarify_pain_or_ache
+  examples: |
+    - So you feel an aching pain?
+- intent: HPIO_when_start_getting_worse
+  examples: |
+    - When did this [back](back_or_leg) pain start getting worse?
+- intent: HPI_affecting_climbing
+  examples: |
+    - Can you still climb stairs despite the pain?
+- intent: DTH_past_physiotherapy
+  examples: |
+    - Has anyone referred you to a physiotherapist?
+- intent: PH_medical_checkups_results
+  examples: |
+    - Do you remember how the latest checkup went?
+- intent: FH_how_is_family
+  examples: |
+    - Are your family members healthy?
+- intent: SRCNS_vision
+  examples: |
+    - Do you have any blurry vision?
+- intent: SRGIT_bowel_frequency
+  examples: |
+    - Any changes in your stools?
+- intent: MOVE_walking_ability
+  examples: |
+    - Any difficulties walking?
+- intent: DD_hands_buttoning_clothes
+  examples: |
+    - Do you have difficulty with your clothes buttons?
+- intent: DEMOG_patient_NRIC_number
+  examples: |
+    - Can you tell me what is your NRIC?
+- intent: HPIO_pain_morning_night
+  examples: |
+    - Is there more pain when you wake up or when you sleep?
+- intent: HPIR_pain_travel_start
+  examples: |
+    - Does it start in the [back](back_or_leg)?
+- intent: HPIE_stand_worse
+  examples: |
+    - Does your [leg](back_or_leg) hurt when you stand?
+- intent: PH_high_blood_pressure
+  examples: |
+    - Any high blood pressure?
+- intent: PH_immunization
+  examples: |
+    - Have you received any vaccination or immunization?
+- intent: SHSAR_smoking
+  examples: |
+    - Do you smoke Mandy.
+- intent: SRGEN_fever
+  examples: |
+    - Any bouts of fever in the past few days?
+- intent: SRRES_breathless
+  examples: |
+    - Do you feel a difficulty in breathing?
+- intent: SREAR_hearing_aid
+  examples: |
+    - Are you on hearing aids?
+- intent: PCE_concerns_affecting_life
+  examples: |
+    - Do you feel worried about this?
+- intent: DEMOG_age
+  examples: |
+    - Maybe could you just start with telling me your age this year?
+- intent: DEMOG_weight_before
+  examples: |
+    - Do you know your weight last time?
+- intent: DEMOG_master_hand
+  examples: |
+    - Do you use your right hand or left hand.
+- intent: HPIO_pain_change_across_time
+  examples: |
+    - Did you notice any changes in your [leg](back_or_leg) pain in the past few months?
+- intent: HPIE_carrying_heavy_objects_weight
+  examples: |
+    - How much water is in the bucket?
+- intent: HPI_affecting_house_chores
+  examples: |
+    - How about your house chores?
+- intent: PH_accidents
+  examples: |
+    - Did you get into any accidents in the past?
+- intent: PH_covid_vaccination
+  examples: |
+    - Have you got your covid immunization?
+- intent: SHOTH_religion
+  examples: |
+    - Do you have any religious affiliation?
+- intent: SHLC_living_conditions_helper
+  examples: |
+    - Does your family have a maid?
+- intent: SHF_financially_stable
+  examples: |
+    - How are your family finances?
+- intent: SRGEN_wounds
+  examples: |
+    - Have you noticed any ulcer on your [leg](back_or_leg)?
+- intent: SRMSK_bone_implants
+  examples: |
+    - Have you done any surgery for bone implantation?
+- intent: PCE_concerns_medical_certificate
+  examples: |
+    - Would you like me to issue a MC letter for you?
+- intent: DD_hands_chopsticks
+  examples: |
+    - Do you have difficulty holding chopsticks?
+- intent: DEMOG_MULTI_patient_name+age
+  examples: |
+    - What is your name and how old are you?
+- intent: HPIS_stomach_pain
+  examples: |
+    - Can I check if you have any stomach pain?
+- intent: HPI_affecting_worklife_relationships
+  examples: |
+    - Is this affecting your ability to get on with people at work?
+- intent: PH_heart_conditions
+  examples: |
+    - Any issues with your heart?
+- intent: PH_medical_checkups_recently_attend
+  examples: |
+    - Do you have regular medical examinations?
+- intent: SHLC_getting_around
+  examples: |
+    - How do you travel around?
+- intent: SHLC_home_chores
+  examples: |
+    - Do you do the housework?
+- intent: SRGEN_fatigue
+  examples: |
+    - Do you feel fatigue lately?
+- intent: SRGEN_night_sweats
+  examples: |
+    - Any fever or sweating at ight?
+- intent: SRGEN_cramps
+  examples: |
+    - Do you feel that your [legs]{"entity": "back_or_leg", "value": "leg"} cramp after walking?
+- intent: SRGIT_vomiting
+  examples: |
+    - Any vomiting?
+- intent: SRGU_urine_ability
+  examples: |
+    - Are you able to pass urine?
+- intent: SRRHEU_hair_loss
+  examples: |
+    - Did you lose any hair.
+- intent: HPIC_pain_sharp_or_dull
+  examples: |
+    - Do you feel any sharpness in your [back](back_or_leg)?
+- intent: HPIT_why_present_now
+  examples: |
+    - Why did you come to the clinic only now?
+- intent: SHLC_living_conditions_stairs_in_characteristics
+  examples: |
+    - Are there stairs at home?
+- intent: SHLC_home_cook
+  examples: |
+    - Who cooks in the family?
+- intent: SRGEN_weight_loss_pants
+  examples: |
+    - Do you think there is more gap or space in your pants?
+- intent: SRMSK_joint_pain
+  examples: |
+    - Ok any other joint pains on other parts of the body?
+- intent: SRMSK_bone_health
+  examples: |
+    - Any problems with your bones?
+- intent: SRRES_chest_tight
+  examples: |
+    - Do you have any recent chest pain?
+- intent: MOVE_standing_stability
+  examples: |
+    - Do you notice unsteadiness in your standing?
+- intent: DEMOG_MULTI_patient_name+patient_NRIC_number
+  examples: |
+    - This is the first time I'm seeing you today, can I have your name and NRIC number?
+- intent: HPIS_sole_pain
+  examples: |
+    - Does it shoot down the to sole of your foot, or the top of your foot?
+- intent: HPIO_pain_whole_day
+  examples: |
+    - Do you feel pain throughout the day?
+- intent: HPIE_carrying_heavy_objects_worse
+  examples: |
+    - Does the pain feel worse when you are carrying the heavy objects?
+- intent: HPI_pain_when_cough_sneeze
+  examples: |
+    - Does it hurt when you cough or sneeze?
+- intent: HPI_affecting_commute
+  examples: |
+    - Does the pain affect your ability to travel around?
+- intent: PH_hospitalisation
+  examples: |
+    - Have you been previously admitted to the hospital?
+- intent: PH_family_cancer_history
+  examples: |
+    - Do you have any family history of cancer?
+- intent: FH_family_conditions
+  examples: |
+    - Do you know if your relatives are ill?
+- intent: SRRES_breathing_problems
+  examples: |
+    - Any respiratory problems recently.
+- intent: DEMOG_gender
+  examples: |
+    - What is your gender?
+- intent: PS_pain_duration_question_same_for_both_pains
+  examples: |
+    - Did this pains start at the same time?
+- intent: HPIC_pain_burning_tingling_location
+  examples: |
+    - Where do you feel this tingling sensation in your [back](back_or_leg)?
+- intent: HPISE_pain_vas_last_time
+  examples: |
+    - Has it always been 6?
+- intent: HPI_association_both_pains
+  examples: |
+    - Both pains always happen at the same time?
+- intent: SHOTH_travel
+  examples: |
+    - Any recent travel history?
+- intent: SRGIT_bowel_issues
+  examples: |
+    - Do you notice anything wrong with your bowels lately?
+- intent: HPIO_pain_frequency
+  examples: |
+    - How long does the pain last?
+- intent: HPIO_pain_at_particular_time
+  examples: |
+    - What is the exact time your right [leg](back_or_leg) pain starts hurting?
+- intent: SHO_working_now
+  examples: |
+    - Are you currently working?
+- intent: SHO_occupation_duration
+  examples: |
+    - How long have you been working as a cleaner?
+- intent: SHDE_exercise
+  examples: |
+    - What exercises do you do?
+- intent: SHDE_carrying_heavy_objects
+  examples: |
+    - Do you lift anything heavy recently?
+- intent: SHDE_change_in_diet
+  examples: |
+    - Did you recently start eating any out of the normal?
+- intent: SHLC_living_conditions_support
+  examples: |
+    - Is there anyone at home to look after you if you are sick?
+- intent: SRRHEU_general_stiffness
+  examples: |
+    - Do you feel any stiffness of your [back](back_or_leg)?
+- intent: NURS_good_news
+  examples: |
+    - Good to hear.
+- intent: HPIA_upwards_downwards_better
+  examples: |
+    - Is it less painful when you climb uphill?
+- intent: HPISE_compare_pain_between_leg_back
+  examples: |
+    - Between your [back](back_or_leg) and [leg](back_or_leg) pain which one is worse?
+- intent: SHSAR_drinking
+  examples: |
+    - Do you drink a lot?
+- intent: SRGEN_rashes
+  examples: |
+    - Any spots on your skin or body?
+- intent: DTH_past_consultations
+  examples: |
+    - Okay, have you seen anyone for this pain before?
+- intent: PH_menstrual_last
+  examples: |
+    - When was the last date of your menstruation?
+- intent: SHO_occupation_confirm
+  examples: |
+    - Auntie you clean is it?
+- intent: SRGIT_bowel_ability
+  examples: |
+    - Have you had any constipation recently?
+- intent: HPIO_pain_intermittent_continuous
+  examples: |
+    - Is the pain constant?
+- intent: SHDE_diet_food
+  examples: |
+    - What do you eat for your 3 meals daily?
+- intent: FH_family_similar_problem
+  examples: |
+    - Is there anyone else in your family who has a history of such [leg](back_or_leg) pain?
+- intent: PCE_expectations
+  examples: |
+    - What do you expect?
+- intent: HPIO_pain_sudden_or_gradual
+  examples: |
+    - Did the pain come gradually or suddenly?
+- intent: HPIE_walk_worse
+  examples: |
+    - Do you have pain in the [leg](back_or_leg) when you walk?
+- intent: HPI_symptoms_weakness_trigger
+  examples: |
+    - What were you doing when you felt weakness?
+- intent: HPI_symptoms_numbness_trigger
+  examples: |
+    - When you feel numbness, what are you doing?
+- intent: HPI_symptoms_numbness_weakness_difference
+  examples: |
+    - Any sensation difference in right and left [leg] (back_or_leg)?
+- intent: SHLC_living_conditions_stairs_out_characteristics
+  examples: |
+    - Do you live on a floor with a lift landing?
+- intent: PCE_concerns_condition
+  examples: |
+    - Do you have any questions about your condition?
+- intent: PH_MULTI_highbloodpressure+diabetes+cholesterol
+  examples: |
+    - How is your blood pressure, cholesterol and diabetes levels?
+- intent: PH_surgery
+  examples: |
+    - Have you been through any operations previously?
+- intent: SRGU_urine_issues
+  examples: |
+    - Do you have difficulty urinating?
+- intent: SRGU_urine_frequency
+  examples: |
+    - Are you peeing more or less?
+- intent: MOVE_walking_independent
+  examples: |
+    - Do you need any help with walking?
+- intent: GENERAL_patient_guess
+  examples: |
+    - Do you have any idea of what might be causing your pain?
+- intent: HPIE_upwards_downwards_worse
+  examples: |
+    - Do you feel more pain when you walk downhill or uphill?
+- intent: DTH_drug_allergies
+  examples: |
+    - Any allergies?
+- intent: SRGIT_appetite_loss
+  examples: |
+    - Do you have any loss of appetite recently?
+- intent: DD_hands_clumsier
+  examples: |
+    - Do you notice if your hand control is getting worse?
+- intent: NURS_empathise
+  examples: |
+    - I can see that the pain is greatly affecting you
+- intent: DEMOG_patient_name
+  examples: |
+    - Can i get your name please?
+- intent: HPIO_pain_last_time
+  examples: |
+    - Do you remember how it was last time?
+- intent: HPI_MULTI_symptoms_numbness+weakness
+  examples: |
+    - Do you notice a change in sensation?
+- intent: SRGU_MULTI_passing_urine+passing_motion
+  examples: |
+    - Do you have any issues with passing motion or urination?
+- intent: SRRHEU_morning_stiffness
+  examples: |
+    - Is the pain more painful in the morning?
+- intent: GENERAL_greet
+  examples: |
+    - Hi
+- intent: GENERAL_how_is_patient
+  examples: |
+    - How are you?
+- intent: HPI_affecting_worklife
+  examples: |
+    - Has this affected your work.
+- intent: MOVE_walking_stability
+  examples: |
+    - Do you notice shaky walking?
+- intent: HPIA_factors_make_pain_better
+  examples: |
+    - Is there anything that makes it better?
+- intent: HPIE_factors_make_pain_worse
+  examples: |
+    - Does anything make the [leg](back_or_leg) pain worse?
+- intent: HPISE_distance_constant
+  examples: |
+    - Does this distance change?
+- intent: SRGEN_weight_loss
+  examples: |
+    - Did you lose any major weight recently?
+- intent: DTH_other_medications
+  examples: |
+    - Have you taken any medications?
+- intent: DTH_medications_for_pain
+  examples: |
+    - Have you been taking medications for your pains?
+- intent: PH_asking_for_patient_history_consent
+  examples: |
+    - Before I start, I would like to go through some history which will involve me asking you questions about your health and social circumstances. Is that ok with you?
+- intent: HPIE_distance_walk_worse
+  examples: |
+    - Can you walk for longer distances?
+- intent: GENERAL_moving_to_physicals
+  examples: |
+    - Alright thank you I will move on to examine your [back](back_or_leg) and [leg](back_or_leg)
+- intent: SHO_occupation
+  examples: |
+    - Auntie where do you work?
+- intent: HPIC_pain_burning_tingling
+  examples: |
+    - Does it feel like water going down your [leg](back_or_leg)?
+- intent: SHLC_living_conditions
+  examples: |
+    - What kind of house do you stay in?
+- intent: HPIS_clarify_leg
+  examples: |
+    - How about your left?
+- intent: HPIO_is_pain_getting_worse
+  examples: |
+    - Does the pain get worse over half the year?
+- intent: SHO_occupation_scope
+  examples: |
+    - How is your job like?
+- intent: PH_scans
+  examples: |
+    - X Ray?
+- intent: HPISE_max_walking_distance
+  examples: |
+    - How many busstops can you walk with your [leg](back_or_leg) pain?
+- intent: HPI_similar_pains_in_the_past
+  examples: |
+    - Before the 6 months, did you get any similar pains?
+- intent: PH_how_is_patient_coping
+  examples: |
+    - What have you done about the [back](back_or_leg) so far?
+- intent: SRRHEU_butt_groin_sensation
+  examples: |
+    - Do you notice difference in your buttock area?
+- intent: HPI_symptoms_weakness
+  examples: |
+    - Do you notice any weakness.
+- intent: PH_medical_problems
+  examples: |
+    - Any medical history?
+- intent: PS_ask_more_about_patient_problem
+  examples: |
+    - Oh, please tell me more.
+- intent: HPISE_pain_vas
+  examples: |
+    - From this chart, how would you rate the [back](back_or_leg) pain?
+- intent: HPI_symptoms_numbness
+  examples: |
+    - Do you have numbness on your [back](back_or_leg)?
+- intent: HPI_back_pain_sleep
+  examples: |
+    - Do you experience any [backache](back_or_leg) during sleep?
+- intent: HPIS_check_other_pain_location
+  examples: |
+    - Any pain in your lower [leg](back_or_leg)?
+- intent: GENERAL_opening_patient_problem
+  examples: |
+    - I'm one of the medical students, how can I help you today?
+- intent: HPIA_rest_makes_pain_better
+  examples: |
+    - Does it hurt less when you are not working?
+- intent: HPIE_pain_extension_or_flexion
+  examples: |
+    - How about when straightening the [leg](back_or_leg) or when bending it? Which one hurts more?
+- intent: HPI_affecting_daily_activities
+  examples: |
+    - How about daily activities?
+- intent: HPIO_first_pain_trigger
+  examples: |
+    - How did it start?
+- intent: filler_phrase
+  examples: |
+    - Erm.
+- intent: GENERAL_changing_topic
+  examples: |
+    - Ok, so I'll just ask you abit more about this pain.
+- intent: HPIR_pain_travel
+  examples: |
+    - Does your [back](back_or_leg) pain move anywhere else?
+- intent: HPIS_pain_location_specific
+  examples: |
+    - Is it at your feet?
+- intent: HPIC_pain_characteristics
+  examples: |
+    - How would you describe the pain?
+- intent: HPIS_pain_location
+  examples: |
+    - Which part of your [leg](back_or_leg)?
+- intent: out_of_scope
+  examples: |
+    - So you just had to come in and then speak to the patient.
+- intent: PH_injuries
+  examples: |
+    - Did you sprain you [back](back_or_leg)?
+- intent: HPIO_pain_trigger
+  examples: |
+    - How did the [leg](back_or_leg) pain arise?
+- intent: PS_pain_duration
+  examples: |
+    - How long has the [leg](back_or_leg) pain been?
+- intent: GENERAL_back_or_leg
+  examples: |
+    - Let's talk about your [back](back_or_leg)
+- synonym: back_and_leg
+  examples: |
+    - back and leg
+    - them
+    - leg and back
+    - back and your leg
+    - leg and your back
+    - leg pain and back pain
+    - back pain and leg pain
+- synonym: back
+  examples: |
+    - backache
+    - backaches
+    - bag
+    - backing
+    - becky
+    - back ache
+- synonym: leg
+  examples: |
+    - legs
+    - lake
+    - link
+    - Lake
+    - lip
+- synonym: leg pain
+  examples: |
+    - linkedin
+- synonym: pain
+  examples: |
+    - pin
+- synonym: pain at
+  examples: |
+    - p net
+    - peanut
+- synonym: pain is
+  examples: |
+    - penis
+- synonym: urine
+  examples: |
+    - you re
