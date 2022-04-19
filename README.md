@@ -2,6 +2,12 @@
 
 Step by step instruction for how to run RASA NLU and Paraphraser to obtain results.
 
+## Overview
+
+Pretrained models can be found in the 'models' folder.
+
+The results of the various pretrained models are found in 'results' folder
+
 ## Instructions
 
 ### Install the dependencies
