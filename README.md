@@ -121,38 +121,24 @@ The overview of training and test permutations can be seen in the following diag
 After performing testing, the results can be found in `results` folder. 
 
 ###
-The performance of the model can be found under the `DIETClassifier_report.json` file.
+The performance of the model can be found under the `intent_report.json` file at the bottom of the json file.
 
 For example:
 
 ```sh
-{
-  "back_or_leg": {
-    "precision": 0.8461538461538461,
-    "recall": 0.9705882352941176,
-    "f1-score": 0.9041095890410958,
-    "support": 34,
-    "confused_with": {}
-  },
-  "micro avg": {
-    "precision": 0.8461538461538461,
-    "recall": 0.9705882352941176,
-    "f1-score": 0.9041095890410958,
-    "support": 34
-  },
+"accuracy": 0.8537735849056604,
   "macro avg": {
-    "precision": 0.8461538461538461,
-    "recall": 0.9705882352941176,
-    "f1-score": 0.9041095890410958,
-    "support": 34
+    "precision": 0.801493710691824,
+    "recall": 0.8537735849056604,
+    "f1-score": 0.8179245283018868,
+    "support": 212
   },
   "weighted avg": {
-    "precision": 0.8461538461538461,
-    "recall": 0.9705882352941176,
-    "f1-score": 0.9041095890410958,
-    "support": 34
+    "precision": 0.801493710691824,
+    "recall": 0.8537735849056604,
+    "f1-score": 0.8179245283018868,
+    "support": 212
   }
-}
 ```
 
 ### Performance Visualisatioin
