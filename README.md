@@ -6,7 +6,11 @@ Step by step instruction for how to run RASA NLU and Paraphraser to obtain resul
 
 Pretrained models can be found in the `models` folder.
 
-The results of the various pretrained models are found in `results` folder
+The results of the various pretrained models are found in `results` folder.
+
+`paraphraser.py` can be found in `paraphraser_tool` folder.
+
+`AllYamlFiles` contains the necessary YAML files in RASA format. The RASA YAML format can be found in this [link](https://rasa.com/docs/rasa/nlu-training-data/)
 
 ## Instructions
 
