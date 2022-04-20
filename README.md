@@ -116,8 +116,8 @@ The overview of training and test permutations can be seen in the following diag
 
 ![](training_data_and_models_overview.png)
 
-### Results
+## Results
 
-Results can be found in `results` folder. For instance:
+After performing testing, the results can be found in `results` folder. For instance:
 
 ![](./results/non_paraphrased_on_non_paraphrased/intent_histogram.png "Intent Prediction Confidence Distribution")
