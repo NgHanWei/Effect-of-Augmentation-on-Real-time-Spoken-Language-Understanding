@@ -118,6 +118,44 @@ The overview of training and test permutations can be seen in the following diag
 
 ## Results
 
-After performing testing, the results can be found in `results` folder. For instance:
+After performing testing, the results can be found in `results` folder. 
+
+###
+The performance of the model can be found under the `DIETClassifier_report.json` file.
+
+For example:
+
+```sh
+{
+  "back_or_leg": {
+    "precision": 0.8461538461538461,
+    "recall": 0.9705882352941176,
+    "f1-score": 0.9041095890410958,
+    "support": 34,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.8461538461538461,
+    "recall": 0.9705882352941176,
+    "f1-score": 0.9041095890410958,
+    "support": 34
+  },
+  "macro avg": {
+    "precision": 0.8461538461538461,
+    "recall": 0.9705882352941176,
+    "f1-score": 0.9041095890410958,
+    "support": 34
+  },
+  "weighted avg": {
+    "precision": 0.8461538461538461,
+    "recall": 0.9705882352941176,
+    "f1-score": 0.9041095890410958,
+    "support": 34
+  }
+}
+```
+
+### Performance Visualisatioin
+Additionally, the confusion matrix and confidence distribution histograms are automaticall generated. For instance:
 
 ![](./results/non_paraphrased_on_non_paraphrased/intent_histogram.png "Intent Prediction Confidence Distribution")
