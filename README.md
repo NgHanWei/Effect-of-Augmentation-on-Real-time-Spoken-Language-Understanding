@@ -1,4 +1,4 @@
-# CE7455 Project
+# Real-time Spoken Language Understanding for Orthopedic Training in Virtual Reality
 
 Step by step instruction for how to run RASA NLU and Paraphraser to obtain results.
 
