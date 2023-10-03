@@ -1,4 +1,5 @@
-# Real-time Spoken Language Understanding for Orthopedic Training in Virtual Reality
+# Real-time Spoken Language Understanding for Orthopedic Training in Virtual Reality (AIED 2022)
+https://link.springer.com/chapter/10.1007/978-3-031-11644-5_61
 
 Step by step instruction for how to run RASA NLU and Paraphraser to obtain results.
 
